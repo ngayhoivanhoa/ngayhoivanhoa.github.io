@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NgayHoiVanHoa_TrungQuoc</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanh dieu huong cac site -->
+    <header class="main-header">
+      <div class="logo">NGÀY HỘI VĂN HÓA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/viet-nam">Việt Nam</a></li>
+          <li><a href="/trung-quoc" class="active">Trung Quốc</a></li>
+          <li><a href="/han-quoc">Hàn Quốc</a></li>
+          <li><a href="/nhat-ban">Nhật Bản</a></li>
+          <li><a href="/dang-ky">Đăng ký tham gia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner đầu trang -->
+    <section class="page-banner">
+      <h1>KHÔNG GIAN VĂN HÓA TRUNG QUỐC</h1>
+    </section>
+
+    <!-- Nội dung chính -->
+    <main class="container-wide">
+      <!-- 3 mục chọn của quốc gia -->
+      <div class="tab-menu">
+        <button class="tab-btn active" onclick="chonMuc('am_thuc', this)">
+          1. Ẩm thực
+        </button>
+        <button class="tab-btn" onclick="chonMuc('du_lich', this)">
+          2. Du lịch
+        </button>
+        <button class="tab-btn" onclick="chonMuc('lich_su_van_hoa', this)">
+          3. Lịch sử và Văn hóa
+        </button>
+      </div>
+
+      <!-- Mục 1: Ẩm thực (Dimsum, Vịt quay Bắc Kinh, Đậu phụ Tứ Xuyên) -->
+      <section id="am_thuc" class="section-card tab-box active">
+        <div class="category-header">
+          <span class="category-tag">Trung Quốc - Ẩm thực</span>
+          <h2 class="section-title">Tinh Hoa Ẩm Thực Trung Hoa</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Món 1: Dimsum -->
+          <a href="/chi-tiet?muc=dimsum" class="detail-item clickable-item">
+            <img
+              src="dimsum.jpg"
+              alt="Dimsum"
+            />
+            <div class="detail-content">
+              <h3>1. Dimsum (Điểm Sấm)</h3>
+              <p>
+                Nghệ thuật ẩm thực Quảng Đông với hàng chục món bánh nhỏ xinh
+                như há cảo, xíu mại, bánh bao hấp trong xửng tre nóng hổi.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách làm Dimsum →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 2: Vịt quay Bắc Kinh -->
+          <a
+            href="/chi-tiet?muc=vit_quay_bac_kinh"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="vitquay.jpg"
+              alt="Vịt quay Bắc Kinh"
+            />
+            <div class="detail-content">
+              <h3>2. Vịt Quay Bắc Kinh</h3>
+              <p>
+                Món ăn trứ danh của hoàng cung Bắc Kinh nổi bật với lớp da mỏng
+                giòn rụm màu cánh gián và thịt mềm ngọt thơm lừng.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Bí quyết chế biến Vịt quay →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 3: Đậu phụ Tứ Xuyên -->
+          <a
+            href="/chi-tiet?muc=dau_phu_tu_xuyen"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="dauphu.jpg"
+              alt="Đậu phụ Tứ Xuyên"
+            />
+            <div class="detail-content">
+              <h3>3. Đậu Phụ Tứ Xuyên (Mapo Tofu)</h3>
+              <p>
+                Đặc sản vùng Tứ Xuyên kết hợp giữa những miếng đậu phụ non mềm
+                mịn và xốt thịt băm cay tê nồng nàn của hạt tiêu hoa tiêu.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách nấu Đậu phụ Tứ Xuyên →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 2: Du lịch (Vạn Lý Trường Thành, Tử Cấm Thành, Bến Thượng Hải) -->
+      <section id="du_lich" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Trung Quốc - Du lịch</span>
+          <h2 class="section-title">Điểm Đến Du Lịch Nổi Tiếng Trung Quốc</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Vạn Lý Trường Thành -->
+          <a
+            href="/chi-tiet?muc=van_ly_truong_thanh"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="trungquoc.jpg"
+              alt="Vạn Lý Trường Thành"
+            />
+            <div class="detail-content">
+              <h3>1. Vạn Lý Trường Thành</h3>
+              <p>
+                Công trình phòng thủ quân sự kỳ vĩ dài hơn 21.000 km uốn lượn
+                qua núi non hiểm trở suốt hơn hai thiên niên kỷ.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Lịch sử xây dựng, Kiến trúc & Điểm tham quan →
+              </p>
+            </div>
+          </a>
+
+          <!-- Tử Cấm Thành -->
+          <a
+            href="/chi-tiet?muc=tu_cam_thanh"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="tucamthanh.jpg"
+              alt="Tử Cấm Thành"
+            />
+            <div class="detail-content">
+              <h3>2. Tử Cấm Thành (Cố Cung Bắc Kinh)</h3>
+              <p>
+                Quần thể cung điện bằng gỗ cổ lớn nhất thế giới của 24 vị hoàng
+                đế hai triều đại Minh - Thanh với 9.999 gian phòng.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Nghệ thuật kiến trúc & Giá trị di sản →
+              </p>
+            </div>
+          </a>
+
+          <!-- Bến Thượng Hải -->
+          <a
+            href="/chi-tiet?muc=ben_thuong_hai"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="thuonghai.jpg"
+              alt="Bến Thượng Hải"
+            />
+            <div class="detail-content">
+              <h3>3. Bến Thượng Hải</h3>
+              <p>
+                Biểu tượng giao thoa Đông - Tây bên dòng sông Hoàng Phố với một
+                bên là các tòa nhà cổ điển châu Âu và một bên là tháp Minh Châu
+                Phương Đông hiện đại.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Lịch sử phát triển, Cảnh sắc & Trải nghiệm về đêm
+                →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 3: Lịch sử và Văn hóa (Phong kiến, Tứ Linh, Thư pháp) -->
+      <section id="lich_su_van_hoa" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Trung Quốc - Lịch sử & Văn hóa</span>
+          <h2 class="section-title">Lịch Sử Và Văn Hóa Trung Quốc</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Lịch sử phong kiến Trung Quốc -->
+          <a
+            href="/chi-tiet?muc=phong_kien_trung_quoc"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="pktq.jpg"
+              alt="Lịch sử thời kì phong kiến Trung Quốc"
+            />
+            <div class="detail-content">
+              <h3>1. Lịch Sử Thời Kì Phong Kiến Trung Quốc</h3>
+              <p>
+                Hành trình lịch sử từ thời Tần Thủy Hoàng thống nhất Trung Hoa
+                qua các triều đại Hán, Đường, Tống, Nguyên, Minh, Thanh cùng Tứ
+                đại phát minh.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Các triều đại tiêu biểu & Thành tựu văn minh →
+              </p>
+            </div>
+          </a>
+
+          <!-- Long Lân Quy Phụng -->
+          <a
+            href="/chi-tiet?muc=tu_linh_trung_quoc"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="tulinh.jpg"
+              alt="Tứ linh Long Lân Quy Phụng"
+            />
+            <div class="detail-content">
+              <h3>2. Tứ Linh (Long - Lân - Quy - Phụng)</h3>
+              <p>
+                Tứ linh huyền thoại trong văn hóa phương Đông tượng trưng cho
+                quyền uy, điềm lành, sự trường thọ và đức hạnh cao quý.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc & Ý nghĩa biểu tượng của từng linh vật →
+              </p>
+            </div>
+          </a>
+
+          <!-- Thư pháp -->
+          <a
+            href="/chi-tiet?muc=thu_phap"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="thuphap.jpg"
+              alt="Thư pháp Trung Hoa"
+            />
+            <div class="detail-content">
+              <h3>3. Nghệ Thuật Thư Pháp Trung Hoa</h3>
+              <p>
+                Bộ môn nghệ thuật viết chữ Hán bằng bút lông và mực tàu với Văn
+                phòng tứ bảo (Bút, Nghiên, Giấy, Mực) rèn luyện tâm tính con
+                người.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Lịch sử chữ viết, Các thể chữ & Cách viết Thư pháp
+                →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="main-footer">
+      <p>
+        © Tổ 4: Phú Lộc, Hoàng Long, Khánh Duy, Minh Khoa, Tiến Lộc, Đức Nguyên,
+        Anh Huy, Bảo Nghi
+      </p>
+      <p>
+        Điều hướng nhanh:
+        <a href="/">Trang chủ</a> |
+        <a href="/viet-nam">Việt Nam</a> |
+        <a href="/trung-quoc">Trung Quốc</a> |
+        <a href="/han-quoc">Hàn Quốc</a> |
+        <a href="/nhat-ban">Nhật Bản</a> |
+        <a href="/dang-ky">Đăng ký</a>
+      </p>
+    </footer>
+
+    <!-- Hàm chuyển đổi giữa 3 mục -->
+    <script>
+      function chonMuc(ten_muc, nut_bam) {
+        var danh_sach_muc = document.getElementsByClassName("tab-box");
+        for (var i = 0; i < danh_sach_muc.length; i++) {
+          danh_sach_muc[i].classList.remove("active");
+        }
+        var danh_sach_nut = document.getElementsByClassName("tab-btn");
+        for (var j = 0; j < danh_sach_nut.length; j++) {
+          danh_sach_nut[j].classList.remove("active");
+        }
+        document.getElementById(ten_muc).classList.add("active");
+        nut_bam.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

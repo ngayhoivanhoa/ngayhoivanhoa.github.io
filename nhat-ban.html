@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NgayHoiVanHoa_NhatBan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanh dieu huong cac site -->
+    <header class="main-header">
+      <div class="logo">NGÀY HỘI VĂN HÓA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/viet-nam">Việt Nam</a></li>
+          <li><a href="/trung-quoc">Trung Quốc</a></li>
+          <li><a href="/han-quoc">Hàn Quốc</a></li>
+          <li><a href="/nhat-ban" class="active">Nhật Bản</a></li>
+          <li><a href="/dang-ky">Đăng ký tham gia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner đầu trang -->
+    <section class="page-banner">
+      <h1>KHÔNG GIAN VĂN HÓA NHẬT BẢN</h1>
+    </section>
+
+    <!-- Nội dung chính -->
+    <main class="container-wide">
+      <!-- 3 mục chọn của quốc gia -->
+      <div class="tab-menu">
+        <button class="tab-btn active" onclick="chonMuc('am_thuc', this)">
+          1. Ẩm thực
+        </button>
+        <button class="tab-btn" onclick="chonMuc('du_lich', this)">
+          2. Du lịch
+        </button>
+        <button class="tab-btn" onclick="chonMuc('lich_su_van_hoa', this)">
+          3. Lịch sử và Văn hóa
+        </button>
+      </div>
+
+      <!-- Mục 1: Ẩm thực (Sushi, Ramen, Bánh Mochi) -->
+      <section id="am_thuc" class="section-card tab-box active">
+        <div class="category-header">
+          <span class="category-tag">Nhật Bản - Ẩm thực</span>
+          <h2 class="section-title">Tinh Hoa Ẩm Thực Nhật Bản (Washoku)</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Món 1: Sushi -->
+          <a href="/chi-tiet?muc=sushi" class="detail-item clickable-item">
+            <img
+              src="sushi.jpg"
+              alt="Sushi Nhật Bản"
+            />
+            <div class="detail-content">
+              <h3>1. Sushi Truyền Thống</h3>
+              <p>
+                Biểu tượng ẩm thực Nhật Bản kết hợp giữa cơm trộn giấm Shari dẻo
+                thơm và các lát hải sản tươi sống Neta được tuyển chọn kỹ lưỡng.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Nghệ thuật nắm Sushi →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 2: Ramen -->
+          <a href="/chi-tiet?muc=ramen" class="detail-item clickable-item">
+            <img
+              src="ramen.jpg"
+              alt="Mì Ramen"
+            />
+            <div class="detail-content">
+              <h3>2. Mì Ramen Nhật Bản</h3>
+              <p>
+                Món mì nước trứ danh với sợi mì lúa mì dai giòn, nước dùng ninh
+                nhiều giờ đậm đà (Shoyu, Miso, Tonkotsu) ăn kèm thịt xá xíu và
+                trứng lòng đào.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách nấu Mì Ramen →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 3: Bánh Mochi -->
+          <a
+            href="/chi-tiet?muc=banh_mochi"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="mochi.jpg"
+              alt="Bánh Mochi"
+            />
+            <div class="detail-content">
+              <h3>3. Bánh Mochi</h3>
+              <p>
+                Món bánh truyền thống mang ý nghĩa may mắn, trường thọ trong các
+                dịp lễ Tết Nhật Bản với lớp vỏ bột nếp dẻo mịn và nhân đậu đỏ
+                ngọt dịu.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Tục giã Bánh Mochi →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 2: Du lịch (Núi Phú Sĩ, Làng cổ Shirakawago, Chùa vàng Kinkaku-ji) -->
+      <section id="du_lich" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Nhật Bản - Du lịch</span>
+          <h2 class="section-title">Biểu Tượng Du Lịch Xứ Sở Phù Tang</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Núi Phú Sĩ -->
+          <a
+            href="/chi-tiet?muc=nui_phu_si"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="fuji.jpg"
+              alt="Núi Phú Sĩ"
+            />
+            <div class="detail-content">
+              <h3>1. Núi Phú Sĩ (Fuji-san)</h3>
+              <p>
+                Đỉnh núi cao nhất Nhật Bản (3.776m) với chóp nón cân đối phủ
+                tuyết trắng xóa, là nguồn cảm hứng thi ca và hội họa bất tận.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Địa lý, Cảnh sắc Phú Sĩ Ngũ Hồ & Trải nghiệm →
+              </p>
+            </div>
+          </a>
+
+          <!-- Làng cổ Shirakawago -->
+          <a
+            href="/chi-tiet?muc=shirakawago"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="langconb.jpg"
+              alt="Làng cổ Shirakawago"
+            />
+            <div class="detail-content">
+              <h3>2. Làng Cổ Shirakawa-go</h3>
+              <p>
+                Di sản thế giới tại tỉnh Gifu nổi tiếng với những ngôi nhà mái
+                tranh dốc đứng kiến trúc Gassho-zukuri đẹp như cổ tích giữa mùa
+                tuyết trắng.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Lịch sử ngôi làng, Kiến trúc mái tranh & Lễ hội →
+              </p>
+            </div>
+          </a>
+
+          <!-- Chùa vàng Kinkaku-ji -->
+          <a
+            href="/chi-tiet?muc=kinkaku_ji"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="chuavang.jpg"
+              alt="Chùa vàng Kinkaku-ji"
+            />
+            <div class="detail-content">
+              <h3>3. Chùa Vàng Kinkaku-ji (Kim Các Tự)</h3>
+              <p>
+                Tuyệt tác kiến trúc Thiền tông tại cố đô Kyoto với hai tầng trên
+                được dát vàng lá rực rỡ soi bóng xuống mặt hồ Kyoko-chi phẳng
+                lặng.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc lịch sử, Kiến trúc 3 tầng & Cảnh quan →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 3: Lịch sử và Văn hóa (Thời kì Heian, Văn hóa Samurai, Trà Đạo) -->
+      <section id="lich_su_van_hoa" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Nhật Bản - Lịch sử & Văn hóa</span>
+          <h2 class="section-title">Lịch Sử Và Văn Hóa Nhật Bản</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Lịch sử thời kì Heian -->
+          <a
+            href="/chi-tiet?muc=thoi_ki_heian"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="heian.jpg"
+              alt="Lịch sử thời kì Heian"
+            />
+            <div class="detail-content">
+              <h3>1. Lịch Sử Thời Kì Heian (Bình An)</h3>
+              <p>
+                Thời kỳ hoàng kim của văn hóa quý tộc cung đình Nhật Bản (794 -
+                1185) tại kinh đô Heian-kyo (Kyoto), khai sinh chữ viết Kana và
+                tiểu thuyết Truyện Genji.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Bối cảnh lịch sử & Thành tựu văn hóa thời Heian →
+              </p>
+            </div>
+          </a>
+
+          <!-- Văn hóa Samurai -->
+          <a
+            href="/chi-tiet?muc=van_hoa_samurai"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="samurai.jpg"
+              alt="Văn hóa Samurai"
+            />
+            <div class="detail-content">
+              <h3>2. Văn Hóa Samurai & Võ Sĩ Đạo (Bushido)</h3>
+              <p>
+                Tầng lớp chiến binh tinh nhuệ gắn liền với thanh kiếm Katana và
+                hệ giá trị đạo đức Bushido: Ngay thẳng, Dũng cảm, Nhân từ, Lễ
+                nghĩa và Trung thành.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc Samurai, Tinh thần Bushido & Ảnh hưởng →
+              </p>
+            </div>
+          </a>
+
+          <!-- Trà Đạo -->
+          <a
+            href="/chi-tiet?muc=tra_dao"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="tradao.jpg"
+              alt="Trà Đạo Nhật Bản"
+            />
+            <div class="detail-content">
+              <h3>3. Nghệ Thuật Trà Đạo (Chanoyu / Chado)</h3>
+              <p>
+                Nghi thức pha và thưởng thức trà xanh Matcha thấm đẫm tinh thần
+                Thiền tông và mỹ học Wabi-sabi với 4 nguyên tắc: Hòa - Kính -
+                Thanh - Tịch.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Triết lý & Quy trình pha Trà Đạo →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="main-footer">
+      <p>
+        © Tổ 4: Phú Lộc, Hoàng Long, Khánh Duy, Minh Khoa, Tiến Lộc, Đức Nguyên,
+        Anh Huy, Bảo Nghi
+      </p>
+      <p>
+        Điều hướng nhanh:
+        <a href="/">Trang chủ</a> |
+        <a href="/viet-nam">Việt Nam</a> |
+        <a href="/trung-quoc">Trung Quốc</a> |
+        <a href="/han-quoc">Hàn Quốc</a> |
+        <a href="/nhat-ban">Nhật Bản</a> |
+        <a href="/dang-ky">Đăng ký</a>
+      </p>
+    </footer>
+
+    <!-- Hàm chuyển đổi giữa 3 mục -->
+    <script>
+      function chonMuc(ten_muc, nut_bam) {
+        var danh_sach_muc = document.getElementsByClassName("tab-box");
+        for (var i = 0; i < danh_sach_muc.length; i++) {
+          danh_sach_muc[i].classList.remove("active");
+        }
+        var danh_sach_nut = document.getElementsByClassName("tab-btn");
+        for (var j = 0; j < danh_sach_nut.length; j++) {
+          danh_sach_nut[j].classList.remove("active");
+        }
+        document.getElementById(ten_muc).classList.add("active");
+        nut_bam.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

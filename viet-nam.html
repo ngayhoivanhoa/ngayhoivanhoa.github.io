@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NgayHoiVanHoa_VietNam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanh dieu huong cac site -->
+    <header class="main-header">
+      <div class="logo">NGÀY HỘI VĂN HÓA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/viet-nam" class="active">Việt Nam</a></li>
+          <li><a href="/trung-quoc">Trung Quốc</a></li>
+          <li><a href="/han-quoc">Hàn Quốc</a></li>
+          <li><a href="/nhat-ban">Nhật Bản</a></li>
+          <li><a href="/dang-ky">Đăng ký tham gia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner đầu trang -->
+    <section class="page-banner">
+      <h1>KHÔNG GIAN VĂN HÓA TRUYỀN THỐNG VIỆT NAM</h1>
+    </section>
+
+    <!-- Nội dung chính -->
+    <main class="container-wide">
+      <!-- 3 mục chọn của quốc gia -->
+      <div class="tab-menu">
+        <button class="tab-btn active" onclick="chonMuc('am_thuc', this)">
+          1. Ẩm thực
+        </button>
+        <button class="tab-btn" onclick="chonMuc('du_lich', this)">
+          2. Du lịch
+        </button>
+        <button class="tab-btn" onclick="chonMuc('lich_su_van_hoa', this)">
+          3. Lịch sử và Văn hóa
+        </button>
+      </div>
+
+      <!-- Mục 1: Ẩm thực (Phở, Bánh Chưng, Bánh mì) -->
+      <section id="am_thuc" class="section-card tab-box active">
+        <div class="category-header">
+          <span class="category-tag">Việt Nam - Ẩm thực</span>
+          <h2 class="section-title">Tinh Hoa Ẩm Thực Việt Nam</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Món 1: Phở -->
+          <a href="/chi-tiet?muc=pho" class="detail-item clickable-item">
+            <img
+              src="pho.jpg"
+              alt="Phở Việt Nam"
+            />
+            <div class="detail-content">
+              <h3>1. Phở Truyền Thống</h3>
+              <p>
+                Đại diện tinh hoa ẩm thực Việt Nam với nước dùng xương ninh
+                trong vắt, thơm lừng hương thảo mộc và bánh phở mềm dai.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách nấu Phở →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 2: Bánh Chưng -->
+          <a
+            href="/chi-tiet?muc=banh_chung"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="banhchung.jpg"
+              alt="Bánh Chưng"
+            />
+            <div class="detail-content">
+              <h3>2. Bánh Chưng</h3>
+              <p>
+                Món bánh cổ truyền tượng trưng cho mặt đất từ thời Vua Hùng, gói
+                trọn vị dẻo thơm của gạo nếp, đậu xanh, thịt mỡ trong lá dong
+                xanh.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách gói Bánh Chưng →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 3: Bánh mì -->
+          <a
+            href="/chi-tiet?muc=banh_mi"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="banhmi.jpg"
+              alt="Bánh mì Việt Nam"
+            />
+            <div class="detail-content">
+              <h3>3. Bánh Mì Việt Nam</h3>
+              <p>
+                Món ăn đường phố nổi tiếng toàn cầu với vỏ bánh nướng giòn rụm
+                kẹp nhân pate, thịt nguội, đồ chua và rau thơm đậm đà.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách làm Bánh mì →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 2: Du lịch (Vịnh Hạ Long, Phố cổ Hội An, Hang Sơn Đoòng) -->
+      <section id="du_lich" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Việt Nam - Du lịch</span>
+          <h2 class="section-title">Danh Lam Thắng Cảnh Du Lịch Việt Nam</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Vịnh Hạ Long -->
+          <a
+            href="/chi-tiet?muc=vinh_ha_long"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="vietnam.jpg"
+              alt="Vịnh Hạ Long"
+            />
+            <div class="detail-content">
+              <h3>1. Vịnh Hạ Long</h3>
+              <p>
+                Di sản thiên nhiên thế giới tại Quảng Ninh với gần 2.000 hòn đảo
+                đá vôi kỳ vĩ trên mặt biển xanh ngọc bích.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Vị trí, Cảnh sắc & Trải nghiệm Vịnh Hạ Long →
+              </p>
+            </div>
+          </a>
+
+          <!-- Phố cổ Hội An -->
+          <a
+            href="/chi-tiet?muc=pho_co_hoi_an"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="hoian.jpg"
+              alt="Phố cổ Hội An"
+            />
+            <div class="detail-content">
+              <h3>2. Phố Cổ Hội An</h3>
+              <p>
+                Thương cảng cổ kính bên bờ sông Hoài nổi bật với những dãy nhà
+                tường vàng, mái ngói rêu phong và phố đèn lồng rực rỡ.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Lịch sử hình thành, Kiến trúc & Trải nghiệm Hội An
+                →
+              </p>
+            </div>
+          </a>
+
+          <!-- Hang Sơn Đoòng -->
+          <a
+            href="/chi-tiet?muc=hang_son_doong"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="sondoong.jpg"
+              alt="Hang Sơn Đoòng"
+            />
+            <div class="detail-content">
+              <h3>3. Hang Sơn Đoòng</h3>
+              <p>
+                Hang động tự nhiên lớn nhất thế giới tại Quảng Bình sở hữu hệ
+                sinh thái rừng nguyên sinh và sông ngầm độc đáo ngay trong lòng
+                đất.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Quá trình phát hiện, Kỳ quan & Thám hiểm Sơn Đoòng
+                →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 3: Lịch sử và Văn hóa (Lịch sử giữ nước, Nhạc Dân ca, Thơ ca Cách Mạng) -->
+      <section id="lich_su_van_hoa" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Việt Nam - Lịch sử & Văn hóa</span>
+          <h2 class="section-title">
+            Lịch Sử Và Văn Hóa Truyền Thống Việt Nam
+          </h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Lịch sử giữ nước -->
+          <a
+            href="/chi-tiet?muc=lich_su_giu_nuoc"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="lsvn.jpg"
+              alt="Lịch sử giữ nước"
+            />
+            <div class="detail-content">
+              <h3>1. Lịch Sử Giữ Nước Của Dân Tộc</h3>
+              <p>
+                Trang sử hào hùng suốt hơn 4.000 năm từ chiến thắng Bạch Đằng,
+                Chi Lăng, Đống Đa đến Điện Biên Phủ và Đại thắng mùa Xuân 1975.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Các mốc son lịch sử & Truyền thống yêu nước →
+              </p>
+            </div>
+          </a>
+
+          <!-- Nhạc Dân ca -->
+          <a
+            href="/chi-tiet?muc=nhac_dan_ca"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="danca.jpg"
+              alt="Nhạc Dân ca Việt Nam"
+            />
+            <div class="detail-content">
+              <h3>2. Nhạc Dân Ca Việt Nam</h3>
+              <p>
+                Kho tàng làn điệu dân ca Quan họ Bắc Ninh, Hát Xoan, Ví Giặm
+                Nghệ Tĩnh và Đờn ca tài tử Nam Bộ thấm đượm tình quê hương.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Các làn điệu tiêu biểu & Giá trị di sản
+                →
+              </p>
+            </div>
+          </a>
+
+          <!-- Thơ ca Cách Mạng -->
+          <a
+            href="/chi-tiet?muc=tho_ca_cach_mang"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="tho.jpg"
+              alt="Thơ ca Cách Mạng"
+            />
+            <div class="detail-content">
+              <h3>3. Thơ Ca Cách Mạng Việt Nam</h3>
+              <p>
+                Dòng văn học hào sảng đồng hành cùng dân tộc trong hai cuộc
+                kháng chiến với những vần thơ bất hủ của Hồ Chí Minh, Tố Hữu,
+                Chính Hữu, Phạm Tiến Duật.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Bối cảnh ra đời, Tác phẩm tiêu biểu & Ý nghĩa →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="main-footer">
+      <p>
+        © Tổ 4: Phú Lộc, Hoàng Long, Khánh Duy, Minh Khoa, Tiến Lộc, Đức Nguyên,
+        Anh Huy, Bảo Nghi
+      </p>
+      <p>
+        Điều hướng nhanh:
+        <a href="/">Trang chủ</a> |
+        <a href="/viet-nam">Việt Nam</a> |
+        <a href="/trung-quoc">Trung Quốc</a> |
+        <a href="/han-quoc">Hàn Quốc</a> |
+        <a href="/nhat-ban">Nhật Bản</a> |
+        <a href="/dang-ky">Đăng ký</a>
+      </p>
+    </footer>
+
+    <!-- Hàm chuyển đổi giữa 3 mục -->
+    <script>
+      function chonMuc(ten_muc, nut_bam) {
+        var danh_sach_muc = document.getElementsByClassName("tab-box");
+        for (var i = 0; i < danh_sach_muc.length; i++) {
+          danh_sach_muc[i].classList.remove("active");
+        }
+        var danh_sach_nut = document.getElementsByClassName("tab-btn");
+        for (var j = 0; j < danh_sach_nut.length; j++) {
+          danh_sach_nut[j].classList.remove("active");
+        }
+        document.getElementById(ten_muc).classList.add("active");
+        nut_bam.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

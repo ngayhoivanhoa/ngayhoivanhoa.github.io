@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NgayHoiVanHoa_DangKy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanh dieu huong cac site -->
+    <header class="main-header">
+      <div class="logo">NGÀY HỘI VĂN HÓA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/viet-nam">Việt Nam</a></li>
+          <li><a href="/trung-quoc">Trung Quốc</a></li>
+          <li><a href="/han-quoc">Hàn Quốc</a></li>
+          <li><a href="/nhat-ban">Nhật Bản</a></li>
+          <li><a href="/dang-ky" class="active">Đăng ký tham gia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner đầu trang -->
+    <section class="page-banner">
+      <h1>ĐĂNG KÝ THAM GIA NGÀY HỘI VĂN HÓA</h1>
+      <p>
+        Cùng trải nghiệm không gian lịch sử, văn hóa, du lịch và ẩm thực truyền
+        thống của Việt Nam, Trung Quốc, Hàn Quốc và Nhật Bản!
+      </p>
+      <!-- Liên kết nhảy tới phần form đăng ký -->
+      <a href="#form-chinh" class="btn-scroll">Điền biểu mẫu ngay ↓</a>
+    </section>
+
+    <!-- Form đăng ký -->
+    <main class="container" id="form-chinh">
+      <div class="form-wrapper">
+        <h2>Biểu Mẫu Đăng Ký Trực Tuyến Ngày Hội Văn Hóa</h2>
+        <p class="form-note">
+          Vui lòng điền đầy đủ thông tin bên dưới cho Ban Tổ Chức sắp xếp thẻ
+          tham dự cho bạn
+        </p>
+        <form action="#" method="post">
+          <!-- Họ và tên -->
+          <div class="form-group">
+            <label for="ho_ten">1. Họ và tên người tham gia (*):</label>
+            <input
+              type="text"
+              id="ho_ten"
+              name="ho_ten"
+              placeholder="Nhập họ và tên của bạn..."
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <!-- Lớp -->
+            <div class="form-group">
+              <label for="lop_donvi">Lớp:</label>
+              <input
+                type="text"
+                id="lop_donvi"
+                name="lop_donvi"
+                placeholder="VD: 12CTIN"
+              />
+            </div>
+            <!-- SĐT -->
+            <div class="form-group">
+              <label for="so_dien_thoai">Số điện thoại (*):</label>
+              <input
+                type="text"
+                id="so_dien_thoai"
+                name="so_dien_thoai"
+                placeholder="VD: 0123456789"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Vai trò -->
+          <div class="form-group">
+            <label>2. Bạn đăng ký tham gia với vai trò nào? (*)</label>
+            <div class="radio-group">
+              <label class="option-item">
+                <input
+                  type="radio"
+                  name="vai_tro"
+                  value="khach_tham_quan"
+                  checked
+                />
+                Khách tham quan trải nghiệm
+              </label>
+              <label class="option-item">
+                <input type="radio" name="vai_tro" value="tinh_nguyen_vien" />
+                Tình nguyện viên hỗ trợ
+              </label>
+              <label class="option-item">
+                <input type="radio" name="vai_tro" value="gian_hang" />
+                Đại diện gian hàng trưng bày
+              </label>
+            </div>
+          </div>
+
+          <!-- Khung giờ -->
+          <div class="form-group">
+            <label for="khung_gio">3. Chọn khung giờ tham gia chính (*):</label>
+            <select id="khung_gio" name="khung_gio" required>
+              <option value="">-- Chọn khung giờ phù hợp --</option>
+              <option value="sang">Ca Sáng (07:30 - 11:30)</option>
+              <option value="chieu">Ca Chiều (13:30 - 17:30)</option>
+              <option value="toi">Ca Tối (18:00 - 21:00)</option>
+              <option value="ca_ngay">Tham gia cả ngày (07:30 - 21:00)</option>
+            </select>
+          </div>
+
+          <!-- Chọn hoạt động -->
+          <div class="form-group">
+            <label
+              >4. Các hoạt động bạn muốn đăng ký trải nghiệm (Có thể chọn
+              nhiều):</label
+            >
+            <div class="checkbox-group">
+              <label class="option-item">
+                <input
+                  type="checkbox"
+                  name="hoat_dong"
+                  value="am_thuc"
+                  checked
+                />
+                Thưởng thức & Làm thử ẩm thực truyền thống
+              </label>
+
+              <label class="option-item">
+                <input type="checkbox" name="hoat_dong" value="trang_phuc" />
+                Mặc thử trang phục truyền thống Việt Nam & các nước
+              </label>
+
+              <label class="option-item">
+                <input type="checkbox" name="hoat_dong" value="lich_su" />
+                Tham quan khu trưng bày lịch sử - du lịch
+              </label>
+
+              <label class="option-item">
+                <input type="checkbox" name="hoat_dong" value="tro_choi" /> Tham
+                gia trò chơi dân gian nhận quà
+              </label>
+            </div>
+          </div>
+
+          <!-- Ý kiến góp ý -->
+          <div class="form-group">
+            <label for="loi_nhan"
+              >5. Câu hỏi hoặc yêu cầu đặc biệt gửi tới Ban Tổ Chức:</label
+            >
+            <textarea
+              id="loi_nhan"
+              name="loi_nhan"
+              rows="4"
+              placeholder="Bạn có dị ứng thực phẩm nào không, hoặc có mong muốn gì đặc biệt khi tham gia ngày hội?..."
+            ></textarea>
+          </div>
+
+          <!-- Gửi / Nhập lại -->
+          <div class="button-group">
+            <button type="submit" class="btn-submit">
+              Gửi Đăng Ký Tham Gia
+            </button>
+            <button type="reset" class="btn-reset">Nhập Lại Từ Đầu</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="main-footer">
+      <p>
+        © Tổ 4: Phú Lộc, Hoàng Long, Khánh Duy, Minh Khoa, Tiến Lộc, Đức Nguyên,
+        Anh Huy, Bảo Nghi
+      </p>
+      <p>
+        Điều hướng nhanh:
+        <a href="/">Trang chủ</a> |
+        <a href="/viet-nam">Việt Nam</a> |
+        <a href="/trung-quoc">Trung Quốc</a> |
+        <a href="/han-quoc">Hàn Quốc</a> |
+        <a href="/nhat-ban">Nhật Bản</a> |
+        <a href="/dang-ky">Đăng ký</a> |
+        <a
+          href="https://vietnam.travel/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Cổng thông tin Du lịch Việt Nam</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

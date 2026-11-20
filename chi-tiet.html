@@ -1,0 +1,1435 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NgayHoiVanHoa_ChiTiet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanh dieu huong cac site -->
+    <header class="main-header">
+      <div class="logo">NGÀY HỘI VĂN HÓA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/viet-nam" id="nav_vn">Việt Nam</a></li>
+          <li><a href="/trung-quoc" id="nav_tq">Trung Quốc</a></li>
+          <li><a href="/han-quoc" id="nav_hq">Hàn Quốc</a></li>
+          <li><a href="/nhat-ban" id="nav_nb">Nhật Bản</a></li>
+          <li><a href="/dang-ky">Đăng ký tham gia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner đầu trang -->
+    <section class="page-banner">
+      <h1 id="tieu_de_banner">THÔNG TIN CHI TIẾT CHUYÊN MỤC</h1>
+      <p id="mo_ta_banner">
+        Tìm hiểu sâu về nguồn gốc, đặc trưng và giá trị văn hóa tại lễ hội!
+      </p>
+    </section>
+
+    <!-- Nội dung bài viết chi tiết -->
+    <main class="container-wide">
+      <div class="back-bar">
+        <a href="/" id="nut_quay_lai" class="btn-scroll">
+          ← Quay lại trang quốc gia
+        </a>
+        <a href="/dang-ky" class="btn-scroll">
+          Đăng ký trải nghiệm mục này →
+        </a>
+      </div>
+
+      <section class="section-card">
+        <div class="category-header">
+          <span class="category-tag" id="nhan_quoc_gia">Quốc gia</span>
+          <h2 class="section-title" id="ten_chinh">Tên mục chi tiết</h2>
+        </div>
+
+        <img
+          id="hinh_anh_chinh"
+          class="article-banner-img"
+          src="banner.jpg"
+          alt="Hình minh họa"
+        />
+
+        <!-- Đoạn dẫn nhập tổng quan -->
+        <div class="article-intro" id="mo_ta_tong_quan"></div>
+
+        <!-- 3 phần chuyên sâu hiển thị đầy đủ đoạn văn và danh sách -->
+        <div class="article-grid">
+          <div class="article-box">
+            <h3 id="tieu_de_1">1. Nguồn gốc & Lịch sử</h3>
+            <div id="noi_dung_1"></div>
+          </div>
+
+          <div class="article-box">
+            <h3 id="tieu_de_2">2. Đặc điểm nổi bật</h3>
+            <div id="noi_dung_2"></div>
+          </div>
+
+          <div class="article-box">
+            <h3 id="tieu_de_3">3. Cách làm / Giá trị trải nghiệm</h3>
+            <div id="noi_dung_3"></div>
+          </div>
+        </div>
+
+        <p class="activity-highlight" id="hoat_dong_le_hoi"></p>
+      </section>
+
+      <!-- Khung kêu gọi đăng ký -->
+      <div class="cta-banner">
+        <h3>Bạn muốn trực tiếp trải nghiệm hoạt động này tại Ngày Hội?</h3>
+        <p>
+          Hãy điền biểu mẫu đăng ký trực tuyến để Ban Tổ Chức chuẩn bị chu đáo
+          nhất cho bạn!
+        </p>
+        <a href="/dang-ky" class="btn-scroll">Đăng Ký Tham Gia Ngay</a>
+      </div>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="main-footer">
+      <p>
+        © Tổ 4: Phú Lộc, Hoàng Long, Khánh Duy, Minh Khoa, Tiến Lộc, Đức Nguyên,
+        Anh Huy, Bảo Nghi
+      </p>
+      <p>
+        Điều hướng nhanh:
+        <a href="/">Trang chủ</a> |
+        <a href="/viet-nam">Việt Nam</a> |
+        <a href="/trung-quoc">Trung Quốc</a> |
+        <a href="/han-quoc">Hàn Quốc</a> |
+        <a href="/nhat-ban">Nhật Bản</a> |
+        <a href="/dang-ky">Đăng ký</a>
+      </p>
+    </footer>
+
+    <!-- Dữ liệu chi tiết chuyên sâu của 36 mục (4 quốc gia) -->
+    <script>
+      var du_lieu_chi_tiet = {
+        // Việt Nam
+        pho: {
+          quoc_gia: "Việt Nam - Ẩm thực",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Phở Truyền Thống Việt Nam",
+          hinh: "pho.jpg",
+          tong_quan:
+            "<strong>Phở</strong> không chỉ là một món ăn sáng quen thuộc mà còn là biểu tượng văn hóa ẩm thực tiêu biểu nhất của dân tộc Việt Nam. Năm 2024, nghề nấu Phở Hà Nội và Phở Nam Định đã chính thức được ghi danh vào Danh mục Di sản Văn hóa Phi vật thể Quốc gia.",
+          muc_1: "1. Nguồn gốc & Lịch sử hình thành",
+          nd_1:
+            "<p>Phở ra đời vào khoảng đầu thế kỷ 20 tại vùng châu thổ sông Hồng, gắn liền với hai cái nôi lớn là làng Vân Cù (Nam Định) và phố cổ Hà Nội. Tiền thân của phở được cho là phát triển từ món 'xáo trâu' (thịt trâu nấu nước dùng ăn với bún) của người Việt xưa, sau đó chuyển sang dùng thịt bò và bánh phở thái sợi.</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Giai đoạn những năm 1900 - 1930:</strong> Hình ảnh những gánh phở rong với tiếng rao đêm trầm bổng trở thành nét văn hóa đặc trưng của 36 phố phường Hà Nội, được các nhà văn Thạch Lam, Nguyễn Tuân, Vũ Bằng ca ngợi như một kiệt tác ẩm thực.</li>" +
+            "<li><strong>Giai đoạn sau năm 1954 đến nay:</strong> Phở theo bước chân người Việt lan tỏa vào miền Trung, miền Nam, tạo nên hai phong cách thưởng thức đặc sắc là Phở Bắc (thanh tao, đậm vị nước xương nguyên bản) và Phở Nam (đậm đà, ăn kèm nhiều loại rau thơm, giá trụng và tương đen, tương đỏ).</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng & Nghệ thuật ngũ hành",
+          nd_2:
+            "<p>Một bát phở ngon là sự tổng hòa tinh tế của ngũ vị và ngũ sắc, trong đó <strong>nước dùng (nước lèo)</strong> giữ vai trò quyết định linh hồn của món ăn:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nước dùng trong và ngọt thanh:</strong> Được ninh hoàn toàn từ xương ống, xương cục và đuôi bò trong suốt 10 - 14 tiếng, tuyệt đối không bị đục hay ngấy mỡ.</li>" +
+            "<li><strong>Hương thảo mộc truyền thống:</strong> Mùi thơm dịu nhẹ nhưng sâu lắng từ 5 loại gia vị khô rang thơm gồm: Quế thanh, Đại hồi, Thảo quả, Đinh hương, Hạt mùi kết hợp cùng gừng già và hành khô nướng cháy vỏ trên bếp than.</li>" +
+            "<li><strong>Bánh phở và thịt bò:</strong> Sợi bánh phở làm từ gạo tẻ ngon, tráng mỏng, mềm dẻo mà không nát. Thịt bò đa dạng từ tái lăn, tái chín, nạm, gầu giòn đến bắp hoa thái lát mỏng tang.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình nấu Phở chuẩn vị truyền thống",
+          nd_3:
+            "<p>Để nấu được nồi phở gia truyền chuẩn vị, người đầu bếp phải thực hiện nghiêm ngặt qua 4 công đoạn chính:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Sơ chế khử mùi xương):</strong> Xương ống bò ngâm nước muối gừng từ 2 - 3 giờ cho sạch huyết, chần qua nước sôi cùng rượu trắng rồi rửa sạch lại bằng nước lạnh.</li>" +
+            "<li><strong>Bước 2 (Ninh nước dùng):</strong> Cho xương vào nồi nước lạnh đun sôi, hạ lửa liu riu và liên tục hớt bọt trong suốt 10 tiếng để nước trong vắt.</li>" +
+            "<li><strong>Bước 3 (Ủ hương gia vị):</strong> Nướng thơm hành tím, gừng tươi; rang khô quế, hồi, thảo quả, hạt mùi cho vào túi vải thả vào nồi nước dùng trong 2 tiếng cuối, nêm nước mắm cốt và đường phèn.</li>" +
+            "<li><strong>Bước 4 (Trình bày và thưởng thức):</strong> Chần nhanh bánh phở qua nước sôi cho vào bát, xếp thịt bò thái mỏng, hành hoa, rau mùi, hành tây thái lát lên trên rồi chan nước dùng đang sôi sùng sục để làm chín tái lớp thịt bò tươi.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Thưởng thức Phở bò gia truyền nóng hổi, tìm hiểu túi gia vị ngũ hương và xem nghệ nhân trình diễn kỹ thuật đập dập thịt bò tái, chan nước dùng tại gian hàng Việt Nam.",
+        },
+
+        banh_chung: {
+          quoc_gia: "Việt Nam - Ẩm thực",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Bánh Chưng",
+          hinh: "banhchung.jpg",
+          tong_quan:
+            "<strong>Bánh Chưng</strong> là món bánh cổ truyền lâu đời nhất của người Việt, gắn liền với tín ngưỡng thờ cúng Hùng Vương và dịp Tết Nguyên Đán cổ truyền, kết tinh triết lý 'Trời tròn - Đất vuông' và đạo lý 'Uống nước nhớ nguồn'.",
+          muc_1: "1. Nguồn gốc lịch sử & Sự tích Lang Liêu",
+          nd_1:
+            "<p>Theo sách <em>Lĩnh Nam chích quái</em>, Bánh Chưng xuất hiện từ thời Vua Hùng Vương thứ 6. Khi nhà vua muốn chọn người nối ngôi, ngài đã yêu cầu các hoàng tử dâng lễ vật ý nghĩa nhất vào dịp đầu xuân.</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Sự sáng tạo từ hạt ngọc của trời:</strong> Trong khi các hoàng tử khác tìm kiếm sơn hào hải vị, hoàng tử thứ 18 là Lang Liêu (vốn chăm chỉ việc đồng áng) đã dùng hạt gạo nếp thơm, đậu xanh và thịt lợn làm ra hai thứ bánh: Bánh Chưng hình vuông tượng trưng cho Đất và Bánh Giầy hình tròn tượng trưng cho Trời.</li>" +
+            "<li><strong>Ý nghĩa văn hóa tâm linh:</strong> Vua Hùng vô cùng hài lòng vì chiếc bánh bao bọc muôn loài cây cỏ, cầm thú của đất nước nông nghiệp lúa nước, từ đó truyền ngôi cho Lang Liêu và đưa Bánh Chưng trở thành lễ vật thiêng liêng dâng lên bàn thờ tổ tiên mỗi dịp Tết đến xuân về.</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng & Sự hòa quyện nguyên liệu",
+          nd_2:
+            "<p>Bánh Chưng ngon đạt chuẩn phải vuông vức sắc cạnh, khi bóc lớp lá dong ra có màu xanh ngọc tự nhiên và hương thơm quyến rũ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Lớp vỏ nếp dẻo rền:</strong> Làm từ gạo nếp cái hoa vàng hoặc nếp nương hạt tròn mẩy, sau khi luộc 12 tiếng hạt nếp chín rền, kết dính dẻo thơm và thấm màu xanh từ lá dong rừng.</li>" +
+            "<li><strong>Nhân đậu xanh và thịt ba chỉ:</strong> Đậu xanh tách vỏ đồ chín bùi béo, ôm trọn miếng thịt ba chỉ (nạc mỡ đan xen) được ướp đậm đà với muối, nước mắm ngon, hành tím và hạt tiêu đen xay thơm nồng.</li>" +
+            "<li><strong>Sự cân bằng vị giác:</strong> Vị béo ngậy của mỡ thịt tan chảy thấm vào lớp đậu xanh bùi ngọt và gạo nếp dẻo, ăn kèm dưa hành muối chua giòn giúp chống ngấy hoàn hảo.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình gói và luộc Bánh Chưng truyền thống",
+          nd_3:
+            "<p>Nghệ thuật làm Bánh Chưng đòi hỏi sự tỉ mỉ, khéo léo qua các bước chuẩn bị và canh lửa công phu:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Chuẩn bị nguyên liệu):</strong> Lá dong rừng chọn lá bánh tẻ to bản, rửa sạch lau khô và tước bớt sống lưng lá; gạo nếp và đậu xanh đãi sạch ngâm nước từ 6 - 8 tiếng, trộn chút muối tinh; thịt ba chỉ thái miếng to bản ướp tiêu và hành tím.</li>" +
+            "<li><strong>Bước 2 (Kỹ thuật gói bánh):</strong> Xếp 4 sợi lạt giang mềm dưới đáy, đặt 4 lá dong vuông góc theo khuôn (hoặc gói tay), lần lượt đổ 1 bát gạo nếp -> 1 lớp đậu xanh -> 2 miếng thịt ba chỉ -> 1 lớp đậu xanh -> phủ tiếp 1 bát gạo nếp lên trên rồi gấp lá vuông vức, buộc lạt chữ thập vừa tay.</li>" +
+            "<li><strong>Bước 3 (Luộc và ép bánh):</strong> Xếp bánh vào nồi lớn, đổ ngập nước và đun củi liên tục từ 10 đến 12 tiếng. Khi vớt ra, rửa sạch nhựa bên ngoài rồi dùng vật nặng ép phẳng trong 3 - 4 giờ để bánh thoát nước thừa, săn chắc và bảo quản được lâu.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tham gia cuộc thi gói Bánh Chưng không dùng khuôn giữa các đội học sinh và thưởng thức Bánh Chưng ăn kèm củ kiệu, dưa hành.",
+        },
+
+        banh_mi: {
+          quoc_gia: "Việt Nam - Ẩm thực",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Bánh Mì Việt Nam",
+          hinh: "banhmi.jpg",
+          tong_quan:
+            "<strong>Bánh mì Việt Nam</strong> (được đưa nguyên danh từ riêng <em>'Banh mi'</em> vào Từ điển Oxford năm 2011) là minh chứng sống động cho khả năng tiếp biến văn hóa tài tình của người Việt, liên tục nằm trong Top những món bánh kẹp ngon nhất thế giới do CNN và TasteAtlas bình chọn.",
+          muc_1: "1. Nguồn gốc & Hành trình Việt hóa ổ bánh Baguette",
+          nd_1:
+            "<p>Bánh mì có nguồn gốc từ ổ bánh Baguette của người Pháp du nhập vào Việt Nam từ giữa thế kỷ 19. Tuy nhiên, bánh Baguette nguyên bản rất dài, vỏ dày cứng, ruột đặc và thường chỉ ăn kèm bơ, súp trên bàn tiệc.</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Sự cải tiến vỏ bánh:</strong> Các thợ làm bánh người Việt tại Sài Gòn và Hà Nội đã điều chỉnh công thức bột mì kết hợp bột gạo và kỹ thuật ủ men, tạo ra ổ bánh mì ngắn hơn (khoảng 20cm), bụng phình to, lớp vỏ cực mỏng giòn tan và phần ruột trắng xốp mềm.</li>" +
+            "<li><strong>Bước ngoặt bánh mì kẹp thịt (năm 1958):</strong> Hiệu bánh Hòa Mã tại Sài Gòn tiên phong rạch dọc ổ bánh mì nóng giòn, kẹp sẵn thịt nguội, chả lụa, pate, bơ và đồ chua vào bên trong để người lao động, học sinh có thể vừa đi vừa thưởng thức tiện lợi.</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng & Sự đa dạng vùng miền",
+          nd_2:
+            "<p>Sức hấp dẫn của Bánh mì Việt Nam nằm ở sự đối lập nhưng hài hòa tuyệt đối giữa nhiệt độ, kết cấu và hương vị:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Kết cấu nhiều tầng:</strong> Vỏ ngoài nóng giòn rụm, bên trong là lớp bơ trứng béo mịn, pate gan heo thơm ngậy, kết hợp độ dai giòn của chả lụa, thịt nguội, xíu mại hoặc heo quay.</li>" +
+            "<li><strong>Cân bằng thanh mát:</strong> Các loại rau dưa tươi sống như dưa leo thái lát, đồ chua (cà rốt, củ cải trắng ngâm chua ngọt), rau ngò rí và vài lát ớt hiểm giúp cân bằng vị béo của thịt và pate.</li>" +
+            "<li><strong>Biến tấu khắp 3 miền:</strong> Bánh mì que cay Hải Phòng, Bánh mì dân tổ Hà Nội, Bánh mì Phượng Hội An, Bánh mì xíu mại Đà Lạt và Bánh mì thịt nướng Sài Gòn.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình làm ổ Bánh mì kẹp chuẩn vị",
+          nd_3:
+            "<p>Để tạo ra một ổ bánh mì thập cẩm thơm ngon đúng điệu, quy trình chế biến gồm các bước:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Làm pate và sốt bơ):</strong> Gan heo ngâm sữa tươi khử mùi, xay nhuyễn cùng thịt mỡ, hành tỏi, bánh mì ngâm sữa rồi hấp cách thủy 4 tiếng; đánh bông lòng đỏ trứng gà tươi với dầu ăn để tạo lớp bơ vàng óng.</li>" +
+            "<li><strong>Bước 2 (Làm đồ chua và nước sốt):</strong> Cà rốt và củ cải thái sợi ngâm giấm đường cho giòn chua ngọt; nước sốt pha từ nước hầm thịt xá xíu, xì dầu và dầu hào đun sánh.</li>" +
+            "<li><strong>Bước 3 (Nướng và kẹp nhân):</strong> Nướng lại ổ bánh mì trong lò cho vỏ giòn nóng, dùng dao rạch một đường dọc, phết đều bơ và pate vào hai mặt ruột bánh, xếp thịt nguội, xá xíu, chả lụa, dưa leo, đồ chua, ngò rí rồi rưới nước sốt đậm đà.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm quầy 'Tự tay làm Bánh mì Việt Nam' với hơn 10 loại nhân và nước sốt đặc trưng của Hội An, Hà Nội và Sài Gòn.",
+        },
+
+        vinh_ha_long: {
+          quoc_gia: "Việt Nam - Du lịch",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Vịnh Hạ Long - Di Sản Thiên Nhiên Thế Giới ",
+          hinh: "banner.jpg",
+          tong_quan:
+            "<strong>Vịnh Hạ Long</strong> (thuộc tỉnh Quảng Ninh) là kỳ quan thiên nhiên kiệt xuất của Việt Nam, ba lần được UNESCO vinh danh là Di sản Thiên nhiên Thế giới (năm 1994, 2000 và mở rộng quần thể Vịnh Hạ Long - Quần đảo Cát Bà năm 2023) và nằm trong Bảy Kỳ quan Thiên nhiên Mới của Thế giới.",
+          muc_1: "1. Nguồn gốc truyền thuyết & Lịch sử địa chất",
+          nd_1:
+            "<p>Vịnh Hạ Long mang trong mình cả giá trị huyền sử giữ nước lẫn lịch sử kiến tạo địa chất hàng trăm triệu năm:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Truyền thuyết Rồng đáp xuống (Hạ Long):</strong> Tương truyền thuở mới dựng nước, khi giặc ngoại xâm kéo vào bờ biển Đông Bắc, Ngọc Hoàng đã sai đàn Rồng Mẹ và Rồng Con đáp xuống hạ giới phun châu nhả ngọc, tạo thành bức tường thành đảo đá vững chắc chặn đứng thuyền giặc. Nơi Rồng mẹ đáp xuống là Hạ Long, Rồng con là Bái Tử Long.</li>" +
+            "<li><strong>Giá trị địa chất - địa mạo (500 triệu năm):</strong> Là mẫu hình tiêu biểu nhất thế giới về địa hình Karst đá vôi bị biển nhấn chìm trong điều kiện nhiệt đới ẩm, đồng thời lưu giữ dấu tích của người Việt cổ thuộc Văn hóa Soi Nhụ và Văn hóa Hạ Long (cách đây 18.000 - 3.500 năm).</li>" +
+            "</ul>",
+          muc_2: "2. Cảnh sắc thiên nhiên & Hệ thống hang động kỳ vĩ",
+          nd_2:
+            "<p>Trên diện tích 1.553 km², Vịnh Hạ Long quy tụ 1.969 hòn đảo lớn nhỏ (trong đó có 980 đảo đã được đặt tên) nhô lên giữa làn nước biển xanh ngọc bích:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Những hòn đảo biểu tượng:</strong> Hòn Trống Mái (biểu tượng du lịch Việt Nam), Hòn Đỉnh Hương (in trên tờ tiền 200.000 VNĐ), Hòn Gà Chọi, Đảo Ti Tốp với bãi tắm vầng trăng.</li>" +
+            "<li><strong>Thế giới hang động thạch nhũ:</strong> Hang Sửng Sốt rộng hơn 10.000 m² như một nhà hát lớn trong lòng đá; Động Thiên Cung lộng lẫy với muôn vàn nhũ đá lấp lánh; Hang Đầu Gỗ cổ kính và Hang Luồn nối thông ra hồ nước kín giữa bốn bề núi đá.</li>" +
+            "<li><strong>Đa dạng sinh học:</strong> Hệ sinh thái rừng nhiệt đới trên đảo đá, rừng ngập mặn và rạn san hô là nơi cư trú của hàng ngàn loài sinh vật biển quý hiếm.</li>" +
+            "</ul>",
+          muc_3: "3. Hoạt động trải nghiệm du lịch đặc sắc",
+          nd_3:
+            "<p>Đến với Vịnh Hạ Long, du khách trong nước và quốc tế được tham gia nhiều hoạt động khám phá ấn tượng:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Du thuyền trên vịnh:</strong> Ngắm bình minh và hoàng hôn buông xuống giữa hàng ngàn đảo đá vôi, câu mực đêm trên biển.</li>" +
+            "<li><strong>Chèo thuyền Kayak & Thăm làng chài cổ:</strong> Tự tay chèo kayak luồn qua các vòm hang nước và tìm hiểu đời sống văn hóa ngư dân tại các làng chài cổ Cửa Vạn, Vung Viêng.</li>" +
+            "<li><strong>Thưởng thức hải sản Quảng Ninh:</strong> Nếm thử Chả mực giã tay Hạ Long, sá sùng, bề bề, ngán biển và sữa chua trân châu Hạ Long.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Đeo kính thực tế ảo VR 360 độ ngắm toàn cảnh Vịnh Hạ Long từ thủy phi cơ và ghép mô hình Hòn Trống Mái.",
+        },
+
+        pho_co_hoi_an: {
+          quoc_gia: "Việt Nam - Du lịch",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Phố Cổ Hội An - Di Sản Văn Hóa Thế Giới ",
+          hinh: "hoian.jpg",
+          tong_quan:
+            "<strong>Phố cổ Hội An</strong> (tỉnh Quảng Nam) nằm bên bờ hạ lưu sông Thu Bồn, được UNESCO công nhận là Di sản Văn hóa Thế giới năm 1999. Đây là một bảo tàng sống về kiến trúc đô thị và lối sống thương cảng cổ Đông Nam Á được bảo tồn nguyên vẹn hiếm có.",
+          muc_1: "1. Nguồn gốc lịch sử thương cảng Faifo",
+          nd_1:
+            "<p>Lịch sử Hội An là bức tranh giao thoa văn hóa rực rỡ kéo dài suốt nhiều thế kỷ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời kỳ tiền sử và Champa:</strong> Vùng đất Hội An - Cù Lao Chàm là cái nôi của Văn hóa Sa Huỳnh (2.000 năm trước) và sau đó là cảng thị Lâm Ấp Phố hưng thịnh của vương quốc Champa.</li>" +
+            "<li><strong>Hoàng kim thế kỷ 16 - 18:</strong> Dưới thời các chúa Nguyễn mở mang Đàng Trong, Hội An (được phương Tây gọi là <em>Faifo</em>) trở thành thương cảng quốc tế sầm uất nhất khu vực, nơi thuyền buôn từ Nhật Bản, Trung Quốc, Bồ Đào Nha, Hà Lan, Anh, Pháp tấp nập cập bến trao đổi tơ lụa, gốm sứ, trầm hương và gia vị.</li>" +
+            "</ul>",
+          muc_2: "2. Đặc trưng kiến trúc & Di tích tiêu biểu",
+          nd_2:
+            "<p>Quần thể Phố cổ Hội An lưu giữ hơn 1.360 di tích kiến trúc cổ kính nằm san sát nhau theo bàn cờ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Kiến trúc nhà cổ hình ống:</strong> Những ngôi nhà 1 - 2 tầng bằng gỗ quý chạm khắc tinh xảo, tường sơn vàng nghệ ấm áp, mái lợp ngói âm dương phủ rêu xanh và giàn hoa giấy rực rỡ trước hiên (tiêu biểu như Nhà cổ Tấn Ký, Phùng Hưng, Quân Thắng).</li>" +
+            "<li><strong>Chùa Cầu (Lai Viễn Kiều):</strong> Biểu tượng hơn 400 năm tuổi do các thương nhân Nhật Bản góp tiền xây dựng từ đầu thế kỷ 17, vừa là cây cầu gỗ có mái che bắc qua lạch nước, vừa là nơi thờ Bắc Đế Trấn Vũ trị thủy.</li>" +
+            "<li><strong>Hệ thống Hội quán và Nhà thờ tộc:</strong> Hội quán Phúc Kiến, Triều Châu, Quảng Đông với kiến trúc cổng tam quan đồ sộ, hài hòa cùng đình chùa truyền thống Việt Nam.</li>" +
+            "</ul>",
+          muc_3: "3. Trải nghiệm văn hóa & Đêm phố cổ đèn lồng",
+          nd_3:
+            "<p>Hội An cuốn hút du khách bởi nhịp sống thanh bình, nhân hậu và những nét sinh hoạt truyền thống đặc sắc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Đêm rằm phố cổ & Thả hoa đăng:</strong> Vào đêm 14 âm lịch hàng tháng, toàn bộ phố cổ tắt đèn điện, nhường chỗ cho ánh sáng lung linh của hàng vạn chiếc đèn lồng lụa và hoa đăng trôi trên dòng sông Hoài.</li>" +
+            "<li><strong>Di sản nghệ thuật Bài Chòi:</strong> Thưởng thức trò chơi dân gian hát Bài Chòi rộn ràng ngay bên bờ sông Hoài mỗi tối.</li>" +
+            "<li><strong>Ẩm thực Hội An:</strong> Thưởng thức Cao lầu sợi vàng dai giòn, Mì Quảng, Cơm gà phố hội, Bánh bao bánh vạc (Bông hồng trắng) và nước Mót thảo mộc.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tự tay dán lụa làm đèn lồng Hội An, thả hoa đăng ước nguyện và chơi trò chơi dân gian Bài Chòi.",
+        },
+
+        hang_son_doong: {
+          quoc_gia: "Việt Nam - Du lịch",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Hang Sơn Đoòng - Kỳ Quan Hang Động Lớn Nhất Thế Giới",
+          hinh: "sondoong2.jpg",
+          tong_quan:
+            "<strong>Hang Sơn Đoòng</strong> (nằm trong vùng lõi Vườn quốc gia Phong Nha - Kẻ Bàng, tỉnh Quảng Bình) được kỷ lục Guinness và Hiệp hội Nghiên cứu Hang động Hoàng gia Anh công nhận là <strong>hang động tự nhiên lớn nhất thế giới</strong> từng được phát hiện.",
+          muc_1: "1. Nguồn gốc địa chất & Hành trình phát hiện",
+          nd_1:
+            "<p>Hang Sơn Đoòng được hình thành cách đây khoảng 2 đến 5 triệu năm, khi dòng nước sông Rào Thương chảy ngầm làm xói mòn dãy núi đá vôi khổng lồ dọc theo một đường đứt gãy địa chất:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Năm 1990:</strong> Ông Hồ Khanh (một người dân địa phương ở Phong Nha) tình cờ phát hiện ra cửa hang khi đi rừng tìm trầm tránh mưa và cảm nhận luồng gió lạnh cùng tiếng suối gầm rú từ lòng núi.</li>" +
+            "<li><strong>Năm 2009:</strong> Ông Hồ Khanh dẫn đường cho đoàn thám hiểm Hang động Hoàng gia Anh (BCRA) do ông Howard Limbert dẫn đầu tiến vào đo đạc chi tiết và công bố chấn động thế giới về một hang động có thể tích lên tới 38,5 triệu m³.</li>" +
+            "</ul>",
+          muc_2: "2. Những kỳ quan độc nhất vô nhị trong lòng đất",
+          nd_2:
+            "<p>Với chiều dài gần 9 km, nhiều đoạn vòm hang cao tới hơn 200m và rộng 150m (đủ để xếp chồng một tòa nhà chọc trời 40 tầng ở New York hoặc cho máy bay Boeing 747 bay qua), Sơn Đoòng sở hữu một thế giới hoàn toàn tách biệt:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Hai hố sụt Doline & Rừng nguyên sinh trong hang:</strong> Tại những nơi trần hang bị sập từ hàng trăm ngàn năm trước, ánh nắng mặt trời chiếu thẳng xuống lòng hang tạo nên khu rừng nhiệt đới <em>'Vườn Địa Đàng' (Garden of Edam)</em> với cây cổ thụ cao 30m, khỉ, chim chóc và các loài sinh vật bạch tạng mới.</li>" +
+            "<li><strong>Bức tường Việt Nam & Cột măng đá khổng lồ:</strong> Khối măng đá 'Hand of Dog' cao hơn 70m và bức tường thạch nhũ 'Bức tường Việt Nam' cao 90m chắn ngang cuối hang.</li>" +
+            "<li><strong>Ngọc động (Cave Pearls) & Khí hậu riêng:</strong> Những viên ngọc đá vôi tròn xoe to bằng quả bóng chày hình thành qua hàng vạn năm cùng những đám mây tự nhiên bay lơ lửng ngay dưới vòm hang.</li>" +
+            "</ul>",
+          muc_3: "3. Mô hình du lịch thám hiểm bền vững",
+          nd_3:
+            "<p>Sơn Đoòng là biểu tượng của du lịch mạo hiểm gắn liền với bảo tồn thiên nhiên nghiêm ngặt bậc nhất hành tinh:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Giới hạn số lượng khách:</strong> Mỗi năm chỉ tiếp đón tối đa khoảng 1.000 nhà thám hiểm từ tháng 1 đến tháng 8 (nghỉ 4 tháng mùa mưa lũ để hệ sinh thái tự phục hồi).</li>" +
+            "<li><strong>Quy tắc bảo tồn tuyệt đối:</strong> Mọi đoàn thám hiểm chỉ được đi đúng trên một lối mòn cố định, không chạm vào thạch nhũ và mang toàn bộ rác thải (kể cả chất thải sinh hoạt) ra khỏi rừng.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm mô hình thực tế ảo khám phá Hố sụt Sơn Đoòng và tìm hiểu quá trình hình thành thạch nhũ đá vôi (CaCO3).",
+        },
+
+        lich_su_giu_nuoc: {
+          quoc_gia: "Việt Nam - Lịch sử & Văn hóa",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Lịch Sử Giữ Nước Hào Hùng Của Dân Tộc Việt Nam",
+          hinh: "lsvn.jpg",
+          tong_quan:
+            "Trải qua hơn <strong>4.000 năm dựng nước và giữ nước</strong>, dân tộc Việt Nam đã viết nên những thiên anh hùng ca bất diệt. Do vị trí địa chiến lược đặc biệt ở ngã tư giao thương Đông Nam Á, đất nước ta liên tục phải đối mặt với những đế chế quân sự hùng mạnh nhất thế giới nhưng chưa bao giờ khuất phục.",
+          muc_1: "1. Từ buổi đầu dựng nước đến Kỷ nguyên độc lập tự chủ",
+          nd_1:
+            "<p>Lịch sử giữ nước của dân tộc Việt Nam bắt đầu từ nền văn minh Sông Hồng và trải qua những cuộc đấu tranh kiên cường để giành và giữ nền độc lập:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời kỳ Văn Lang - Âu Lạc:</strong> Các Vua Hùng dựng nước Văn Lang, tiếp nối là An Dương Vương xây thành Cổ Loa với nỏ thần Liên Châu chống quân Tần xâm lược.</li>" +
+            "<li><strong>Hơn 1.000 năm đấu tranh chống Bắc thuộc (179 TCN - 938):</strong> Dù bị các triều đại phong kiến phương Bắc đô hộ và tìm mọi cách đồng hóa, nhân dân ta vẫn liên tiếp nổi dậy qua các cuộc khởi nghĩa Hai Bà Trưng (năm 40), Bà Triệu (248), Lý Bí lập nước Vạn Xuân (544), Mai Thúc Loan, Phùng Hưng.</li>" +
+            "<li><strong>Chiến thắng Bạch Đằng năm 938:</strong> Đức Vương Ngô Quyền dùng kế đóng cọc gỗ bịt sắt dưới lòng sông Bạch Đằng, đánh tan quân Nam Hán, chấm dứt hoàn toàn hơn một thiên niên kỷ Bắc thuộc, mở ra kỷ nguyên độc lập tự chủ lâu dài.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Những chiến công hiển hách thời kỳ phong kiến và cận - hiện đại",
+          nd_2:
+            "<p>Từ thế kỷ 10 đến thế kỷ 20, dân tộc Việt Nam đã lập nên những kỳ tích quân sự lẫy lừng khắp năm châu:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời Lý - Trần (Thế kỷ 11 - 13):</strong> Lý Thường Kiệt chủ động phòng ngự trên phòng tuyến sông Như Nguyệt đánh bại quân Tống (1077) cùng bản Tuyên ngôn độc lập đầu tiên <em>'Nam quốc sơn hà'</em>. Tiếp đó, quân dân nhà Trần với Hào khí Đông A và tài thao lược của Hưng Đạo Đại Vương Trần Quốc Tuấn đã <strong>3 lần đánh tan đế chế Nguyên - Mông</strong> (1258, 1285, 1288) - đội quân từng chinh phục khắp Á - Âu.</li>" +
+            "<li><strong>Khởi nghĩa Lam Sơn & Chiến thắng Ngọc Hồi - Đống Đa (Thế kỷ 15 - 18):</strong> Lê Lợi và Nguyễn Trãi bền bỉ kháng chiến 10 năm đánh đuổi quân Minh, viết nên <em>'Bình Ngô đại cáo'</em> (1428). Mùa xuân năm Kỷ Dậu (1789), Hoàng đế Quang Trung - Nguyễn Huệ thần tốc hành quân đại phá 29 vạn quân Thanh chỉ trong 5 ngày đêm.</li>" +
+            "<li><strong>Thời đại Hồ Chí Minh (Thế kỷ 20):</strong> Dưới sự lãnh đạo của Đảng và Chủ tịch Hồ Chí Minh, dân tộc ta làm nên Cách mạng Tháng Tám 1945 khai sinh nước Việt Nam Dân chủ Cộng hòa; giành <strong>Chiến thắng Điện Biên Phủ (07/05/1954)</strong> 'lừng lẫy năm châu, chấn động địa cầu'; và <strong>Đại thắng mùa Xuân ngày 30/04/1975</strong> giải phóng hoàn toàn miền Nam, thống nhất Tổ quốc.</li>" +
+            "</ul>",
+          muc_3:
+            "3. Nghệ thuật quân sự & Giá trị tinh thần truyền lại cho thế hệ trẻ",
+          nd_3:
+            "<p>Qua hàng ngàn năm lịch sử, dân tộc Việt Nam đã đúc kết nên những bài học vô giá về lòng yêu nước và nghệ thuật bảo vệ Tổ quốc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nghệ thuật chiến tranh nhân dân:</strong> 'Giặc đến nhà đàn bà cũng đánh', kết hợp sức mạnh đại đoàn kết toàn dân tộc, lấy nhỏ thắng lớn, lấy ít địch nhiều, lấy đoản binh thắng trường trận.</li>" +
+            "<li><strong>Tư tưởng nhân nghĩa và hòa hiếu:</strong> <em>'Đem đại nghĩa để thắng hung tàn / Lấy chí nhân để thay cường bạo'</em>. Sau mỗi chiến thắng, cha ông ta luôn mở đường hiếu sinh, cấp thuyền ngựa cho bại binh về nước để giữ hòa khí muôn đời.</li>" +
+            "<li><strong>Trách nhiệm của thế hệ học sinh hôm nay:</strong> Tự hào về truyền thống cha anh, ra sức học tập, làm chủ khoa học - công nghệ và quảng bá văn hóa Việt Nam ra thế giới để xây dựng đất nước hùng cường.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tham quan sa bàn chiến thắng Bạch Đằng - Điện Biên Phủ và tham gia cuộc thi Rung Chuông Vàng 'Theo dòng lịch sử giữ nước Việt Nam'.",
+        },
+
+        nhac_dan_ca: {
+          quoc_gia: "Việt Nam - Lịch sử & Văn hóa",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Kho Tàng Nhạc Dân Ca Truyền Thống Việt Nam",
+          hinh: "danca.jpg",
+          tong_quan:
+            "<strong>Nhạc Dân ca Việt Nam</strong> là dòng âm nhạc cổ truyền được sáng tác và lưu truyền qua hình thức truyền khẩu trong đời sống lao động, lễ hội của nhân dân 54 dân tộc anh em, phản ánh tâm hồn tinh tế, lạc quan và giàu tình nghĩa của người Việt.",
+          muc_1: "1. Nguồn gốc & Mối gắn kết với đời sống dân gian",
+          nd_1:
+            "<p>Dân ca Việt Nam nảy sinh trực tiếp từ môi trường tự nhiên, tiếng nói giàu thanh điệu của tiếng Việt và nhịp điệu lao động nông nghiệp:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Từ tiếng hát trong lao động:</strong> Những câu hò kéo thuyền, hò giã gạo, hát cấy lúa, hát chèo đò giúp xua tan mệt nhọc và tạo nhịp điệu phối hợp nhịp nhàng giữa mọi người.</li>" +
+            "<li><strong>Từ tiếng hát giao duyên và lễ hội:</strong> Vào mùa xuân hội làng hay những đêm trăng sáng, trai gái các làng quê hát đối đáp trao gửi tâm tình, thử tài ứng đối thơ ca, gắn kết cộng đồng làng xã.</li>" +
+            "<li><strong>Từ lời ru của mẹ:</strong> Những khúc hát ru con ngọt ngào bên cánh võng đưa tâm hồn dân tộc thấm sâu vào mỗi người Việt ngay từ thuở lọt lòng.</li>" +
+            "</ul>",
+          muc_2: "2. Bản đồ Dân ca đặc sắc của Ba Miền Bắc - Trung - Nam",
+          nd_2:
+            "<p>Mỗi vùng đất trên dải đất hình chữ S đều sở hữu những làn điệu dân ca mang âm hưởng đặc trưng riêng biệt, nhiều di sản đã được UNESCO vinh danh:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Miền Bắc:</strong> Nổi bật với <strong>Dân ca Quan họ Bắc Ninh</strong> (liền anh áo the khăn xếp, liền chị áo mớ ba mớ bảy nón quai thao hát đối đáp 'Người ơi người ở đừng về'), <strong>Hát Xoan Phú Thọ</strong> thờ Vua Hùng, hát Chèo, hát Xẩm và hát Then của dân tộc Tày, Nùng.</li>" +
+            "<li><strong>Miền Trung:</strong> Sâu lắng, tha thiết với <strong>Dân ca Ví, Giặm Nghệ Tĩnh</strong> mộc mạc nghĩa tình; <strong>Hò Huế, Lý Huế</strong> (Lý Mười Thương) dịu dàng bên dòng sông Hương và dân ca Bài Chòi Nam Trung Bộ rộn rã.</li>" +
+            "<li><strong>Miền Nam:</strong> Phóng khoáng, hào sảng với <strong>Đờn ca tài tử Nam Bộ</strong>, những điệu Hò Đồng Tháp, Hò Hậu Giang mênh mang sóng nước và hàng chục điệu Lý Nam Bộ (Lý Con Sáo, Lý Ngựa Ô, Lý Cây Bông).</li>" +
+            "</ul>",
+          muc_3: "3. Hệ thống nhạc cụ dân tộc & Sức sống đương đại",
+          nd_3:
+            "<p>Nhạc dân ca Việt Nam gắn liền với hệ thống nhạc cụ truyền thống độc đáo và đang được thế hệ trẻ làm mới đầy sáng tạo:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nhạc cụ truyền thống:</strong> Đàn bầu (độc huyền cầm chỉ có 1 dây nhưng ngân nga mọi cung bậc cảm xúc), Đàn tranh 16 dây, Đàn nguyệt, Đàn tính, Sáo trúc, Nhị và Trống cơm.</li>" +
+            "<li><strong>Sự tiếp nối của thế hệ trẻ:</strong> Ngày nay, nhiều làn điệu dân ca (như <em>Trống Cơm, Bèo Dạt Mây Trôi, Đào Liễu, Lý Kéo Chài</em>) được kết hợp cùng hòa âm hiện đại, lan tỏa mạnh mẽ tình yêu văn hóa truyền thống trong giới học sinh, sinh viên.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Giao lưu hát Dân ca 3 miền, trải nghiệm gẩy thử Đàn tranh - Đàn bầu và thưởng thức tiết mục 'Trống Cơm' tại sân khấu chính.",
+        },
+
+        tho_ca_cach_mang: {
+          quoc_gia: "Việt Nam - Lịch sử & Văn hóa",
+          trang_quay_lai: "/viet-nam",
+          id_nav: "nav_vn",
+          ten: "Thơ Ca Cách Mạng Việt Nam Thế Kỷ XX",
+          hinh: "tho.jpg",
+          tong_quan:
+            "<strong>Thơ ca Cách mạng Việt Nam</strong> (đặc biệt trong giai đoạn 1930 - 1975) là một hiện tượng văn học đặc sắc, nơi nghệ thuật gắn liền với vận mệnh dân tộc. Mỗi vần thơ vừa là tiếng lòng yêu nước tha thiết, vừa là lời hiệu triệu cổ vũ hàng triệu người con đất Việt lên đường bảo vệ Tổ quốc.",
+          muc_1: "1. Bối cảnh lịch sử & Quan niệm 'Nghệ sĩ - Chiến sĩ'",
+          nd_1:
+            "<p>Dòng thơ ca Cách mạng ra đời trong ngọn lửa đấu tranh giải phóng dân tộc và trải qua hai cuộc kháng chiến vĩ đại chống thực dân Pháp và đế quốc Mỹ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thơ ca trong lao tù thực dân (1930 - 1945):</strong> Dù bị giam cầm trong nhà tù khắc nghiệt, các chiến sĩ cách mạng như Hồ Chí Minh (tập <em>Nhật ký trong tù</em>), Tố Hữu (tập <em>Từ ấy</em>), Sóng Hồng vẫn sáng tác những vần thơ tràn đầy ánh sáng lý tưởng và niềm tin tất thắng.</li>" +
+            "<li><strong>Thơ ca kháng chiến chống Pháp (1945 - 1954) và chống Mỹ (1954 - 1975):</strong> Thực hiện phương châm của Chủ tịch Hồ Chí Minh: <em>'Nay ở trong thơ nên có thép / Nhà thơ cũng phải biết xung phong'</em>, hàng loạt nhà thơ khoác ba lô trực tiếp ra chiến trường như Quang Dũng, Chính Hữu, Tố Hữu, Chế Lan Viên, Phạm Tiến Duật, Xuân Quỳnh, Nguyễn Khoa Điềm, Lê Anh Xuân, Nguyễn Duy.</li>" +
+            "</ul>",
+          muc_2: "2. Đặc trưng nghệ thuật & Những tác phẩm bất hủ",
+          nd_2:
+            "<p>Thơ ca Cách mạng Việt Nam nổi bật với sự kết hợp hài hòa giữa <strong>Khuynh hướng sử thi</strong> (đề tài lịch sử dân tộc) và <strong>Cảm hứng lãng mạn cách mạng</strong> (vẻ đẹp lý tưởng, lạc quan vượt lên gian khổ):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Hình tượng người lính cao đẹp:</strong> Tình đồng chí keo sơn <em>'Đầu súng trăng treo'</em> trong bài <strong>Đồng chí</strong> (Chính Hữu); vẻ đẹp hào hoa, bi tráng <em>'Chiến trường đi chẳng tiếc đời xanh'</em> trong <strong>Tây Tiến</strong> (Quang Dũng); hay nét trẻ trung, ngang tàng của những người lính lái xe Trường Sơn trong <strong>Bài thơ về tiểu đội xe không kính</strong> (Phạm Tiến Duật).</li>" +
+            "<li><strong>Tình quân dân và hình tượng Đất Nước:</strong> Nỗi nhớ ân tình kháng chiến sâu nặng trong <strong>Việt Bắc</strong> (Tố Hữu): <em>'Mình về mình có nhớ ta / Mười lăm năm ấy thiết tha mặn nồng'</em>; và tư tưởng <em>'Đất Nước của Nhân dân'</em> sâu sắc trong trường ca <strong>Mặt đường khát vọng</strong> (Nguyễn Khoa Điềm).</li>" +
+            "</ul>",
+          muc_3: "3. Giá trị lịch sử & Sức sống trong giáo dục hôm nay",
+          nd_3:
+            "<p>Vượt qua giới hạn của thời gian, Thơ ca Cách mạng vẫn giữ nguyên giá trị nhân văn và sức lay động mạnh mẽ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Biên niên sử bằng thơ của dân tộc:</strong> Ghi lại chân thực tâm thế của cả một thế hệ thanh niên Việt Nam 'Xẻ dọc Trường Sơn đi cứu nước / Mà lòng phơi phới dậy tương lai'.</li>" +
+            "<li><strong>Giáo dục lý tưởng sống đẹp:</strong> Bồi đắp lòng biết ơn thế hệ cha anh đã hy sinh vì hòa bình, khơi dậy tình yêu tiếng Việt và khát vọng cống hiến trong tâm hồn thế hệ trẻ.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Không gian trưng bày ấn phẩm Thơ ca Kháng chiến, giao lưu diễn ngâm thơ 'Tây Tiến - Việt Bắc - Đất Nước' và viết thư pháp các câu thơ nổi tiếng.",
+        },
+
+        // Trung Quốc
+        dimsum: {
+          quoc_gia: "Trung Quốc - Ẩm thực",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Nghệ Thuật Ẩm Thực Dimsum (Điểm Sấm)",
+          hinh: "dimsum.jpg",
+          tong_quan:
+            "<strong>Dimsum</strong> (phát âm tiếng Quảng Đông của từ <em>Điểm tâm</em>, nghĩa đen là 'chạm nhẹ vào trái tim') là nét văn hóa ẩm thực tinh tế bậc nhất miền Nam Trung Quốc, gắn liền với phong tục thưởng trà sáng <em>Yum Cha</em>.",
+          muc_1: "1. Nguồn gốc lịch sử từ Con đường Tơ lụa",
+          nd_1:
+            "<p>Lịch sử Dimsum bắt nguồn từ hàng ngàn năm trước dọc theo các tuyến đường giao thương cổ đại:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Các quán trà ven đường:</strong> Các thương nhân và lữ khách đi trên Con đường Tơ lụa thường dừng chân nghỉ ngơi tại các quán trà (Trà lâu) ở vùng Quảng Đông. Ban đầu y học cổ truyền cho rằng uống trà kết hợp đồ ăn nhiều quá sẽ tăng cân, nhưng về sau các đầu bếp đã sáng tạo ra những món bánh nhỏ xinh vừa miệng ăn kèm trà nóng giúp tiêu thực.</li>" +
+            "<li><strong>Phát triển thành nghệ thuật cung đình và đại chúng:</strong> Từ vùng Quảng Châu và Hồng Kông, Dimsum phát triển lên tới hơn 150 món khác nhau, trở thành biểu tượng của sự sum vầy gia đình mỗi dịp cuối tuần.</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng & 'Tứ đại thiên vương' của Dimsum",
+          nd_2:
+            "<p>Trong thế giới Dimsum, tay nghề của người đầu bếp được đánh giá qua 4 món kinh điển gọi là <strong>'Tứ đại thiên vương'</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Há cảo tôm (Har Gow):</strong> Lớp vỏ bột mì tinh lọc mỏng trong suốt như pha lê, xếp 10 - 12 nếp gấp tinh xảo, nhìn rõ nhân tôm tươi hồng giòn sần sật bên trong.</li>" +
+            "<li><strong>Xíu mại (Siu Mai):</strong> Gói bằng vỏ bột vàng mỏng để hở mặt trên, nhân thịt heo băm trộn tôm tươi, nấm đông cô và điểm xuyết trứng cua đỏ cam béo ngậy.</li>" +
+            "<li><strong>Bánh bao xá xíu (Char Siu Bao) & Bánh bao kim sa:</strong> Vỏ bánh trắng xốp mềm nở bung, nhân thịt xá xíu đậm đà hoặc nhân trứng muối kim sa tan chảy vàng óng.</li>" +
+            "<li><strong>Bánh trứng nướng (Egg Tart) & Bánh cuốn tôm (Cheung Fun):</strong> Mềm mượt, thơm ngậy, chấm cùng nước tương pha dầu mè và ớt chưng.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình chế biến & Nghệ thuật hấp xửng tre",
+          nd_3:
+            "<p>Để tạo ra những xửng Dimsum đạt chuẩn 'Sắc - Hương - Vị - Hình', quy trình chế biến đòi hỏi sự chuẩn xác cao:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Nhào bột và cán vỏ):</strong> Pha trộn bột mì tinh (Wheat starch) và bột năng với nước thật sôi, nhào mịn rồi dùng mặt dao bản to ép xoay thành miếng vỏ tròn mỏng tang nhưng dẻo dai không rách.</li>" +
+            "<li><strong>Bước 2 (Quết nhân tạo độ giòn):</strong> Tôm tươi và thịt heo băm được quết mạnh tay theo một chiều cùng dầu mè, tiêu trắng để tạo độ kết dính và giòn tự nhiên.</li>" +
+            "<li><strong>Bước 3 (Hấp bằng xửng tre):</strong> Xếp bánh vào xửng tre lót giấy nến, hấp trên nồi nước sôi mạnh từ 5 - 7 phút. Chất liệu tre giúp thấm hút hơi nước thừa, giữ bánh khô ráo và dậy mùi thơm thanh tao của tre tự nhiên.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm tự tay xếp nếp gói Há cảo, Xíu mại và thưởng thức Dimsum trong xửng tre nóng hổi cùng trà Hoa Cúc.",
+        },
+
+        vit_quay_bac_kinh: {
+          quoc_gia: "Trung Quốc - Ẩm thực",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Vịt Quay Bắc Kinh - Tinh Hoa Ngự Thiện Hoàng Cung",
+          hinh: "vitquay.jpg",
+          tong_quan:
+            "<strong>Vịt quay Bắc Kinh</strong> là món ăn danh tiếng bậc nhất của nền ẩm thực Trung Hoa, từng là món ngự thiện chỉ dành riêng cho Hoàng đế, Hoàng tộc và dùng để chiêu đãi các nguyên thủ quốc gia trong các buổi quốc yến.",
+          muc_1: "1. Nguồn gốc lịch sử hơn 600 năm",
+          nd_1:
+            "<p>Món vịt quay có lịch sử phát triển gắn liền với sự dịch chuyển kinh đô của các triều đại phong kiến Trung Quốc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Khởi nguồn từ Nam Kinh và thời Nguyên (1330):</strong> Món vịt quay đầu tiên được ghi chép trong cuốn <em>Ẩm thiện chính yếu</em> của thái y triều Nguyên.</li>" +
+            "<li><strong>Hoàn thiện tại Bắc Kinh thời Minh - Thanh:</strong> Khi vua Minh Thành Tổ dời đô từ Nam Kinh về Bắc Kinh đầu thế kỷ 15, các đầu bếp ngự trù đã tuyển chọn giống vịt trắng Bắc Kinh nuôi vỗ béo tự nhiên và cải tiến kỹ thuật lò quay treo, đưa món ăn đạt tới đỉnh cao nghệ thuật tại nhà hàng Toàn Tụ Đức (mở cửa năm 1864).</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng & Nghệ thuật cắt 108 lát",
+          nd_2:
+            "<p>Vịt quay Bắc Kinh chinh phục thực khách nhờ sự cầu kỳ đến từng chi tiết nhỏ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Lớp da giòn như pha lê:</strong> Da vịt sau khi quay căng phồng, mỏng tang, có màu đỏ sẫm cánh gián bóng bẩy, khi cắn vào giòn tan ngay trong miệng mà không hề ngấy mỡ.</li>" +
+            "<li><strong>Thịt vịt mềm ngọt đượm hương gỗ quả:</strong> Nhờ được quay bằng củi gỗ cây ăn quả (gỗ táo tàu, gỗ lê, gỗ đào), phần thịt bên trong giữ nguyên độ mọng nước và thoang thoảng hương khói trái cây tự nhiên.</li>" +
+            "<li><strong>Kỹ thuật thái vịt (Phiến vịt):</strong> Ngay khi vịt vừa ra lò còn nóng hổi, đầu bếp lành nghề sẽ biểu diễn thái đúng 108 lát mỏng đều nhau trong vòng vài phút để mỗi lát đều có cả da giòn và thịt mềm.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình chế biến 5 bước truyền thống",
+          nd_3:
+            "<p>Để làm ra một con Vịt quay Bắc Kinh đúng chuẩn phải mất gần 2 ngày chuẩn bị qua các công đoạn:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Bơm hơi tách da):</strong> Làm sạch vịt, bơm không khí vào dưới lớp da để tách rời hoàn toàn phần da khỏi lớp mỡ và thịt.</li>" +
+            "<li><strong>Bước 2 (Chần nước sôi & Phết mạch nha):</strong> Dội nước sôi lên thân vịt cho da săn lại, sau đó phết đều hỗn hợp nước đường mạch nha, giấm đỏ và rượu thiệu hưng.</li>" +
+            "<li><strong>Bước 3 (Phơi gió 24 giờ):</strong> Treo vịt ở nơi thoáng gió mát từ 12 - 24 tiếng cho lớp da khô se hoàn toàn như giấy.</li>" +
+            "<li><strong>Bước 4 (Quay lò củi & Thưởng thức 3 món):</strong> Đổ nước sôi vào bụng vịt rồi treo vào lò gạch đốt củi gỗ táo để 'trong hấp - ngoài quay'. Khi ăn, cuốn da và thịt vịt trong bánh tráng mỏng cùng hành baro, dưa leo và sốt tương ngọt Thiên Tân; phần xương vịt dùng nấu canh cải thảo hoặc rang muối.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Thưởng thức món cuốn Vịt quay Bắc Kinh sốt tương ngọt và xem đầu bếp trình diễn kỹ thuật thái vịt điêu luyện.",
+        },
+
+        dau_phu_tu_xuyen: {
+          quoc_gia: "Trung Quốc - Ẩm thực",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Đậu Phụ Tứ Xuyên (Mapo Tofu)",
+          hinh: "dauphu.jpg",
+          tong_quan:
+            "<strong>Đậu phụ Tứ Xuyên</strong> (tên gốc là <em>Ma Bà Đậu Phụ - Mapo Tofu</em>) là món ăn đại diện nổi tiếng nhất của trường phái ẩm thực Xuyên (Tứ Xuyên) - một trong Bát đại trường phái ẩm thực Trung Hoa.",
+          muc_1: "1. Nguồn gốc từ quán cơm nhỏ ở Thành Đô (năm 1862)",
+          nd_1:
+            "<p>Món ăn gắn liền với câu chuyện có thật vào thời vua Đồng Trị nhà Thanh tại ngoại ô phía Bắc thành phố Thành Đô (tỉnh Tứ Xuyên):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nữ đầu bếp Trần Ma Bà:</strong> Bà vợ của ông Trần Xuân Phú (chủ quán ăn Trần Hưng Thịnh Phạn Phố) có gương mặt lấm tấm vết rỗ nhẹ nên người dân thân mật gọi là 'Trần Ma Bà'.</li>" +
+            "<li><strong>Món ăn chống lạnh cho phu gánh dầu:</strong> Để giúp những người phu gánh dầu qua cầu Vạn Phúc xua tan cái lạnh ẩm ướt của vùng bồn địa Tứ Xuyên, bà đã sáng tạo cách nấu đậu phụ non om cùng thịt bò băm, tương đậu ớt lên men và hạt tiêu Tứ Xuyên cay nồng, thơm nức. Món ăn nhanh chóng nổi tiếng khắp cả nước.</li>" +
+            "</ul>",
+          muc_2: "2. Tám chữ vàng làm nên hương vị Đậu phụ Tứ Xuyên",
+          nd_2:
+            "<p>Các chuyên gia ẩm thực tổng kết phẩm chất của một đĩa Đậu phụ Tứ Xuyên hoàn hảo qua <strong>8 đặc tính</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Ma (Tê) & Lạt (Cay):</strong> Vị tê đầu lưỡi đặc trưng từ bột hạt tiêu hoa tiêu (Hua Jiao) kết hợp vị cay nồng ấm của tương đậu蚕豆 ớt Tứ Xuyên (Pixian Doubanjiang) ủ lên men nhiều năm.</li>" +
+            "<li><strong>Thang (Nóng) & Tiên (Tươi ngọt):</strong> Món ăn luôn được dọn ra khi còn sôi lăn tăn, giữ trọn vị ngọt tươi từ thịt băm và nước dùng.</li>" +
+            "<li><strong>Nộn (Mềm mịn), Hương (Thơm), Tô (Rời giòn) & Hoạt (Nguyên miếng):</strong> Miếng đậu phụ non trắng ngần mềm mượt như lụa nhưng không bị nát vụn, hạt thịt bò/thịt heo băm săn thơm quyện trong lớp xốt đỏ bóng mượt.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình chế biến Đậu phụ Tứ Xuyên chuẩn vị",
+          nd_3:
+            "<p>Bí quyết để đậu phụ thấm vị mà vẫn giữ nguyên khối vuông vức nằm ở kỹ thuật xử lý nhiệt và vào bột:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Chần đậu phụ với nước muối):</strong> Đậu phụ non cắt khối vuông 2cm, ngâm hoặc chần nhẹ trong nước sôi pha chút muối để khử mùi nồng của đậu và giúp miếng đậu dẻo dai, khó vỡ khi đảo.</li>" +
+            "<li><strong>Bước 2 (Xào thịt và tạo màu xốt):</strong> Xào săn thịt băm cho tơi hạt, thêm gừng tỏi băm, đậu tương đen lên men (Douchi) và 2 muỗng tương đậu ớt Doubanjiang xào lửa nhỏ đến khi dậy màu dầu đỏ óng.</li>" +
+            "<li><strong>Bước 3 (Om đậu và 3 lần xuống bột năng):</strong> Đổ nước dùng vào đun sôi, thả đậu phụ vào om 5 phút (dùng muôi đẩy nhẹ từ đáy chảo, không đảo mạnh). Chia nước bột năng thành 3 lần rưới vào chảo để lớp xốt ôm chặt lấy từng miếng đậu, cuối cùng rắc hành lá và bột tiêu hoa tiêu mới rang.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Khám phá quầy gia vị 'Ma Lạt' Tứ Xuyên và thưởng thức Đậu phụ Tứ Xuyên nóng hổi (có phiên bản ít cay cho học sinh).",
+        },
+
+        van_ly_truong_thanh: {
+          quoc_gia: "Trung Quốc - Du lịch",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Vạn Lý Trường Thành - Kỳ Quan Thế Giới",
+          hinh: "trungquoc.jpg",
+          tong_quan:
+            "<strong>Vạn Lý Trường Thành</strong> là công trình kiến trúc phòng thủ quân sự vĩ đại nhất trong lịch sử nhân loại, được UNESCO công nhận là Di sản Thế giới năm 1987 và được bầu chọn là một trong <strong>Bảy Kỳ quan Thế giới Mới</strong> vào năm 2007.",
+          muc_1: "1. Lịch sử xây dựng suốt hơn 2.000 năm",
+          nd_1:
+            "<p>Vạn Lý Trường Thành không phải được xây trong một triều đại mà là kết quả tiếp nối suốt hơn hai thiên niên kỷ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời Xuân Thu - Chiến Quốc (Thế kỷ 7 - 3 TCN):</strong> Các chư hầu phía Bắc như Yên, Triệu, Tần đã đắp những đoạn tường thành bằng đất nện để tự vệ và ngăn chặn các bộ tộc du mục phương Bắc.</li>" +
+            "<li><strong>Thời Tần Thủy Hoàng (Năm 221 - 210 TCN):</strong> Sau khi thống nhất Trung Hoa, Tần Thủy Hoàng huy động hàng trăm vạn binh lính và dân phu dưới sự chỉ huy của tướng Mông Điềm để nối liền các đoạn thành cũ thành một tuyến phòng thủ dài vạn dặm.</li>" +
+            "<li><strong>Thời nhà Minh (1368 - 1644):</strong> Đây là giai đoạn Trường Thành được đại trùng tu và xây mới kiên cố nhất bằng gạch nung và đá tảng nguyên khối mà du khách vẫn chiêm ngưỡng ngày nay.</li>" +
+            "</ul>",
+          muc_2: "2. Quy mô đồ sộ & Kỹ thuật kiến trúc quân sự cổ đại",
+          nd_2:
+            "<p>Theo khảo sát khảo cổ học tổng thể, tổng chiều dài tất cả các nhánh của Vạn Lý Trường Thành qua các triều đại lên tới <strong>21.196 km</strong> (riêng phần tường thành thời Minh dài 8.851 km):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Cấu trúc phòng thủ liên hoàn:</strong> Bao gồm Tường thành cao trung bình 7 - 8m, mặt thành rộng 5 - 6m (đủ cho 5 con ngựa hoặc 10 binh sĩ dàn hàng ngang hành quân), kết hợp hệ thống Địch lâu (tháp canh chứa vũ khí), Phong hỏa đài (đốt khói báo hiệu ban ngày, đốt lửa ban đêm truyền tin xa hàng trăm dặm chỉ trong vài giờ).</li>" +
+            "<li><strong>Chất kết dính 'Vữa cháo gạo nếp':</strong> Các thợ xây thời cổ đại đã trộn vôi tôi với nước cháo gạo nếp đặc tạo ra loại vữa hữu cơ siêu bền, giúp các khối đá đứng vững trước động đất và mưa nắng hàng trăm năm.</li>" +
+            "<li><strong>Tam đại danh quan (3 cửa ải nổi tiếng nhất):</strong> Sơn Hải Quan (nơi đầu rồng Trường Thành chạm biển Bột Hải), Cư Dung Quan (cửa ngõ bảo vệ Bắc Kinh) và Gia Dụ Quan (cực Tây giữa sa mạc Gobi).</li>" +
+            "</ul>",
+          muc_3: "3. Trải nghiệm du lịch & Câu nói nổi tiếng",
+          nd_3:
+            "<p>Với câu ngạn ngữ nổi tiếng <em>'Bất đáo Trường Thành phi hảo hán'</em> (Chưa đến Trường Thành chưa phải là hảo hán), đây là điểm đến mơ ước của du khách toàn cầu:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Đoạn Bát Đạt Lĩnh & Mộ Điền Cốc (Mutianyu):</strong> Cách trung tâm Bắc Kinh khoảng 70km, du khách có thể leo bộ chinh phục các bậc đá hoặc đi cáp treo ngắm rừng cây đổi màu rực rỡ vào mùa thu.</li>" +
+            "<li><strong>Đoạn Tư Mã Đài (Simatai):</strong> Trải nghiệm ngắm Vạn Lý Trường Thành lung linh ánh đèn vào ban đêm.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Chụp ảnh check-in nhận 'Giấy chứng nhận Hảo Hán' tại mô hình Vạn Lý Trường Thành và tìm hiểu cơ chế truyền tin bằng Phong Hỏa Đài.",
+        },
+
+        tu_cam_thanh: {
+          quoc_gia: "Trung Quốc - Du lịch",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Tử Cấm Thành (Cố Cung Bắc Kinh)",
+          hinh: "tucamthanh.jpg",
+          tong_quan:
+            "<strong>Tử Cấm Thành</strong> (ngày nay gọi là <em>Bảo tàng Cố Cung</em>, tọa lạc tại trung tâm Bắc Kinh) là quần thể cung điện cổ bằng gỗ lớn nhất và được bảo tồn nguyên vẹn nhất thế giới, được UNESCO công nhận là Di sản Thế giới năm 1987.",
+          muc_1: "1. Nguồn gốc tên gọi & Lịch sử 24 vị Hoàng đế",
+          nd_1:
+            "<p>Tử Cấm Thành được khởi công xây dựng năm 1406 và hoàn thành năm 1420 dưới triều vua Minh Thành Tổ (Chu Đệ) với sự tham gia của 100.000 nghệ nhân và hơn 1 triệu dân phu:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Ý nghĩa tên gọi 'Tử Cấm Thành':</strong> Chữ <em>'Tử'</em> lấy từ 'Tử Vi Tinh' (ngôi sao Bắc Đẩu ở trung tâm bầu trời, nơi ở của Ngọc Hoàng thượng đế); Hoàng đế tự coi mình là Thiên tử (con trời) nên cung điện mặt đất cũng là trung tâm vũ trụ. Chữ <em>'Cấm'</em> thể hiện nơi tôn nghiêm tối cao mà người thường không được phép bước vào nếu không có lệnh vua.</li>" +
+            "<li><strong>Trung tâm quyền lực 500 năm (1420 - 1912):</strong> Là nơi ở và điều hành đất nước của 24 vị Hoàng đế (14 vua nhà Minh và 10 vua nhà Thanh), chứng kiến toàn bộ những biến cố chính trị lớn nhất lịch sử cận đại Trung Hoa.</li>" +
+            "</ul>",
+          muc_2: "2. Đỉnh cao kiến trúc gỗ & Quy hoạch Phong thủy Ngũ hành",
+          nd_2:
+            "<p>Trải rộng trên diện tích <strong>720.000 m²</strong> (dài 961m, rộng 753m), bao quanh bởi tường thành cao 10m và hào nước Hộ Thành Hà rộng 52m, Tử Cấm Thành sở hữu 980 tòa kiến trúc với truyền thuyết <strong>9.999,5 gian phòng</strong> (vì chỉ có Thiên đình mới được có 10.000 phòng):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bố cục 'Tiền Triều - Hậuẩm' trên trục Bắc - Nam:</strong> Phía Nam là Ngoại Đình (nơi Hoàng đế thiết triều tại 3 đại điện: Điện Thái Hòa, Điện Trung Hòa, Điện Bảo Hòa); phía Bắc là Nội Đình (nơi sinh hoạt của Hoàng đế, Hoàng hậu và hậu cung tại Cung Càn Thanh, Điện Giao Thái, Cung Khôn Ninh và Ngự Hoa Viên).</li>" +
+            "<li><strong>Màu sắc Hoàng gia:</strong> Tường sơn đỏ tượng trưng cho may mắn và mặt trời; mái lợp ngói lưu ly màu vàng rực rỡ (màu độc quyền của Hoàng đế tượng trưng cho hành Thổ ở trung tâm).</li>" +
+            "<li><strong>Kỹ thuật mộng gỗ Đấu Củng (Dougong):</strong> Toàn bộ các cột gỗ Nam Mộc khổng lồ và hệ thống mái đan cài với nhau bằng hàng vạn khớp mộng gỗ mà không dùng một chiếc đinh sắt nào, giúp Tử Cấm Thành đứng vững qua hơn 200 trận động đất suốt 600 năm.</li>" +
+            "</ul>",
+          muc_3: "3. Kho tàng cổ vật vô giá tại Bảo tàng Cố Cung",
+          nd_3:
+            "<p>Từ năm 1925, Tử Cấm Thành chính thức trở thành Bảo tàng Cố Cung mở cửa cho công chúng tham quan:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Hơn 1,8 triệu cổ vật:</strong> Lưu giữ những bảo vật quốc gia vô giá gồm ấn ngọc hoàng đế, tranh thư họa cổ (như bức <em>Thanh minh thượng hà đồ</em>), đồ đồng thời Thương - Chu, gốm sứ ngự dụng và bộ sưu tập đồng hồ cơ khí cổ lớn nhất thế giới.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm lắp ghép mô hình mộng gỗ Đấu Củng không dùng đinh và tìm hiểu ý nghĩa các linh vật trên mái ngói Điện Thái Hòa.",
+        },
+
+        ben_thuong_hai: {
+          quoc_gia: "Trung Quốc - Du lịch",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Bến Thượng Hải - Giao Thoa Lịch Sử & Hiện Đại",
+          hinh: "thuonghai.jpg",
+          tong_quan:
+            "<strong>Bến Thượng Hải</strong> (tên tiếng Trung là <em>Ngoại Than - Waitan</em>, tiếng Anh là <em>The Bund</em>) trải dài khoảng 1,5 km dọc theo bờ Tây sông Hoàng Phố, là biểu tượng phồn hoa bậc nhất của thành phố Thượng Hải.",
+          muc_1: "1. Lịch sử từ bến thuyền bùn lầy đến 'Phố Wall Phương Đông'",
+          nd_1:
+            "<p>Sự trỗi dậy của Bến Thượng Hải gắn liền với lịch sử giao thương hàng hải quốc tế:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Trước thế kỷ 19:</strong> Nơi đây vốn chỉ là một đường bờ sông nhỏ để dân chài kéo thuyền dọc theo sông Hoàng Phố.</li>" +
+            "<li><strong>Giai đoạn cuối thế kỷ 19 - đầu thế kỷ 20:</strong> Khi Thượng Hải mở cửa thành cảng thương mại quốc tế, hàng loạt ngân hàng lớn, tổng lãnh sự quán, hãng tàu biển và khách sạn từ Anh, Pháp, Mỹ, Nga, Nhật Bản đã tập trung về đây xây dựng trụ sở, biến Bến Thượng Hải thành trung tâm tài chính lớn nhất châu Á thời bấy giờ.</li>" +
+            "<li><strong>Dấu ấn văn hóa đại chúng:</strong> Đi vào thơ ca, âm nhạc và điện ảnh với ca khúc <em>Bến Thượng Hải</em> bất hủ.</li>" +
+            "</ul>",
+          muc_2: "2. Hai bờ sông Hoàng Phố - Cuộc đối thoại giữa hai thế kỷ",
+          nd_2:
+            "<p>Đứng tại Bến Thượng Hải, du khách được chiêm ngưỡng hai không gian kiến trúc đối lập nhưng tôn vinh lẫn nhau qua dòng sông Hoàng Phố:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bờ Tây (Triển lãm Kiến trúc Vạn Quốc):</strong> Quy tụ 52 tòa nhà lịch sử xây bằng đá granite theo các trường phái Gothic, Baroque, Romanesque, Tân cổ điển và Art Deco châu Âu (nổi bật như Tòa nhà Hải quan với tháp đồng hồ Big Ching, Ngân hàng HSBC, Khách sạn Hòa Bình - Peace Hotel).</li>" +
+            "<li><strong>Bờ Đông (Khu tài chính Lục Gia Chủy - Pudong):</strong> Biểu tượng của Trung Quốc hiện đại thế kỷ 21 với <strong>Tháp truyền hình Minh Châu Phương Đông</strong> (cao 468m với các khối cầu hồng ngọc), Tháp Kim Mậu và <strong>Tháp Thượng Hải (Shanghai Tower)</strong> cao 632m - tòa nhà cao nhất Trung Quốc và cao thứ 3 thế giới.</li>" +
+            "</ul>",
+          muc_3: "3. Trải nghiệm du lịch đặc sắc tại Bến Thượng Hải",
+          nd_3:
+            "<p>Bến Thượng Hải mang vẻ đẹp biến đổi kỳ diệu từ ban ngày sang ban đêm:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Du thuyền đêm trên sông Hoàng Phố:</strong> Đúng 19h00 tối, toàn bộ 52 tòa nhà cổ điển rực sáng ánh đèn vàng ấm áp đối diện với màn trình diễn ánh sáng LED rực rỡ sắc màu của các tòa tháp chọc trời bờ Đông.</li>" +
+            "<li><strong>Dạo bộ Phố Nam Kinh & Dự Viên:</strong> Kết hợp khám phá phố đi bộ sầm uất Nam Kinh Lộ và khu vườn cổ điển Dự Viên nằm ngay gần Bến Thượng Hải.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Chiêm ngưỡng bộ ảnh đối sánh 'Bến Thượng Hải năm 1920 và năm 2026' và nghe hòa tấu nhạc phẩm Bến Thượng Hải bằng đàn Nhị.",
+        },
+
+        phong_kien_trung_quoc: {
+          quoc_gia: "Trung Quốc - Lịch sử & Văn hóa",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Lịch Sử Thời Kì Phong Kiến Trung Quốc & Tứ Đại Phát Minh",
+          hinh: "pktq.jpg",
+          tong_quan:
+            "Khởi nguồn từ lưu vực hai dòng sông lớn là <strong>sông Hoàng Hà</strong> và <strong>sông Trường Giang</strong>, chế độ phong kiến Trung Quốc kéo dài hơn 2.100 năm (từ năm 221 TCN đến năm 1912), tạo dựng nên một trong bốn nền văn minh cổ đại rực rỡ nhất lịch sử thế giới.",
+          muc_1: "1. Dòng chảy các triều đại phong kiến lớn",
+          nd_1:
+            "<p>Sau thời kỳ cổ đại (Hạ - Thương - Chu và Xuân Thu - Chiến Quốc), lịch sử phong kiến trung ương tập quyền Trung Quốc phát triển qua các vương triều tiêu biểu:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nhà Tần (221 - 206 TCN) & Nhà Hán (202 TCN - 220):</strong> Tần Thủy Hoàng thống nhất lãnh thổ, thống nhất văn tự, tiền tệ và đo lường, để lại kỳ quan Đội quân đất nung Tây An. Nhà Hán mở mang <strong>Con đường Tơ lụa</strong> kết nối giao thương từ Trường An đến tận Đế chế La Mã, đưa Nho giáo thành tư tưởng chính thống.</li>" +
+            "<li><strong>Nhà Đường (618 - 907) & Nhà Tống (960 - 1279):</strong> Thời Đường là kỷ nguyên hoàng kim về văn hóa, ngoại giao và đỉnh cao của <strong>Thơ Đường</strong> (Lý Bạch, Đỗ Phủ, Bạch Cư Dị). Thời Tống đạt trình độ phát triển vượt bậc về kinh tế thương mại, gốm sứ và khoa học kỹ thuật.</li>" +
+            "<li><strong>Nhà Nguyên (1271 - 1368), Nhà Minh (1368 - 1644) & Nhà Thanh (1644 - 1912):</strong> Nhà Minh nổi bật với 7 chuyến hải trình vượt đại dương của Đô đốc Trịnh Hòa, xây dựng Tử Cấm Thành và sự ra đời của Tứ đại danh tác tiểu thuyết cổ điển (<em>Tam quốc diễn nghĩa, Thủy hử, Tây du ký, Hồng lâu mộng</em>).</li>" +
+            "</ul>",
+          muc_2: "2. Tứ đại phát minh làm thay đổi văn minh nhân loại",
+          nd_2:
+            "<p>Đóng góp vĩ đại nhất của thời kỳ phong kiến Trung Quốc cho khoa học thế giới là <strong>Tứ đại phát minh</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Kỹ thuật làm giấy (Thời Đông Hán - năm 105):</strong> Thái Luân dùng vỏ cây dâu, lưới cá cũ và тряпки giã nhuyễn tạo ra giấy viết giá rẻ, nhẹ nhàng thay thế cho thẻ tre nặng nề và lụa đắt đỏ.</li>" +
+            "<li><strong>2. Nghề in (Thời Đường - Tống):</strong> Từ kỹ thuật in khắc gỗ đến phát minh <strong>in chữ rời bằng đất sét nung</strong> của Tất Thăng (thế kỷ 11), giúp nhân bản sách vở và phổ cập tri thức nhanh chóng.</li>" +
+            "<li><strong>3. La bàn (Thời Chiến Quốc - Tống):</strong> Ban đầu là chiếc muôi từ tính 'Tư Nam' chỉ hướng Nam, sau được hoàn thiện thành kim nam châm la bàn hàng hải mở đường cho Kỷ nguyên Khám phá Đại dương thế giới.</li>" +
+            "<li><strong>4. Thuốc súng (Thời Đường - Tống):</strong> Các đạo sĩ luyện đan phát hiện ra hỗn hợp lưu huỳnh, diêm tiêu và than củi bốc cháy mạnh, tạo bước ngoặt lớn trong quân sự và khai khoáng.</li>" +
+            "</ul>",
+          muc_3: "3. Hệ tư tưởng triết học & Giá trị văn hóa",
+          nd_3:
+            "<p>Văn hóa truyền thống Trung Quốc được định hình bởi sự dung hợp của <strong>Tam giáo (Nho - Phật - Đạo)</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nho giáo (Khổng Tử, Mạnh Tử):</strong> Đề cao Ngũ thường (Nhân - Lễ - Nghĩa - Trí - Tín), chế độ khoa cử chọn hiền tài và trật tự gia đình, xã hội.</li>" +
+            "<li><strong>Đạo giáo (Lão Tử) & Phật giáo:</strong> Đề cao lối sống thuận theo tự nhiên (Vô vi), cân bằng Âm - Dương Ngũ hành và lòng từ bi hướng thiện.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm in tranh khắc gỗ cổ truyền, xem mô hình La bàn Tư Nam cổ đại và đố vui về các nhân vật lịch sử.",
+        },
+
+        tu_linh_trung_quoc: {
+          quoc_gia: "Trung Quốc - Lịch sử & Văn hóa",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Linh Vật Biểu Tượng: Tứ Linh (Long - Lân - Quy - Phụng)",
+          hinh: "tulinh.jpg",
+          tong_quan:
+            "Trong văn hóa cổ truyền Trung Hoa và các quốc gia đồng văn Á Đông, <strong>Tứ Linh (Long - Lân - Quy - Phụng)</strong> là bốn linh vật tối cao hội tụ linh khí của trời đất, đại diện cho quyền năng vũ trụ, điềm lành thái bình và ước vọng hạnh phúc của con người.",
+          muc_1: "1. Nguồn gốc từ Thiên văn học cổ đại và Kinh Lễ",
+          nd_1:
+            "<p>Khái niệm Tứ Linh được ghi chép rõ nét trong sách <em>Kinh Lễ (Lễ Vận)</em> từ hơn 2.000 năm trước: <em>'Lân, Phụng, Quy, Long vị chi Tứ Linh'</em>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Kết tinh từ tín ngưỡng vật tổ (Totem):</strong> Các bộ lạc cổ xưa kết hợp đặc điểm mạnh mẽ nhất của nhiều loài động vật có thật trong tự nhiên để tạo nên hình tượng linh vật thiêng liêng.</li>" +
+            "<li><strong>Gắn liền với Tứ Tượng thiên văn và Tứ Phương:</strong> Tương ứng với 28 chòm sao (Nhị thập bát tú) chia làm 4 phương bầu trời và 4 mùa trong năm (Xuân - Hạ - Thu - Đông).</li>" +
+            "</ul>",
+          muc_2:
+            "2. Ý nghĩa biểu tượng sâu sắc của từng linh vật trong Tứ Linh",
+          nd_2:
+            "<p>Mỗi linh vật trong bộ Tứ Linh mang một dáng vẻ và phẩm chất tinh thần riêng biệt:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Long (Rồng - Đứng đầu loài có vẩy):</strong> Kết hợp thân rắn, vẩy cá chép, sừng hươu, móng đại bàng, bờm sư tử. Rồng làm chủ mây mưa giúp mùa màng tươi tốt, đồng thời là biểu tượng tối thượng của Hoàng đế (Chân Long Thiên Tử) và sức mạnh vươn lên mạnh mẽ.</li>" +
+            "<li><strong>2. Lân (Kỳ Lân - Đứng đầu loài có lông mao):</strong> Đầu nửa rồng nửa thú, mình hươu, đuôi bò. Kỳ Lân là linh vật của lòng <strong>Nhân từ và Hòa bình</strong> (khi bước đi không bao giờ giẫm lên cỏ non hay côn trùng sống), tương truyền chỉ xuất hiện khi có bậc thánh nhân ra đời hoặc đất nước thái bình thịnh trị.</li>" +
+            "<li><strong>3. Quy (Rùa thần - Đứng đầu loài có mai giáp):</strong> Linh vật duy nhất có thật trong tự nhiên. Bụng phẳng tượng trưng cho Đất, mai vòm tròn tượng trưng cho Trời, biểu trưng cho sự <strong>Trường thọ, Trí tuệ, Vững bền</strong> và nâng đỡ bia đá hiền tài.</li>" +
+            "<li><strong>4. Phụng / Phượng Hoàng (Đứng đầu loài có lông vũ):</strong> Đầu gà, cổ cao như hạc, đuôi rực rỡ như chim công. Năm màu sắc trên lông Phượng Hoàng đại diện cho 5 đức tính Nho giáo (Nhân, Nghĩa, Lễ, Trí, Tín), biểu trưng cho Hoàng hậu, vẻ đẹp cao quý và sự hòa hợp.</li>" +
+            "</ul>",
+          muc_3: "3. Hiện diện trong Kiến trúc, Nghệ thuật và Lễ hội",
+          nd_3:
+            "<p>Hình tượng Tứ Linh thấm sâu vào mọi mặt đời sống văn hóa truyền thống:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Trong kiến trúc và trang phục cung đình:</strong> Chạm khắc trên Bức tường Cửu Long, ngai vàng, long bào của Vua và mũ phượng của Hoàng hậu.</li>" +
+            "<li><strong>Trong lễ hội dân gian:</strong> Nghệ thuật Múa Lân - Sư - Rồng rộn rã tiếng trống dịp Tết Nguyên Đán và Tết Trung Thu nhằm xua đuổi điều xấu, rước tài lộc và bình an.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Xem biểu diễn Múa Lân - Sư - Rồng và tự tay cắt giấy đỏ nghệ thuật (Jianzhi) tạo hình Long - Lân - Quy - Phụng.",
+        },
+
+        thu_phap: {
+          quoc_gia: "Trung Quốc - Lịch sử & Văn hóa",
+          trang_quay_lai: "/trung-quoc",
+          id_nav: "nav_tq",
+          ten: "Nghệ Thuật Thư Pháp Trung Hoa",
+          hinh: "thuphap.jpg",
+          tong_quan:
+            "<strong>Thư pháp Trung Hoa</strong> (nghệ thuật viết chữ đẹp) được UNESCO công nhận là Di sản Văn hóa Phi vật thể của Nhân loại năm 2009. Trong 'Cầm - Kỳ - Thi - Họa', Thư pháp và Hội họa luôn song hành như tấm gương phản chiếu nhân cách và tâm hồn người cầm bút.",
+          muc_1: "1. Lịch sử tiến hóa hơn 3.000 năm của chữ Hán và 5 thể chữ",
+          nd_1:
+            "<p>Nghệ thuật Thư pháp phát triển song song với sự biến đổi hình thể của chữ Hán qua các thời kỳ lịch sử:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Triện Thư (Chữ Triện):</strong> Phát triển từ chữ Giáp Cốt (khắc trên mai rùa thời Thương) và Kim Văn (đúc trên chuông đồng thời Chu), có đường nét uốn lượn tròn trịa, cổ kính, cân đối, thường dùng khắc ấn chương.</li>" +
+            "<li><strong>2. Lệ Thư (Chữ Lệ - Thời Hán):</strong> Chuyển các nét tròn sang nét vuông dẹt, có thế bút 'tằm nằm đuôi nhạn' (đầu nét tròn, đuôi nét vẩy nhẹ), mở đường cho chữ Hán hiện đại.</li>" +
+            "<li><strong>3. Khải Thư (Chữ Khải / Chân Thư):</strong> Hình thành cuối thời Hán, hưng thịnh thời Đường (với Âu Dương Tuân, Nhan Chân Khanh, Liễu Công Quyền). Các nét chữ ngay ngắn, chuẩn mực, rõ ràng như người đứng nghiêm.</li>" +
+            "<li><strong>4. Hành Thư (Chữ Hành):</strong> Nét chữ uyển chuyển như mây trôi nước chảy (nổi tiếng nhất là tuyệt tác <em>Lan Đình Tự</em> của 'Thư thánh' Vương Hi Chi thời Đông Tấn).</li>" +
+            "<li><strong>5. Thảo Thư (Chữ Thảo):</strong> Viết phóng khoáng, tốc độ, các nét nối liền nhau đầy cảm xúc nghệ thuật như múa kiếm.</li>" +
+            "</ul>",
+          muc_2: "2. 'Văn Phòng Tứ Bảo' - Bốn bảo vật của người viết thư pháp",
+          nd_2:
+            "<p>Để tạo nên một bức thư pháp có thần thái, người nghệ nhân không thể thiếu 4 dụng cụ quý giá trong thư phòng:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bút (Hồ Bút):</strong> Bút lông làm từ lông thỏ, lông dê hoặc lông chồn gắn trên cán trúc, hội tụ 4 đặc tính 'Nhọn - Đều - Tròn - Khỏe'.</li>" +
+            "<li><strong>Mặc (Huy Mặc):</strong> Thỏi mực tàu làm từ muội than gỗ thông đốt cháy trộn keo da động vật và xạ hương thơm dịu, sắc mực đen nhánh bền màu hàng trăm năm.</li>" +
+            "<li><strong>Nghiên (Đoan Nghiên):</strong> Đĩa đá mịn dùng để nhỏ nước và mài thỏi mực thành dung dịch mực sánh mịn.</li>" +
+            "<li><strong>Giấy (Tuyên Chỉ):</strong> Loại giấy truyền thống làm thủ công từ vỏ cây đàn hương xanh ở vùng Tuyên Thành (An Huy), có độ thấm mực và loang màu tuyệt đẹp mà không bị mục nát.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình luyện chữ & Triết lý 'Tâm chính thì Bút chính'",
+          nd_3:
+            "<p>Các bậc thầy thư pháp xưa luôn dạy rằng <em>'Tâm chính tắc bút chính'</em> (Tâm hồn ngay thẳng thì nét bút mới vững vàng):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Tư thế và Hơi thở:</strong> Ngồi thẳng lưng, vai thả lỏng, tập trung hơi thở khi mài mực để tĩnh tâm; cầm bút thẳng đứng bằng 5 ngón tay và điều khiển lực từ cổ tay.</li>" +
+            "<li><strong>Bát pháp chữ Vĩnh (永):</strong> Người mới học thường luyện viết chữ <em>Vĩnh</em> vì chỉ một chữ này đã hội tụ đủ 8 nét cơ bản của thư pháp (Chấm, Ngang, Sổ, Móc, Hất, Phẩy dài, Phẩy ngắn, Mác).</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm mài mực tàu, cầm bút lông luyện viết chữ 'Vĩnh', 'Phúc', 'Trí' trên giấy đỏ và nhận liễn thư pháp may mắn.",
+        },
+
+        // Hàn Quốc
+        kimchi: {
+          quoc_gia: "Hàn Quốc - Ẩm thực",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Kimchi & Văn Hóa Muối Kimjang Hàn Quốc",
+          hinh: "kimchi.jpg",
+          tong_quan:
+            "<strong>Kimchi</strong> là món ăn truyền thống biểu tượng không thể thiếu trong mọi bữa cơm của người Hàn Quốc. Năm 2013, văn hóa cùng nhau làm và chia sẻ Kimchi cho mùa đông (<strong>Kimjang</strong>) đã được UNESCO ghi danh là Di sản Văn hóa Phi vật thể của Nhân loại.",
+          muc_1: "1. Nguồn gốc lịch sử hơn 1.500 năm",
+          nd_1:
+            "<p>Sự ra đời của Kimchi gắn liền với điều kiện khí hậu mùa đông khắc nghiệt trên bán đảo Triều Tiên:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời kỳ Tam Quốc (Thế kỷ 1 - 7):</strong> Do mùa đông tuyết phủ dày không thể trồng rau xanh, người dân đã nghĩ ra cách ướp muối các loại củ cải, rau rừng rồi cất trong những vại sành lớn (Onggi) chôn sâu dưới lòng đất để giữ nhiệt và lên men tự nhiên.</li>" +
+            "<li><strong>Bước ngoặt thời kỳ Joseon (Thế kỷ 17 - 18):</strong> Ban đầu Kimchi chỉ có màu trắng (Baek-kimchi) vì chưa có ớt. Khi quả ớt đỏ được các thương thuyền du nhập vào Hàn Quốc đầu thế kỷ 17 kết hợp cùng giống cải thảo cuộn bắp, món <strong>Baechu Kimchi</strong> (Kimchi cải thảo cay đỏ) trứ danh ngày nay chính thức định hình.</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng, Sự đa dạng & Lợi ích sức khỏe",
+          nd_2:
+            "<p>Hàn Quốc sở hữu tới hơn <strong>200 loại Kimchi</strong> khác nhau tùy theo nguyên liệu vùng miền và bốn mùa trong năm:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Các loại Kimchi nổi tiếng nhất:</strong> Baechu Kimchi (Kimchi cải thảo nguyên bẹ), Kkakdugi (Kimchi củ cải cắt khối vuông giòn rụm), Oi Sobagi (Kimchi dưa chuột nhồi nhân mùa hè) và Dongchimi (Kimchi nước củ cải thanh mát).</li>" +
+            "<li><strong>Tầng hương vị phức hợp:</strong> Vị chua dịu mát từ quá trình lên men vi khuẩn Lactic, vị cay nồng nhưng thơm ngọt của bột ớt Gochugaru hạt to, vị đậm đà của hải sản muối (tép muối Saeujeot, nước mắm cá cơm) và độ giòn ngọt của cải thảo, lê Hàn Quốc.</li>" +
+            "<li><strong>Thực phẩm vàng cho sức khỏe:</strong> Được tạp chí <em>Health</em> xếp vào nhóm 5 thực phẩm lành mạnh nhất thế giới nhờ giàu lợi khuẩn Probiotics, Vitamin A, C và chất chống oxy hóa.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình 4 bước muối Kimchi cải thảo chuẩn vị",
+          nd_3:
+            "<p>Để làm ra mẻ Kimchi giòn ngon, lên men chuẩn vị, người Hàn Quốc thực hiện kỹ lưỡng qua 4 công đoạn:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Chẻ và ướp muối cải thảo):</strong> Cải thảo chẻ làm đôi hoặc làm tư dọc theo gốc, rắc muối hạt biển vào từng bẹ lá và ngâm từ 4 - 6 tiếng cho cải thảo dẻo mềm (bẻ cong không gãy) rồi xả sạch 3 lần nước, vắt ráo.</li>" +
+            "<li><strong>Bước 2 (Nấu hồ bột nếp & Xay gia vị):</strong> Khuấy bột nếp với nước thành hỗn hợp hồ sánh mịn để nuôi lợi khuẩn lên men; xay nhuyễn tỏi, gừng, hành tây, lê Hàn Quốc rồi trộn cùng bột ớt Gochugaru, nước mắm, tép muối, củ cải trắng và hẹ thái khúc.</li>" +
+            "<li><strong>Bước 3 (Phết sốt Sokkaseo & Ủ lên men):</strong> Đeo găng tay phết đều hỗn hợp sốt đỏ vào từng kẽ lá cải thảo từ gốc lên ngọn, cuộn tròn bẹ cải xếp chặt vào hũ, để ở nhiệt độ phòng 1 - 2 ngày cho dậy vị chua rồi bảo quản lạnh.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm lễ hội 'Kimjang thu nhỏ' - tự tay phết sốt muối Kimchi cải thảo và đóng hộp mang về tặng gia đình.",
+        },
+
+        kimbap: {
+          quoc_gia: "Hàn Quốc - Ẩm thực",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Kimbap - Món Cơm Cuộn Rong Biển Quốc Dân",
+          hinh: "kimbap.jpg",
+          tong_quan:
+            "<strong>Kimbap</strong> (ghép từ <em>'Kim'</em> nghĩa là lá rong biển khô và <em>'Bap'</em> nghĩa là cơm) là món ăn biểu tượng cho sự tiện lợi, đủ đầy dinh dưỡng và tình cảm gia đình trong văn hóa ẩm thực hiện đại Hàn Quốc.",
+          muc_1: "1. Nguồn gốc lịch sử & Ý nghĩa trong đời sống người Hàn",
+          nd_1:
+            "<p>Văn hóa dùng lá rong biển (Kim) bọc cơm đã có từ lâu đời và phát triển thành món Kimbap hiện đại vô cùng phổ biến:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Tục ăn Bokssam truyền thống:</strong> Trong các sách cổ thời Joseon như <em>Dongguk Sesigi</em>, vào dịp Rằm tháng Giêng (Jeongwol Daeboreum), người Hàn có tục dùng lá rong biển nướng bọc cơm và rau để cầu phúc lộc đầu năm.</li>" +
+            "<li><strong>Món ăn gắn liền với ký ức tuổi học trò:</strong> Tại Hàn Quốc, cứ mỗi dịp trường học tổ chức dã ngoại mùa xuân (Sopoong) hay hội thao, các bà mẹ đều dậy từ sáng sớm chuẩn bị những hộp Kimbap đầy màu sắc cho con mang theo.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Điểm khác biệt đặc trưng giữa Kimbap (Hàn Quốc) và Sushi Maki (Nhật Bản)",
+          nd_2:
+            "<p>Dù có hình dáng cuộn tròn tương đồng, Kimbap sở hữu hương vị và nguyên liệu hoàn toàn riêng biệt:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Gia vị trộn cơm:</strong> Cơm Kimbap không trộn giấm chua ngọt mà được trộn trực tiếp với <strong>dầu mè rang (Chamgireum)</strong> thơm lừng, chút muối tinh và hạt mè trắng rang vàng.</li>" +
+            "<li><strong>Nhân chín đa dạng sắc màu:</strong> Nhân Kimbap hầu hết là nguyên liệu đã nấu chín hoặc muối chua gồm: Củ cải muối vàng (Danmuji) giòn ngọt, rễ cây ngưu bàng kho (Ueong), cà rốt xào, rau chân vịt chần trộn dầu mè, trứng chiên thái sợi, thanh cua, chả cá và thịt bò xào Bulgogi.</li>" +
+            "<li><strong>Các biến tấu nổi tiếng:</strong> Chungmu Kimbap (cơm cuộn nhỏ ăn kèm mực xào cay), Samgak Kimbap (cơm nắm tam giác) và Mayak Kimbap (Kimbap mini chấm sốt mù tạt ở chợ Gwangjang).</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình cuộn và cắt Kimbap đẹp mắt không bị vỡ",
+          nd_3:
+            "<p>Để cuộn được thanh Kimbap chắc tay, mặt cắt tròn đều rực rỡ sắc màu, người làm thực hiện qua các bước:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Chuẩn bị cơm và nhân):</strong> Nấu cơm hơi khô dẻo, trộn đều với dầu mè và muối khi cơm còn ấm; thái toàn bộ nguyên liệu nhân thành các thanh dài bằng nhau.</li>" +
+            "<li><strong>Bước 2 (Trải cơm và cuộn mành tre):</strong> Đặt mặt nhám của lá rong biển ngửa lên trên mành tre (Gimbal), dàn mỏng một lớp cơm chiếm 2/3 diện tích lá, xếp các thanh nhân gọn gàng ở giữa rồi dùng mành tre cuộn tròn, vừa cuộn vừa bóp nhẹ cho định hình.</li>" +
+            "<li><strong>Bước 3 (Phết dầu mè và cắt khoanh):</strong> Phết một lớp dầu mè mỏng lên vỏ ngoài cuộn cơm và lưỡi dao sắc, cắt thành từng khoanh dày khoảng 1,5 cm và rắc mè rang lên trên.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tham gia thử thách 'Cuộn thanh Kimbap dài 5 mét' cùng các thành viên trong lớp và thưởng thức Kimbap kèm bánh gạo cay Tokbokki.",
+        },
+
+        bibimbap: {
+          quoc_gia: "Hàn Quốc - Ẩm thực",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Bibimbap - Cơm Trộn Ngũ Sắc Hàn Quốc",
+          hinh: "bibimbap.jpg",
+          tong_quan:
+            "<strong>Bibimbap</strong> (ghép từ <em>'Bibim'</em> là trộn các nguyên liệu và <em>'Bap'</em> là cơm) là kiệt tác ẩm thực thể hiện rõ nét nhất triết lý <strong>Âm Dương Ngũ Hành</strong> và mỹ học Năm màu sắc truyền thống (Obangsaek) của người Hàn Quốc.",
+          muc_1: "1. Nguồn gốc lịch sử từ lễ cúng tổ tiên và vùng đất Jeonju",
+          nd_1:
+            "<p>Cơm trộn Bibimbap được ghi chép lần đầu trong sách nấu ăn <em>Siuijeonseo</em> cuối thế kỷ 19 với tên chữ Hán là <em>'Cốt Đổng Phạn'</em>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nghi thức Thụ lộc (Eumbok):</strong> Xưa kia sau khi cúng tổ tiên trên núi hoặc tại nhà thờ họ, người dân thường bày cơm cùng tất cả các món rau rừng (Namul), thịt bò lễ vật vào chung một chiếc bát lớn trộn đều để cùng nhau thụ lộc may mắn.</li>" +
+            "<li><strong>Cái nôi Jeonju Bibimbap:</strong> Thành phố Jeonju (tỉnh Jeollabuk-do) là thủ phủ của món Bibimbap nổi tiếng nhất nhờ hạt gạo nấu bằng nước hầm xương bò và giá đỗ trồng bằng nguồn nước suối tinh khiết.</li>" +
+            "</ul>",
+          muc_2: "2. Triết lý Ngũ Hành - Ngũ Sắc (Obangsaek) trong một tô cơm",
+          nd_2:
+            "<p>Mỗi tô Bibimbap là một bức tranh nghệ thuật cân bằng cả về thị giác, hương vị lẫn công dụng đối với ngũ tạng con người:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Màu Trắng (Hành Kim - Tốt cho Phổi):</strong> Cơm trắng dẻo, giá đỗ, củ cải trắng hoặc lòng trắng trứng.</li>" +
+            "<li><strong>Màu Đỏ/Cam (Hành Hỏa - Tốt cho Tim):</strong> Cà rốt thái sợi, ớt đỏ và tương ớt lên men <strong>Gochujang</strong> đậm đà ở trung tâm.</li>" +
+            "<li><strong>Màu Xanh (Hành Mộc - Tốt cho Gan):</strong> Rau chân vịt (rau bina), bí ngòi xanh và dưa chuột.</li>" +
+            "<li><strong>Màu Đen/Nâu (Hành Thủy - Tốt cho Thận):</strong> Nấm đông cô, rau dương xỉ núi (Gosari), thịt bò xào nước tương và rong biển vụn.</li>" +
+            "<li><strong>Màu Vàng (Hành Thổ - Tốt cho Dạ dày):</strong> Lòng đỏ trứng gà tươi hoặc trứng ốp la lòng đào đặt chính giữa tô cơm.</li>" +
+            "</ul>",
+          muc_3: "3. Quy trình chế biến Cơm trộn thố đá nóng (Dolsot Bibimbap)",
+          nd_3:
+            "<p>Phiên bản được yêu thích nhất là <strong>Dolsot Bibimbap</strong> (Cơm trộn thố đá nóng) với các bước thực hiện:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Sơ chế từng loại rau Namul):</strong> Mỗi loại rau củ và nấm được thái chỉ, chần hoặc xào riêng từng món với tỏi băm và dầu mè để giữ nguyên màu sắc tươi sáng tự nhiên; thịt bò thái sợi ướp xì dầu, đường, dầu mè xào chín tới.</li>" +
+            "<li><strong>Bước 2 (Làm nóng thố đá):</strong> Quết một lớp dầu mè vào lòng thố đá (Dolsot) rồi đun nóng trên bếp, cho cơm trắng vào để lớp cơm dưới đáy tiếp xúc với đá nóng tạo thành lớp <strong>cơm cháy vàng giòn rụm (Nurungji)</strong>.</li>" +
+            "<li><strong>Bước 3 (Bày trí và thưởng thức):</strong> Xếp xen kẽ các loại rau củ và thịt bò theo hình nan quạt quanh mặt cơm, đặt lòng đỏ trứng và tương ớt Gochujang ở giữa. Khi ăn, dùng thìa trộn đều tất cả nguyên liệu khi thố đá còn đang xèo xèo nóng hổi.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Thực hành xếp tô Bibimbap Ngũ Sắc theo đúng sơ đồ Ngũ Hành và thưởng thức cùng canh rong biển Hàn Quốc.",
+        },
+
+        gyeongbokgung: {
+          quoc_gia: "Hàn Quốc - Du lịch",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Cung Điện Hoàng Gia Gyeongbokgung (Cảnh Phúc Cung)",
+          hinh: "cungdien.jpg",
+          tong_quan:
+            "<strong>Gyeongbokgung</strong> (Cảnh Phúc Cung) nằm ở phía Bắc thủ đô Seoul, là cung điện chính, xuất hiện sớm nhất và có quy mô bề thế nhất trong <strong>Ngũ Đại Hoàng Cung</strong> của vương triều Joseon (1392 - 1910).",
+          muc_1: "1. Lịch sử xây dựng & Những thăng trầm thế kỷ",
+          nd_1:
+            "<p>Lịch sử hơn 600 năm của Gyeongbokgung gắn liền với vận mệnh của đất nước Hàn Quốc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Khởi dựng năm 1395:</strong> Ba năm sau khi lập ra triều đại Joseon và dời đô về Hanyang (Seoul ngày nay), vua Taejo (Lý Thành Quế) đã cho xây dựng hoàng cung. Đại học giả Jeong Do-jeon đã đặt tên cung là <em>Gyeongbokgung</em> (Cảnh Phúc Cung - lấy từ câu thơ trong Kinh Thi với ý nghĩa 'Cầu chúc nhà vua và con cháu muôn đời hưởng phúc lớn').</li>" +
+            "<li><strong>Biến cố và Đại trùng tu:</strong> Cung điện từng bị thiêu rụi trong cuộc chiến năm 1592 (nhiệm thần倭란) và được Hưng Tuyên Đại Viện Quân phục dựng quy mô lớn vào năm 1867 với hơn 500 tòa điện các. Từ năm 1990 đến nay, Chính phủ Hàn Quốc triển khai dự án trùng tu nguyên trạng hoàng cung để gìn giữ quốc hồn dân tộc.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Kiến trúc Phong thủy 'Tựa sơn hướng thủy' & Các công trình kiệt tác",
+          nd_2:
+            "<p>Gyeongbokgung được quy hoạch hoàn hảo theo thế đất lưng tựa vào núi Bugaksan hùng vĩ, mặt hướng ra dòng suối Cheonggyecheon và đại lộ Gwanghwamun:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Cổng Gwanghwamun (Quang Hóa Môn):</strong> Cổng chính phía Nam với 3 lối vòm đá và lầu gỗ hai tầng uy nghiêm, nơi diễn ra nghi thức canh gác hoàng cung.</li>" +
+            "<li><strong>Điện Geunjeongjeon (Cần Chính Điện):</strong> Chính điện lớn nhất nằm trên thềm đá trắng hai tầng, nơi các vị vua Joseon đăng cơ, thiết triều và tiếp đón sứ thần. Tên điện mang lời nhắc nhở: <em>'Việc thiên hạ chỉ có thể trị vì tốt đẹp nhờ sự cần mẫn'</em>.</li>" +
+            "<li><strong>Lầu Gyeonghoeru (Khánh Hội Lâu) & Đình Hyangwonjeong (Hương Viễn Đình):</strong> Hai kiệt tác kiến trúc thủy đình nằm nổi trên mặt hồ sen, nơi nhà vua mở yến tiệc và thưởng cảnh bốn mùa.</li>" +
+            "<li><strong>Màu sơn Dancheong (Đan Thanh):</strong> Các mái hiên gỗ được vẽ họa tiết hoa văn tinh xảo bằng 5 màu khoáng vật tự nhiên giúp bảo vệ gỗ khỏi thời tiết và côn trùng.</li>" +
+            "</ul>",
+          muc_3: "3. Trải nghiệm văn hóa đặc sắc cho du khách",
+          nd_3:
+            "<p>Đến thăm Gyeongbokgung, du khách được sống lại không gian lịch sử thời Joseon qua các hoạt động:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nghi thức Đổi gác Hoàng gia (Sumunjang):</strong> Diễn ra vào 10h00 và 14h00 hàng ngày trước cổng Gwanghwamun với đội lính gác mặc quân phục cổ truyền, trống trận và cờ lệnh rực rỡ.</li>" +
+            "<li><strong>Mặc Hanbok dạo hoàng cung:</strong> Du khách mặc trang phục truyền thống Hanbok được miễn phí 100% vé vào cổng và tham quan Bảo tàng Cung điện Quốc gia cùng Bảo tàng Dân gian Quốc gia ngay trong khuôn viên.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Mặc thử Hanbok hoàng cung chụp ảnh tại cổng Gwanghwamun thu nhỏ và tô màu họa tiết Dancheong truyền thống.",
+        },
+
+        gangwon_do: {
+          quoc_gia: "Hàn Quốc - Du lịch",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Tỉnh Gangwon-do - Thiên Đường Thiên Nhiên Bốn Mùa",
+          hinh: "gangwondo.jpg",
+          tong_quan:
+            "<strong>Tỉnh Gangwon (Gangwon-do)</strong> nằm ở phía Đông Bắc Hàn Quốc, nơi hơn 80% diện tích được bao phủ bởi những dãy núi hùng vĩ và đường bờ biển Đông trong xanh, được mệnh danh là cái nôi của làn sóng du lịch điện ảnh K-Drama và thủ phủ thể thao mùa đông châu Á.",
+          muc_1: "1. Vị trí địa lý & Dấu ấn Thế vận hội Mùa đông PyeongChang",
+          nd_1:
+            "<p>Gangwon-do sở hữu địa hình độc đáo kết hợp giữa dãy núi xương sống Taebaek và vùng duyên hải phía Đông:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Khí hậu bốn mùa rõ rệt nhất bán đảo:</strong> Nhờ độ cao của các dãy núi, Gangwon-do có mùa hè mát mẻ trong lành, mùa thu lá đỏ rực rỡ sớm nhất Hàn Quốc và mùa đông lượng tuyết rơi dày trắng xóa từ tháng 11 đến tháng 3.</li>" +
+            "<li><strong>Đăng cai Olympic Mùa đông 2018 và Olympic Trẻ 2024:</strong> Huyện PyeongChang và thành phố Gangneung của tỉnh Gangwon đã tổ chức thành công rực rỡ Thế vận hội Mùa đông, đưa nơi đây thành trung tâm nghỉ dưỡng trượt tuyết đẳng cấp quốc tế.</li>" +
+            "</ul>",
+          muc_2: "2. Những thắng cảnh nổi tiếng bậc nhất tại Gangwon-do",
+          nd_2:
+            "<p>Gangwon-do quy tụ những điểm đến làm say lòng hàng triệu du khách yêu thiên nhiên và điện ảnh:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Đảo Nami (Thành phố Chuncheon):</strong> Hòn đảo hình bán nguyệt nằm giữa dòng sông Bắc Hán, nổi tiếng toàn châu Á qua bộ phim <em>Bản tình ca mùa đông</em> với những con đường rợp bóng cây ngân hạnh vàng rực và hàng cây thủy sam thẳng tắp.</li>" +
+            "<li><strong>Vườn quốc gia núi Seoraksan (Tuyết Nhạc Sơn):</strong> Khu dự trữ sinh quyển thế giới UNESCO với đỉnh Daecheongbong cao 1.708m, tượng Phật đồng khổng lồ tại chùa Sinheungsa và thung lũng suối đá tuyệt đẹp vào mùa lá phong đỏ.</li>" +
+            "<li><strong>Bãi biển Gangneung & Đồi cừu Daegwallyeong:</strong> Nơi có cảng Jumunjin thơ mộng và những đồng cỏ chăn thả cừu xanh mướt cùng hệ thống tua-bin điện gió trên đỉnh đồi.</li>" +
+            "</ul>",
+          muc_3: "3. Trải nghiệm du lịch & Ẩm thực đặc sản địa phương",
+          nd_3:
+            "<p>Mỗi mùa đến Gangwon-do đều mang lại những trải nghiệm văn hóa và ẩm thực khó quên:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Hoạt động theo mùa:</strong> Đạp xe đường sắt Gangchon Rail Bike ngắm cảnh sông núi, đi cáp treo lên đỉnh 권금성 (Gwongeumseong) ở núi Seoraksan và trượt tuyết tại Alpensia / Yongpyong Resort.</li>" +
+            "<li><strong>Ẩm thực đặc sản Gangwon:</strong> Thưởng thức món <strong>Gà xào bắp cải cay phô mai (Chuncheon Dakgalbi)</strong>, mì kiều mạch trộn Makguksu và đậu phụ non hầm hải sản Chodang Sundubu tại Gangneung.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Chụp ảnh tại tiểu cảnh con đường lá vàng Đảo Nami (Gangwon-do) và treo thiệp ước nguyện mùa đông.",
+        },
+
+        bukchon_hanok: {
+          quoc_gia: "Hàn Quốc - Du lịch",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Làng Cổ Bukchon Hanok - Di Sản Sống Giữa Lòng Seoul",
+          hinh: "langco.jpg",
+          tong_quan:
+            "<strong>Làng cổ Bukchon Hanok</strong> nằm tọa lạc trên sườn đồi giữa hai cung điện lớn là Gyeongbokgung và Changdeokgung. Không giống như các bảo tàng dựng lại, Bukchon là một khu dân cư lịch sử hơn 600 năm tuổi vẫn đang có người dân sinh sống thực tế giữa trung tâm thủ đô Seoul hiện đại.",
+          muc_1: "1. Nguồn gốc lịch sử của khu phố quý tộc thời Joseon",
+          nd_1:
+            "<p>Tên gọi <em>'Bukchon'</em> có nghĩa là <strong>'Bắc Thôn'</strong> (Ngôi làng phía Bắc), vì nằm ở phía Bắc của dòng suối Cheonggyecheon và khu vực Jongno:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Nơi ở của tầng lớp Vương công và Quan lại (Yangban):</strong> Dưới triều đại Joseon, do nằm sát ngay cạnh hai hoàng cung nơi nhà vua làm việc và có địa thế phong thủy cao ráo, thoáng đãng, Bukchon được chọn làm nơi xây dựng dinh thự của hoàng thân quốc thích và các đại thần cấp cao trong triều.</li>" +
+            "<li><strong>Bảo tồn qua biến động đô thị:</strong> Đầu thế kỷ 20, các dinh thự lớn được chia nhỏ thành các cụm nhà chữ L và chữ U nằm san sát dọc theo những con dốc lát đá, tạo nên quần thể khoảng 900 ngôi nhà cổ Hanok độc đáo ngày nay.</li>" +
+            "</ul>",
+          muc_2: "2. Khoa học kiến trúc nhà truyền thống Hanok",
+          nd_2:
+            "<p>Mỗi ngôi nhà <strong>Hanok</strong> tại làng Bukchon là một công trình kiến trúc sinh thái thông minh thuận theo tự nhiên của người Hàn xưa:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Vật liệu tự nhiên hoàn toàn:</strong> Khung cột làm bằng gỗ thông đỏ, tường trát đất sét trộn rơm giúp điều hòa độ ẩm, cửa sổ và cửa trượt dán bằng <strong>giấy truyền thống Hanji</strong> (làm từ vỏ cây dâu tằm) vừa lấy ánh sáng dịu nhẹ vừa thông khí.</li>" +
+            "<li><strong>Mái ngói Giwa uốn cong:</strong> Những viên ngói xám đen xếp chồng tạo đường cong mềm mại ở bốn góc mái (Cheoma), được tính toán góc nghiêng để che nắng gắt mùa hè nhưng vẫn đón ánh nắng ấm áp chiếu sâu vào hiên nhà mùa đông.</li>" +
+            "<li><strong>Kết hợp hệ thống sưởi sàn Ondol & Sàn gỗ Maru:</strong> Phòng ngủ có hệ thống dẫn khói nóng dưới gầm sàn đá (Ondol) giữ ấm qua mùa đông tuyết giá; phòng khách có sàn gỗ nâng cao thông gió (Maru) mát mẻ vào mùa hè.</li>" +
+            "</ul>",
+          muc_3:
+            "3. Tám điểm ngắm cảnh (Bukchon 8 Views) & Trải nghiệm thủ công",
+          nd_3:
+            "<p>Dạo bước qua những con hẻm nhỏ yên bình của Bukchon Hanok, du khách có thể khám phá:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bukchon Bát Cảnh (8 góc nhìn đẹp nhất):</strong> Đặc biệt là con dốc ở điểm số 5 và số 6, nơi những mái ngói cổ kính xếp tầng nối tiếp nhau dẫn tầm mắt ra xa là các tòa nhà chọc trời và tháp Namsan Seoul hiện đại.</li>" +
+            "<li><strong>Xưởng nghệ nhân truyền thống:</strong> Tham gia các lớp học làm thủ công giấy Hanji, thắt dây nghệ thuật Maedeup, nhuộm vải chàm tự nhiên và thưởng trà ngũ vị tử (Omija) trong sân nhà cổ.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Học cách thắt vòng tay chỉ ngũ sắc Maedeup và làm quạt giấy Hanji truyền thống tại gian hàng Hàn Quốc.",
+        },
+
+        phong_kien_han_quoc: {
+          quoc_gia: "Hàn Quốc - Lịch sử & Văn hóa",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Lịch Sử Thời Kì Phong Kiến Hàn Quốc & Di Sản Chữ Hangeul",
+          hinh: "lshq.jpg",
+          tong_quan:
+            "Lịch sử các vương triều phong kiến trên bán đảo Triều Tiên kéo dài gần hai thiên niên kỷ (từ thời kỳ Tam Quốc thế kỷ 1 TCN đến hết triều đại Joseon năm 1910), để lại một nền văn hóa bản địa độc창 và nhiều di sản tư liệu, khoa học tầm cỡ thế giới.",
+          muc_1: "1. Ba giai đoạn vương triều lớn trong lịch sử Hàn Quốc",
+          nd_1:
+            "<p>Sau nhà nước cổ đại Gojoseon (Cổ Triều Tiên gắn với truyền thuyết Dangun năm 2333 TCN), thời kỳ phong kiến Hàn Quốc phát triển qua 3 giai đoạn lớn:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Thời kỳ Tam Quốc (57 TCN - 668) và Silla thống nhất:</strong> Ba vương quốc hùng mạnh là <strong>Goguryeo</strong> (Cao Câu Ly ở phía Bắc giỏi cưỡi ngựa bắn cung), <strong>Baekje</strong> (Bách Tế ở Tây Nam tinh tế về nghệ thuật) và <strong>Silla</strong> (Tân La ở Đông Nam nổi tiếng với các vương miện vàng ròng và đài thiên văn Cheomseongdae cổ nhất châu Á). Năm 668, Silla thống nhất bán đảo.</li>" +
+            "<li><strong>2. Vương triều Goryeo - Cao Ly (918 - 1392):</strong> Do vua Wang Geon sáng lập, lấy Phật giáo làm quốc giáo. Tên gọi <em>'Goryeo'</em> chính là nguồn gốc của tên tiếng Anh <strong>'Korea'</strong> ngày nay.</li>" +
+            "<li><strong>3. Vương triều Joseon - Triều Tiên (1392 - 1910):</strong> Vương triều phong kiến dài nhất kéo dài hơn 500 năm, dời đô về Seoul, đề cao Nho giáo, văn trị và phát triển rực rỡ về khoa học, giáo dục.</li>" +
+            "</ul>",
+          muc_2: "2. Những thành tựu khoa học & Văn hóa kiệt xuất thế giới",
+          nd_2:
+            "<p>Các vương triều phong kiến Hàn Quốc đã tạo ra những phát minh đi trước thời đại nhiều thế kỷ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Vua Sejong Đại Đế và sự ra đời của chữ Hangeul (năm 1443):</strong> Thương người dân lao động không thể học chữ Hán quá phức tạp, vua Sejong cùng các học giả Tập Hiền Điện đã sáng tạo ra bộ chữ cái <em>Hunminjeongeum</em> (Huấn dân chính âm - tức chữ Hangeul). Các phụ âm mô phỏng hình dáng cơ quan phát âm của con người, nguyên âm dựa trên triết lý Thiên - Địa - Nhân, được ngôn ngữ học thế giới đánh giá là hệ chữ viết khoa học và dễ học nhất hành tinh.</li>" +
+            "<li><strong>Kỹ thuật in chữ rời kim loại đầu tiên thế giới (năm 1234 - 1377):</strong> Thời Goryeo đã in cuốn sách <em>Jikji</em> bằng chữ rời kim loại vào năm 1377 (sớm hơn máy in Gutenberg ở châu Âu tới 78 năm) cùng bộ <strong>Bát vạn đại tạng kinh (Tripitaka Koreana)</strong> khắc trên hơn 81.258 mộc bản gỗ vẫn nguyên vẹn tại chùa Haeinsa.</li>" +
+            "<li><strong>Tàu chiến bọc sắt Quy thuyền (Geobukseon):</strong> Do Đô đốc Yi Sun-sin chế tạo cuối thế kỷ 16 với mui tàu bọc sắt cắm chông nhọn và đầu rồng phun khói lửa bảo vệ vùng biển đất nước.</li>" +
+            "</ul>",
+          muc_3: "3. Di sản văn hóa truyền thống lưu giữ đến ngày nay",
+          nd_3:
+            "<p>Trải qua hàng thế kỷ, tinh hoa văn hóa thời phong kiến vẫn hiện diện sống động trong xã hội Hàn Quốc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Quốc phục Hanbok và Lễ nghi:</strong> Đường nét thanh tao của trang phục Hanbok, nghi lễ trà lễ Darye và âm nhạc cung đình Jongmyo Jeryeak.</li>" +
+            "<li><strong>Truyền thống hiếu học:</strong> Hệ thống trường học Seowon và khoa cử thời Joseon đã hun đúc nên tinh thần coi trọng giáo dục hàng đầu của người dân Hàn Quốc hiện đại.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tìm hiểu nguyên lý ghép chữ Hangeul chỉ trong 10 phút và tự tay viết tên tiếng Hàn của mình lên thẻ lưu niệm.",
+        },
+
+        taekwondo: {
+          quoc_gia: "Hàn Quốc - Lịch sử & Văn hóa",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Quốc Võ Taekwondo - Tinh Thần Võ Đạo Hàn Quốc",
+          hinh: "taekwondo.jpg",
+          tong_quan:
+            "<strong>Taekwondo</strong> là môn quốc võ truyền thống của Hàn Quốc, hiện có hơn 80 triệu môn sinh luyện tập tại hơn 200 quốc gia và vùng lãnh thổ, đồng thời là môn thể thao thi đấu chính thức tại <strong>Thế vận hội Olympic</strong> từ năm 2000.",
+          muc_1: "1. Nguồn gốc từ các võ sĩ cổ đại đến môn thể thao Olympic",
+          nd_1:
+            "<p>Lịch sử Taekwondo gắn liền với truyền thống thượng võ bảo vệ đất nước của người Hàn từ hơn 2.000 năm trước:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Khởi nguồn thời Tam Quốc:</strong> Các bức bích họa trong lăng mộ cổ Muyongchong (thời Goguryeo) đã khắc họa hình ảnh các võ sĩ giao đấu tay không. Tại vương quốc Silla, tổ chức thanh niên ưu tú <strong>Hwarang (Hoa Lang Đạo)</strong> đã rèn luyện các môn võ cổ như <em>Subak</em> và <em>Taekkyeon</em> (di sản văn hóa phi vật thể UNESCO) với những đòn chân linh hoạt để rèn luyện cả thể chất lẫn trí tuệ.</li>" +
+            "<li><strong>Thống nhất tên gọi Taekwondo (năm 1955):</strong> Sau Thế chiến thứ II, các võ đường truyền thống Hàn Quốc (các Kwan) đã hợp nhất hệ thống kỹ thuật và chính thức đặt tên môn võ là <strong>Taekwondo</strong>, thành lập Liên đoàn Taekwondo Thế giới (WT) và Viện Kukkiwon tại Seoul.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Triết lý tên gọi, Hệ thống đai & Kỹ thuật đòn chân độc đáo",
+          nd_2:
+            "<p>Tên gọi <strong>Tae - Kwon - Do (태권도 / 跆拳道)</strong> hàm chứa đầy đủ kỹ thuật và đạo lý của môn võ:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Ý nghĩa 3 chữ:</strong> <strong>Tae (Đài)</strong> là các kỹ thuật đòn chân đá, bay nhảy công phá; <strong>Kwon (Quyền)</strong> là các kỹ thuật đòn tay đấm, đỡ gạt; <strong>Do (Đạo)</strong> là con đường tu dưỡng đạo đức, lễ nghĩa và làm chủ bản thân.</li>" +
+            "<li><strong>Nghệ thuật của những đòn đá tầm cao:</strong> Khác với nhiều môn võ thiên về đòn tay, Taekwondo phát huy tối đa sức mạnh và chiều dài của đôi chân với các đòn đá vòng cầu (Dollyo Chagi), đá tạt, đá hậu xoay người 360 độ và bay đá công phá trên không tốc độ cao.</li>" +
+            "<li><strong>Ý nghĩa màu đai (Từ Trắng đến Đen):</strong> Đai Trắng (hạt giống mới gieo trong trắng) -> Đai Vàng (đất đai nuôi dưỡng rễ) -> Đai Xanh lá (cây nảy mầm vươn lên) -> Đai Xanh dương (hướng tới bầu trời cao) -> Đai Đỏ (quả chín, cảnh báo sức mạnh cần kiểm soát) -> Đai Đen (sự trưởng thành và khởi đầu mới của người võ sĩ).</li>" +
+            "</ul>",
+          muc_3: "3. Năm tôn chỉ đạo đức và Nội dung rèn luyện",
+          nd_3:
+            "<p>Mỗi môn sinh khi bước lên thảm tập võ phục Dobok trắng đều cúi chào quốc kỳ, thầy dạy và khắc cốt ghi tâm <strong>5 tinh thần Taekwondo</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Lễ nghĩa (Ye-ui) - 2. Liêm chính (Yeom-chi) - 3. Kiên nhẫn (In-nae) - 4. Tự chủ (Guk-gi) - 5. Tinh thần bất khuất (Baekjul-boolgool).</strong></li>" +
+            "<li><strong>Bốn nội dung tập luyện:</strong> Gồm Kỹ thuật căn bản (Kibon), Đi quyền theo sơ đồ triết học (Poomsae), Đối kháng thể thao (Kyorugi) và Công phá mục tiêu (Kyukpa).</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Thưởng thức màn biểu diễn nhảy cao đá bay công phá ván gỗ theo nhạc (Taekwonmu) và hướng dẫn các thế tự vệ cơ bản.",
+        },
+
+        phim_anh_han_quoc: {
+          quoc_gia: "Hàn Quốc - Lịch sử & Văn hóa",
+          trang_quay_lai: "/han-quoc",
+          id_nav: "nav_hq",
+          ten: "Nền Phim Ảnh Hàn Quốc - Trụ Cột Của Làn Sóng Hallyu Toàn Cầu",
+          hinh: "kdrama.jpg",
+          tong_quan:
+            "Từ một nền điện ảnh nội địa nhỏ bé sau chiến tranh, <strong>Phim ảnh Hàn Quốc (K-Cinema và K-Drama)</strong> đã tạo nên kỳ tích văn hóa của thế kỷ 21, trở thành mũi nhọn của <strong>Làn sóng Hàn Quốc (Hallyu)</strong> chinh phục hàng tỷ khán giả trên khắp các châu lục.",
+          muc_1:
+            "1. Hành trình trỗi dậy từ thập niên 1990 đến Đỉnh cao Oscar & Emmy",
+          nd_1:
+            "<p>Sự phát triển vượt bậc của nền công nghiệp phim ảnh Hàn Quốc là kết quả của chiến lược đầu tư bài bản vào con người và sáng tạo văn hóa:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Giai đoạn mở màn Hallyu 1.0 & 2.0 (Cuối thập niên 1990 - 2010):</strong> Những bộ phim truyền hình giàu cảm xúc gia đình và tình yêu như <em>Bản tình ca mùa đông, Nàng Dae Jang Geum, Ngôi nhà hạnh phúc, Vườn sao băng</em> tạo cơn sốt khắp châu Á, biến các bối cảnh quay phim thành điểm du lịch nổi tiếng.</li>" +
+            "<li><strong>Kỷ nguyên toàn cầu hóa Hallyu 3.0 & 4.0 (2015 đến nay):</strong> Điện ảnh Hàn Quốc liên tiếp lập kỳ tích lịch sử khi bộ phim <strong>Ký Sinh Trùng (Parasite - 2019)</strong> của đạo diễn Bong Joon-ho giành cả <strong>Cành Cọ Vàng tại LHP Cannes</strong> lẫn <strong>4 tượng vàng Oscar 2020</strong> (kể cả Phim xuất sắc nhất - bộ phim không nói tiếng Anh đầu tiên trong lịch sử 92 năm của Oscar làm được điều này); tiếp nối là hiện tượng toàn cầu <em>Squid Game, Hạ cánh nơi anh, Reply 1988, Khi cuộc đời cho bạn quả quýt</em>.</li>" +
+            "</ul>",
+          muc_2: "2. Bí quyết tạo nên sức hút đặc biệt của Phim ảnh Hàn Quốc",
+          nd_2:
+            "<p>Phim ảnh Hàn Quốc chạm tới trái tim khán giả quốc tế nhờ 4 yếu tố cốt lõi:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Kịch bản sáng tạo và giàu tính nhân văn:</strong> Khai thác sâu sắc tình cảm gia đình, tình bạn tuổi học trò, nghị lực vươn lên và phản ánh thẳng thắn các góc khuất xã hội hiện đại với nhiều cú ngoặt (plot twist) bất ngờ.</li>" +
+            "<li><strong>Chất lượng sản xuất và diễn xuất đỉnh cao:</strong> Góc máy điện ảnh trau chuốt, kỹ xảo hiện đại kết hợp dàn diễn viên thực lực có khả năng truyền tải cảm xúc chân thực.</li>" +
+            "<li><strong>Nhạc phim (OST) chạm đến cảm xúc:</strong> Mỗi bộ phim đều có những bản nhạc phim được sáng tác riêng, chỉ cần vang lên giai điệu là gợi nhớ ngay đến câu chuyện phim.</li>" +
+            "</ul>",
+          muc_3: "3. Sức mạnh mềm (Soft Power) quảng bá văn hóa và kinh tế",
+          nd_3:
+            "<p>Phim ảnh đã trở thành 'đại sứ văn hóa' hiệu quả nhất của đất nước Hàn Quốc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Lan tỏa ẩm thực, thời trang và ngôn ngữ:</strong> Qua từng cảnh phim, khán giả khắp thế giới yêu thích món Kimchi, mì tương đen Jajangmyeon, gà rán, trang phục Hanbok và thúc đẩy hàng triệu người trẻ theo học tiếng Hàn.</li>" +
+            "<li><strong>Bài học phát triển công nghiệp văn hóa:</strong> Là hình mẫu tiêu biểu về việc kết hợp bản sắc truyền thống dân tộc với công nghệ giải trí hiện đại để xuất khẩu văn hóa ra thế giới.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tham gia trò chơi 'Nghe nhạc hiệu đoán tên K-Drama', chụp ảnh Photobooth Hàn Quốc 4 khung (Life4Cuts) cùng bạn bè.",
+        },
+
+        // Nhật Bản
+        sushi: {
+          quoc_gia: "Nhật Bản - Ẩm thực",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Nghệ Thuật Ẩm Thực Sushi Truyền Thống Nhật Bản",
+          hinh: "sushi.jpg",
+          tong_quan:
+            "<strong>Sushi</strong> là tinh hoa tiêu biểu nhất của nền ẩm thực truyền thống Nhật Bản (<strong>Washoku</strong> - được UNESCO công nhận là Di sản Văn hóa Phi vật thể của Nhân loại năm 2013), tôn vinh hương vị tươi ngon nguyên bản của thiên nhiên bốn mùa.",
+          muc_1: "1. Nguồn gốc lịch sử từ phương pháp ủ cá đến Edomae Sushi",
+          nd_1:
+            "<p>Trái với suy nghĩ của nhiều người rằng chữ 'Sushi' có nghĩa là cá sống, thực chất chữ <em>'Sushi'</em> bắt nguồn từ chữ cổ nghĩa là <strong>'Vị chua'</strong> (chỉ phần cơm trộn giấm):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời kỳ cổ đại (Narezushi):</strong> Ban đầu ở vùng Đông Nam Á và du nhập vào Nhật Bản thế kỷ 8, người dân ướp cá với muối và bọc trong cơm lên men nhiều tháng để bảo quản cá; khi ăn họ bỏ phần cơm đi và chỉ ăn cá.</li>" +
+            "<li><strong>Thời kỳ Muromachi (Thế kỷ 15 - 16):</strong> Người Nhật rút ngắn thời gian lên men để ăn được cả cá lẫn cơm có vị chua dịu.</li>" +
+            "<li><strong>Bước ngoặt thời kỳ Edo (Đầu thế kỷ 19 tại Tokyo):</strong> Đầu bếp <strong>Hanaya Yohei</strong> đã sáng tạo ra <strong>Edomae Nigiri-zushi</strong>: thay vì ủ lên men lâu ngày, ông trộn trực tiếp giấm gạo vào cơm ấm rồi dùng tay nắm lại, đặt một lát hải sản tươi sống vừa đánh bắt ở vịnh Tokyo lên trên, tạo nên món Sushi hiện đại ngày nay.</li>" +
+            "</ul>",
+          muc_2: "2. Cấu trúc tinh tế & Các dòng Sushi phổ biến nhất",
+          nd_2:
+            "<p>Một miếng Sushi chuẩn mực là sự kết hợp hoàn hảo của hai thành phần chính là <strong>Shari</strong> (cơm trộn giấm) và <strong>Neta</strong> (hải sản/nhân đặt trên cơm):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Nigiri-zushi (Sushi nắm bằng tay):</strong> Cơm nắm hình bầu dục nhỏ vừa một miếng cắn, phết chút mù tạt tươi Wasabi ở giữa và đặt lát cá ngừ đại dương (Maguro), cá hồi (Sake), tôm ngọt (Ebi) hoặc lươn nướng (Unagi) lên trên.</li>" +
+            "<li><strong>2. Maki-zushi (Sushi cuộn rong biển Nori):</strong> Dùng mành tre Makisu cuộn cơm và nhân bên trong lá rong biển nướng giòn (gồm Hosomaki cuộn nhỏ 1 nhân, Futomaki cuộn to nhiều nhân và Temaki cuộn hình phễu).</li>" +
+            "<li><strong>3. Gunkan-maki (Sushi chiến hạm):</strong> Cơm nắm bọc vòng rong biển xung quanh để đựng trứng cá hồi (Ikura) hoặc nhím biển (Uni) bên trên.</li>" +
+            "<li><strong>Gia vị đi kèm:</strong> Nước tương Shoyu, mù tạt tươi mài từ củ Wasabi giúp kháng khuẩn và khử tanh, cùng gừng hồng ngâm chua ngọt (Gari) dùng để làm sạch vị giác giữa hai miếng cá khác nhau.</li>" +
+            "</ul>",
+          muc_3: "3. Kỷ luật nghề nghiệp 'Shokunin' và Quy tắc thưởng thức",
+          nd_3:
+            "<p>Tại Nhật Bản, để trở thành một nghệ nhân Sushi (Itamae), người học việc phải trải qua nguyên tắc rèn luyện khắt khe <em>'3 năm học nấu cơm Shari, 8 năm học dùng dao cắt cá và nắm cơm'</em>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bí quyết nắm cơm Nigiri:</strong> Hạt cơm phải giữ ở nhiệt độ bằng nhiệt độ cơ thể người (khoảng 36 - 37°C). Nghệ nhân nắm cơm nhẹ nhàng sao cho bên ngoài kết dính chắc chắn nhưng bên trong vẫn có khe thoáng khí để khi đưa vào miệng hạt cơm tơi mềm ngay lập tức.</li>" +
+            "<li><strong>Cách thưởng thức chuẩn Nhật:</strong> Khi chấm Nigiri, chỉ nghiêng miếng sushi để <strong>phần lát cá chạm nhẹ vào nước tương</strong> (không chấm phần cơm để tránh cơm hút mặn và bị vỡ), sau đó thưởng thức trọn vẹn trong một miếng cắn.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Thực hành cuộn Maki Sushi, học cách phân biệt các loại Sushi và thưởng thức tại quầy ẩm thực Nhật Bản.",
+        },
+
+        ramen: {
+          quoc_gia: "Nhật Bản - Ẩm thực",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Mì Ramen - Biểu Tượng Ẩm Thực Nóng Hổi Của Nhật Bản",
+          hinh: "ramen.jpg",
+          tong_quan:
+            "<strong>Mì Ramen</strong> là một trong những món ăn được yêu thích nhất tại Nhật Bản và trên toàn thế giới. Mỗi tô Ramen là một tác phẩm ẩm thực cầu kỳ hội tụ 5 yếu tố: Nước dùng hầm xương, Sốt gia vị nền (Tare), Dầu thơm, Sợi mì kiềm và các món ăn kèm (Topping).",
+          muc_1: "1. Nguồn gốc & Sự phát triển bản sắc Ramen Nhật Bản",
+          nd_1:
+            "<p>Lịch sử Ramen là minh chứng cho sự sáng tạo không ngừng của các đầu bếp Nhật Bản:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Cuối thế kỷ 19 - Năm 1910:</strong> Khi Nhật Bản mở cửa giao thương thời kỳ Minh Trị tại các cảng Yokohama, Kobe, món mì kéo sợi (Lamian) được du nhập vào. Năm 1910, tiệm mì <em>Rairaiken</em> ở Asakusa (Tokyo) kết hợp sợi mì lúa mì với nước dùng nấu từ nước tương Nhật Bản và cá khô, tạo nên cơn sốt Ramen đầu tiên.</li>" +
+            "<li><strong>Phát minh mì ăn liền năm 1958:</strong> Ông Momofuku Ando đã phát minh ra gói mì Ramen ăn liền đầu tiên trên thế giới (Chicken Ramen) và mì ly (Cup Noodles), đưa tên tuổi Ramen phủ sóng toàn cầu và có cả Bảo tàng Ramen tại Yokohama.</li>" +
+            "</ul>",
+          muc_2: "2. Tứ đại trường phái nước dùng Ramen và Đặc trưng vùng miền",
+          nd_2:
+            "<p>Hương vị của một tô Ramen được phân loại dựa trên phần <strong>Nước cốt (Soup)</strong> kết hợp với <strong>Sốt gia vị đáy bát (Tare)</strong> thành 4 dòng chính:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Shoyu Ramen (Nước tương - Đặc trưng vùng Tokyo):</strong> Nước dùng ninh từ xương gà, rau củ và hải sản khô Dashi hòa quyện cùng nước tương Shoyu tạo màu nâu trong suốt, vị mặn dịu và thơm thanh tao.</li>" +
+            "<li><strong>2. Tonkotsu Ramen (Xương heo hầm - Đặc trưng vùng Hakata, Fukuoka):</strong> Xương ống và chân giò heo được ninh lửa lớn sùng sục từ 12 đến 18 tiếng cho đến khi collagen và tủy xương tan hoàn toàn, tạo ra dòng nước dùng màu trắng sữa sánh mịn, béo ngậy đậm đà.</li>" +
+            "<li><strong>3. Miso Ramen (Tương đậu nành - Đặc trưng vùng Sapporo, Hokkaido):</strong> Ra đời ở vùng lạnh giá phía Bắc với nước dùng đậm vị tương đậu nành Miso xào cùng thịt băm, bắp ngọt và một lát bơ tan chảy giữ ấm cơ thể.</li>" +
+            "<li><strong>4. Shio Ramen (Muối biển - Đặc trưng vùng Hakodate):</strong> Dòng nước dùng lâu đời nhất, trong vắt màu vàng nhạt, tôn lên vị ngọt tự nhiên của xương gà và muối biển khoáng.</li>" +
+            "</ul>",
+          muc_3: "3. Cấu tạo sợi mì Kansui & Các thành phần ăn kèm kinh điển",
+          nd_3:
+            "<p>Để hoàn thiện một tô Ramen chuẩn vị, ngoài nước dùng còn cần sự kết hợp của:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Sợi mì Kansui:</strong> Bột mì được nhào cùng <strong>nước khoáng kiềm (Kansui)</strong> giúp sợi mì Ramen có màu vàng tự nhiên, độ đàn hồi dai giòn đặc trưng và không bị bở khi ngâm trong nước súp nóng.</li>" +
+            "<li><strong>Bộ Topping truyền thống:</strong> Những lát <strong>Thịt heo Chashu</strong> cuộn tròn hầm nước tương mềm tan, <strong>Trứng lòng đào ngâm tương (Ajitsuke Tamago)</strong> với lòng đỏ sánh dẻo như mật, măng khô lên men (Menma), chả cá xoắn hồng trắng (Narutomaki), hành baro và lá rong biển khô.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Thưởng thức mì Ramen nóng hổi với trứng lòng đào ngâm tương và khám phá bản đồ Ramen từ Hokkaido đến Kyushu.",
+        },
+
+        banh_mochi: {
+          quoc_gia: "Nhật Bản - Ẩm thực",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Bánh Mochi & Lễ Hội Giã Bánh Mochitsuki",
+          hinh: "mochi.jpg",
+          tong_quan:
+            "<strong>Bánh Mochi</strong> là món bánh truyền thống thiêng liêng và lâu đời bậc nhất của người Nhật Bản. Không chỉ là món tráng miệng tinh tế, Mochi còn mang ý nghĩa tâm linh gắn liền với sự may mắn, sức mạnh gắn kết gia đình và lời cầu chúc trường thọ vào dịp Năm Mới (Oshogatsu).",
+          muc_1: "1. Nguồn gốc lịch sử từ lễ vật thần linh thời cổ đại",
+          nd_1:
+            "<p>Lịch sử bánh Mochi gắn bó mật thiết với nền văn minh lúa nước và tín ngưỡng Thần đạo (Shinto) của Nhật Bản:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thời kỳ Yayoi và Heian (794 - 1185):</strong> Sau khi kỹ thuật trồng lúa nước phát triển, người Nhật tin rằng bên trong mỗi hạt gạo nếp trắng ngần đều có vị thần lúa ngự trị (Inadama). Do đó, bánh Mochi giã từ gạo nếp chỉ được dùng trong hoàng cung và làm lễ vật dâng lên các vị thần trong dịp Tết để cầu quốc thái dân an.</li>" +
+            "<li><strong>Bánh Kagami Mochi (Bánh dày gương):</strong> Vào dịp Tết cổ truyền, mọi gia đình Nhật Bản đều bày tháp <em>Kagami Mochi</em> gồm 2 chiếc bánh Mochi tròn xếp chồng lên nhau và đặt một quả quýt Daidai ở trên đỉnh để đón Thần Năm Mới (Toshigami-sama).</li>" +
+            "</ul>",
+          muc_2: "2. Hương vị đặc trưng & Các biến tấu Mochi nổi tiếng bốn mùa",
+          nd_2:
+            "<p>Sức hấp dẫn của Mochi đến từ sự hòa quyện giữa lớp vỏ nếp dẻo mịn đàn hồi và phần nhân ngọt thanh tao:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Vỏ bánh gạo nếp Mochigome:</strong> Được làm từ giống gạo nếp hạt ngắn Nhật Bản có hàm lượng amylopectin rất cao, khi giã nhuyễn tạo ra kết cấu mềm mượt như nhung, dẻo dai mà không dính răng.</li>" +
+            "<li><strong>Daifuku Mochi (Đại Phúc Mochi):</strong> Loại Mochi phổ biến nhất với nhân đậu đỏ nghiền ngọt dịu (Anko), nhân trà xanh Matcha hoặc <strong>Ichigo Daifuku</strong> (bọc nguyên một quả dâu tây tươi mọng nước chua ngọt bên trong lớp đậu đỏ).</li>" +
+            "<li><strong>Mochi theo mùa lễ hội:</strong> Mùa xuân ngắm hoa anh đào có <em>Sakura Mochi</em> (vỏ hồng gói trong lá anh đào muối thơm dịu); Ngày Tết Thiếu nhi 5/5 có <em>Kashiwa Mochi</em> gói lá sồi; mùa hè có <em>Warabi Mochi</em> phủ bột đậu nành rang Kinako và mật đường đen Kuromitsu.</li>" +
+            "</ul>",
+          muc_3:
+            "3. Quy trình làm bánh & Nghi thức giã bánh truyền thống (Mochitsuki)",
+          nd_3:
+            "<p>Vào những ngày cuối năm, khắp các khu phố và trường học ở Nhật Bản lại rộn vang tiếng chày giã bánh trong lễ hội <strong>Mochitsuki</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bước 1 (Ngâm và đồ chín nếp):</strong> Gạo nếp Mochigome vo sạch, ngâm nước qua đêm rồi cho vào xửng gỗ vuông (Seiro) hấp chín bằng hơi nước nóng.</li>" +
+            "<li><strong>Bước 2 (Phối hợp giã bánh trong cối Usu):</strong> Nếp nóng được đổ vào cối gỗ hoặc cối đá lớn (Usu). Hai người phải phối hợp cực kỳ ăn ý theo nhịp hô: một người vung chày gỗ lớn (Kine) giã mạnh xuống, ngay khoảnh khắc nhấc chày lên, người thứ hai (Kaeshi-te) nhanh tay vỗ nước và lật khối bột nếp trong cối.</li>" +
+            "<li><strong>Bước 3 (Bọc nhân và áo bột):</strong> Khi khối bột đã dẻo mịn hoàn toàn, chia thành từng viên nhỏ, cán dẹt trên lớp bột năng rang (Katakuriko), đặt viên nhân đậu đỏ vào giữa rồi khéo léo vê tròn mịn màng.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Trải nghiệm cầm chày gỗ Kine tham gia giã bánh Mochitsuki và tự tay nặn bánh Mochi nhân đậu đỏ, dâu tây, Matcha.",
+        },
+
+        nui_phu_si: {
+          quoc_gia: "Nhật Bản - Du lịch",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Núi Phú Sĩ (Fuji-san) - Biểu Tượng Thiêng Liêng Của Nhật Bản",
+          hinh: "fuji.jpg",
+          tong_quan:
+            "<strong>Núi Phú Sĩ</strong> (người Nhật tôn kính gọi là <em>Fuji-san</em>, cao <strong>3.776 mét</strong>) là đỉnh núi cao nhất Nhật Bản, nằm trải dài trên địa phận hai tỉnh Yamanashi và Shizuoka (cách thủ đô Tokyo khoảng 100 km về phía Tây Nam). Năm 2013, UNESCO đã công nhận Núi Phú Sĩ là <strong>Di sản Văn hóa Thế giới</strong> với tư cách là 'Nơi linh thiêng và nguồn cảm hứng nghệ thuật bất tận'.",
+          muc_1: "1. Lịch sử địa chất & Ý nghĩa tâm linh trong văn hóa Nhật",
+          nd_1:
+            "<p>Núi Phú Sĩ thực chất là một ngọn núi lửa dạng tầng (Stratovolcano) được hình thành qua hàng trăm ngàn năm phun trào chồng lớp lên nhau (lần phun trào gần nhất là vào năm 1707 thời kỳ Edo):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Tam đại danh sơn thiêng liêng:</strong> Cùng với núi Tateyama và núi Hakusan, Phú Sĩ là một trong 3 ngọn núi linh thiêng nhất của Nhật Bản. Trong tín ngưỡng Thần đạo Shinto, ngọn núi là nơi ngự trị của nữ thần <em>Konohanasakuya-hime</em> (Nữ thần của hoa anh đào nở rộ và lửa núi), có hệ thống đền thờ Sengen-jinja bao quanh chân núi và ngay trên đỉnh núi.</li>" +
+            "<li><strong>Nguồn cảm hứng nghệ thuật vĩ đại:</strong> Đi vào hàng ngàn bài thơ Haiku, Waka và nổi tiếng toàn cầu qua bộ tranh khắc gỗ Ukiyo-e <strong>'36 cảnh núi Phú Sĩ'</strong> (đặc biệt là bức <em>Sóng lừng ngoài khơi Kanagawa</em>) của danh họa Katsushika Hokusai đầu thế kỷ 19.</li>" +
+            "</ul>",
+          muc_2: "2. Vẻ đẹp đối xứng hoàn mỹ & Quần thể Phú Sĩ Ngũ Hồ",
+          nd_2:
+            "<p>Núi Phú Sĩ sở hữu hình chóp nón cân đối hoàn hảo từ mọi góc nhìn với chóp đỉnh phủ tuyết trắng xóa suốt mùa đông - xuân:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Phú Sĩ Ngũ Hồ (Fujigoko):</strong> Năm hồ nước ngọt tuyệt đẹp hình thành do dòng dung nham cổ chặn dòng chảy quanh chân núi phía Bắc gồm: <strong>Hồ Kawaguchiko</strong> (nổi tiếng nhất với hình ảnh bóng núi Phú Sĩ phản chiếu lộn ngược dưới mặt hồ phẳng lặng - <em>Sakasa Fuji</em>), Hồ Yamanakako, Hồ Saiko, Hồ Shojiko và Hồ Motosuko (khung cảnh được in trên mặt sau tờ tiền 1.000 Yên Nhật).</li>" +
+            "<li><strong>Chùa Chureito & Khu rừng Aokigahara:</strong> Ngôi chùa tháp 5 tầng đỏ rực Chureito nằm trên sườn đồi thành phố Fujiyoshida là góc ngắm núi Phú Sĩ cùng hoa anh đào mùa xuân và lá phong đỏ mùa thu đẹp nhất thế giới.</li>" +
+            "<li><strong>Hiện tượng 'Phú Sĩ Kim Cương' (Diamond Fuji):</strong> Khoảnh khắc kỳ diệu khi mặt trời mọc hoặc lặn nằm đúng ngay chính giữa chóp đỉnh núi Phú Sĩ, tỏa sáng lấp lánh như một viên kim cương khổng lồ.</li>" +
+            "</ul>",
+          muc_3: "3. Trải nghiệm du lịch bốn mùa & Mùa leo núi đón bình minh",
+          nd_3:
+            "<p>Núi Phú Sĩ mang đến những hoạt động khám phá đa dạng quanh năm:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Mùa leo núi chính thức (Tháng 7 đến đầu tháng 9):</strong> Khi tuyết trên đỉnh tan hết, 4 cung đường leo núi (Yoshida, Subashiri, Gotemba, Fujinomiya) mở cửa đón khoảng 300.000 người leo xuyên đêm từ Trạm số 5 (cao 2.300m) lên đỉnh núi để chiêm ngưỡng <strong>Goraiko</strong> - ánh mặt trời mọc trên biển mây.</li>" +
+            "<li><strong>Nghỉ dưỡng Onsen & Làng cổ Oshino Hakkai:</strong> Thăm ngôi làng cổ Oshino Hakkai với 8 hồ nước suối băng tan từ đỉnh Phú Sĩ lọc qua đá nham thạch suốt nhiều thập kỷ trong vắt như gương.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Chụp ảnh check-in tại góc tiểu cảnh 'Chùa Chureito - Hoa Anh Đào - Núi Phú Sĩ' và in tranh khắc gỗ sóng biển Hokusai.",
+        },
+
+        shirakawago: {
+          quoc_gia: "Nhật Bản - Du lịch",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Làng Cổ Shirakawa-go - Xứ Sở Cổ Tích Mái Tranh Nhật Bản",
+          hinh: "langconb.jpg",
+          tong_quan:
+            "<strong>Làng cổ Shirakawa-go</strong> (tọa lạc tại thung lũng sông Shogawa thuộc tỉnh Gifu, miền Trung Nhật Bản) cùng với cụm làng Gokayama đã được UNESCO công nhận là <strong>Di sản Văn hóa Thế giới</strong> vào năm 1995 nhờ kiến trúc nhà mái tranh độc nhất vô nhị và truyền thống gắn kết cộng đồng hàng trăm năm.",
+          muc_1:
+            "1. Vị trí biệt lập & Sự ra đời của kiến trúc thích ứng thiên nhiên",
+          nd_1:
+            "<p>Shirakawa-go (nghĩa là <em>'Bạch Xuyên Hương'</em> - Ngôi làng của dòng sông trắng) nằm sâu giữa vùng núi cao Hida hiểm trở:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Vùng có lượng tuyết rơi dày nhất thế giới:</strong> Do gió mùa mùa đông từ biển Nhật Bản thổi vào gặp dãy núi Alps Nhật Bản chắn lại, mỗi mùa đông lớp tuyết phủ tại Shirakawa-go dày tới <strong>2 đến 4 mét</strong>, từng khiến ngôi làng bị cô lập hoàn toàn với thế giới bên ngoài suốt nhiều tháng.</li>" +
+            "<li><strong>Lịch sử hơn 300 năm:</strong> Để sinh tồn trong điều kiện khắc nghiệt và phát triển nghề truyền thống nuôi tằm dệt lụa cùng sản xuất diêm tiêu, người dân địa phương từ thời kỳ Edo đã sáng tạo nên kiểu nhà gỗ mái tranh kiên cố truyền từ đời này sang đời khác.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Bí mật kiến trúc 'Gassho-zukuri' (Chắp bàn tay cầu nguyện)",
+          nd_2:
+            "<p>Làng Ogimachi (ngôi làng lớn nhất ở Shirakawa-go) bảo tồn nguyên vẹn hơn <strong>114 ngôi nhà cổ Gassho-zukuri</strong> (nhiều ngôi nhà như Wada House, Nagase House có tuổi đời hơn 250 - 300 năm):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Mái tranh dốc đứng 60 độ:</strong> Tên gọi <em>'Gassho-zukuri'</em> có nghĩa là <strong>'Cấu trúc hai bàn tay chắp lại cầu nguyện'</strong>. Hai mái nhà lợp bằng cỏ tranh (Susuki) dày tới 80cm tạo thành góc nhọn 60 độ giúp những khối tuyết khổng lồ tự động trượt rơi xuống đất mà không làm sập mái nhà, đồng thời chống thấm nước mưa hiệu quả.</li>" +
+            "<li><strong>Kết cấu hoàn toàn không dùng đinh kim loại:</strong> Toàn bộ khung kèo gỗ của ngôi nhà cao từ 3 đến 4 tầng được buộc chặt với nhau bằng dây thừng bện từ cây phỉ (Neso) và mộng gỗ, giúp ngôi nhà có độ đàn hồi dẻo dai trước gió bão và động đất.</li>" +
+            "<li><strong>Công năng thông minh bên trong:</strong> Tầng 1 là không gian sinh hoạt của đại gia đình quanh <strong>bếp lửa than vuông dưới sàn (Irori)</strong>. Hơi ấm và khói từ bếp Irori bay lên các tầng áp mái (tầng 2, 3, 4) vừa giúp sưởi ấm nong tằm nhả tơ vào mùa đông, vừa hun khô mái tranh và chống mối mọt cho gỗ.</li>" +
+            "</ul>",
+          muc_3: "3. Tinh thần tương trợ 'Yui' và Vẻ đẹp bốn mùa",
+          nd_3:
+            "<p>Giá trị di sản của Shirakawa-go không chỉ nằm ở những ngôi nhà mà còn ở tinh thần <strong>'Yui' (Kết - Sự gắn kết tương trợ cộng đồng)</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Ngày hội lợp lại mái nhà của cả làng:</strong> Cứ sau 30 - 40 năm khi một mái tranh cần thay mới, hàng trăm người dân trong làng sẽ gác lại việc riêng, cùng nhau leo lên mái hoàn thành việc lợp mới hàng chục tấn cỏ tranh chỉ trong đúng 1 ngày mà không nhận tiền công.</li>" +
+            "<li><strong>Lễ hội thắp sáng mùa đông (Winter Light-up):</strong> Vào những đêm cuối tuần tháng 1 - tháng 2, những ngôi nhà phủ tuyết trắng rực sáng ánh đèn vàng ấm áp nhìn từ đài quan sát Shiroyama đẹp như một bức tranh cổ tích.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tìm hiểu mô hình mặt cắt 4 tầng của ngôi nhà cổ Gassho-zukuri và làm búp bê cầu nắng Sarubobo truyền thống vùng Hida - Gifu.",
+        },
+
+        kinkaku_ji: {
+          quoc_gia: "Nhật Bản - Du lịch",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Chùa Vàng Kinkaku-ji (Kim Các Tự) - Báu Vật Cố Đô Kyoto",
+          hinh: "chuavang.jpg",
+          tong_quan:
+            "<strong>Chùa Vàng Kinkaku-ji</strong> (tên Hán Việt là <em>Kim Các Tự</em>, tên chính thức trong Phật giáo Thiền tông là <strong>Rokuon-ji - Lộc Uyển Tự</strong>) tọa lạc tại phía Bắc cố đô Kyoto, là một trong những công trình lịch sử nổi tiếng nhất Nhật Bản và được UNESCO công nhận là Di sản Văn hóa Thế giới năm 1994.",
+          muc_1: "1. Nguồn gốc lịch sử từ biệt phủ của Tướng quân Ashikaga",
+          nd_1:
+            "<p>Lịch sử hình thành Chùa Vàng gắn liền với thời kỳ văn hóa Kitayama rực rỡ dưới triều đại Mạc phủ Muromachi:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Xây dựng năm 1397:</strong> Sau khi nhường chức Tướng quân (Shogun) cho con trai, Tướng quân thứ ba của Mạc phủ Muromachi là <strong>Ashikaga Yoshimitsu</strong> đã mua lại dinh thự cổ ở sườn núi Kitayama để xây dựng biệt phủ nghỉ dưỡng mang tên <em>Kitayama-dono</em> với tòa lầu dát vàng lộng lẫy mô phỏng cõi Tịnh Độ Phật giáo trên mặt đất.</li>" +
+            "<li><strong>Chuyển thành ngôi chùa Thiền tông (năm 1408):</strong> Thực hiện di nguyện của Tướng quân Yoshimitsu sau khi ông qua đời, con trai ông đã mời Thiền sư Muso Soseki khai sơn, chuyển toàn bộ dinh thự thành ngôi chùa Thiền tông phái Rinzai (Lâm Tế) mang tên Lộc Uyển Tự (Rokuon-ji).</li>" +
+            "</ul>",
+          muc_2: "2. Tuyệt tác kiến trúc: Ba tầng lầu - Ba phong cách lịch sử",
+          nd_2:
+            "<p>Điểm độc đáo bậc nhất của tòa Kim Các (Kinkaku) cao 12,5 mét là mỗi tầng trong 3 tầng lầu đều được thiết kế theo một trường phái kiến trúc hoàn toàn khác nhau nhưng hòa hợp tuyệt đối:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Tầng 1 - Pháp Thủy Viện (Hossokukyo) theo phong cách Cung điện thời Heian (Shinden-zukuri):</strong> Là tầng duy nhất không dát vàng, giữ nguyên màu cột gỗ bách tự nhiên và tường vôi trắng thanh nhã, bên trong đặt tượng Phật Thích Ca và tượng Tướng quân Yoshimitsu.</li>" +
+            "<li><strong>Tầng 2 - Triều Âm Động (Choondo) theo phong cách Võ gia Samurai (Buke-zukuri):</strong> Mặt ngoài bắt đầu được phủ kín bằng những lá vàng ròng nguyên chất dát mỏng đặt trên lớp sơn mài Nhật Bản, bên trong thờ Bồ Tát Quán Thế Âm.</li>" +
+            "<li><strong>Tầng 3 - Cứu Cánh Đỉnh (Kukkyochou) theo phong cách Thiền đường Phật giáo (Zenshu-butsuden):</strong> Được dát vàng ròng cả mặt trong lẫn mặt ngoài (tổng lượng vàng lá phủ trên chùa nặng khoảng <strong>20 kg vàng nguyên chất</strong>). Trên đỉnh mái gỗ lợp ván cây bách (Kokera-buki) là bức tượng <strong>chim Phượng Hoàng bằng đồng mạ vàng</strong> hướng lên bầu trời biểu trưng cho hòa bình và sự bất diệt.</li>" +
+            "</ul>",
+          muc_3: "3. Nghệ thuật Vườn Nhật Bản & Hồ Gương (Kyoko-chi)",
+          nd_3:
+            "<p>Kinkaku-ji là kiệt tác của nghệ thuật thiết kế vườn dạo truyền thống Nhật Bản (Kaiyushiki Teien) kết hợp kỹ thuật mượn cảnh núi non phía xa (Shakkei):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Hồ Gương (Kyoko-chi - Kính Hồ Trì):</strong> Tòa Kim Các nằm ngay sát mép hồ nước rộng lớn trong vắt như tấm gương, phản chiếu trọn vẹn ánh vàng lấp lánh của ngôi chùa giữa rừng thông xanh mát mùa hè, rừng phong đỏ rực mùa thu hay tuyết trắng mùa đông.</li>" +
+            "<li><strong>Các hòn đảo đá phong thủy:</strong> Trên mặt hồ bố trí đảo Hạc (Tsuru-jima), đảo Rùa (Kame-jima) và những tảng đá quý do các lãnh chúa Daimyo khắp nước Nhật dâng tặng từ thế kỷ 14.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tìm hiểu nghệ thuật kiến trúc 3 tầng của Chùa Vàng Kyoto và viết điều ước may mắn lên thẻ gỗ Ema.",
+        },
+
+        thoi_ki_heian: {
+          quoc_gia: "Nhật Bản - Lịch sử & Văn hóa",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Lịch Sử Thời Kì Heian - Hoàng Kim Văn Hóa Cổ Điển Nhật Bản",
+          hinh: "heian.jpg",
+          tong_quan:
+            "<strong>Thời kỳ Heian</strong> (Bình An thời đại, kéo dài gần 400 năm từ <strong>năm 794 đến năm 1185</strong>) được các nhà sử học đánh giá là <strong>thời kỳ hoàng kim của nền văn hóa cổ điển Nhật Bản</strong>. Đây là giai đoạn người Nhật chuyển từ việc tiếp thu văn hóa đại lục sang tự chủ sáng tạo nên chữ viết, văn học, trang phục và mỹ học thuần Nhật (<em>Kokufu Bunka</em>).",
+          muc_1: "1. Bối cảnh lịch sử & Kinh đô Bình An (Heian-kyo / Kyoto)",
+          nd_1:
+            "<p>Thời kỳ Heian mở đầu bằng một quyết định lịch sử định hình diện mạo văn hóa Nhật Bản suốt hơn một thiên niên kỷ sau đó:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Năm 794 - Dời đô về Heian-kyo:</strong> Thiên hoàng thứ 50 là Thiên hoàng Kammu đã quyết định dời kinh đô từ Nara về vùng đất mới được bao bọc bởi ba mặt núi non và dòng sông Kamo trong lành, đặt tên kinh đô là <strong>Heian-kyo (Bình An Kinh - Kinh đô của Hòa bình và An lạc)</strong>. Đó chính là thành phố <strong>Kyoto</strong> (thủ đô của Nhật Bản suốt từ năm 794 đến năm 1868).</li>" +
+            "<li><strong>Đời sống quý tộc cung đình (Kuge):</strong> Dưới sự hưng thịnh của gia tộc nhiếp chính Fujiwara, xã hội cung đình Heian sống trong hòa bình lâu dài, lấy thơ ca, âm nhạc, hội họa, thưởng hương và lễ nghi làm thước đo phẩm giá cao quý nhất.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Thành tựu vĩ đại: Sự ra đời của chữ Kana & Tiểu thuyết đầu tiên của nhân loại",
+          nd_2:
+            "<p>Đóng góp rực rỡ nhất của thời kỳ Heian đối với văn minh Nhật Bản và thế giới nằm ở lĩnh vực ngôn ngữ và văn chương:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Sáng tạo bảng chữ cái Hiragana và Katakana:</strong> Trước thời Heian, người Nhật phải mượn chữ Hán (Kanji) để ghi âm tiếng Nhật. Vào thế kỷ 9, người Nhật đã giản lược các nét chữ Hán thảo để tạo ra chữ <strong>Hiragana</strong> mềm mại uyển chuyển và chữ <strong>Katakana</strong> vuông vức, giải phóng khả năng biểu đạt cảm xúc tinh tế bằng chính tiếng mẹ đẻ.</li>" +
+            "<li><strong>Kiệt tác 'Truyện Genji' (Genji Monogatari - khoảng năm 1008):</strong> Do nữ quan cung đình <strong>Murasaki Shikibu</strong> sáng tác gồm 54 chương (dài hơn 1.000 trang viết bằng chữ Hiragana) xoay quanh cuộc đời hoàng tử Hikaru Genji. Tác phẩm được UNESCO và giới văn học thế giới công nhận là <strong>cuốn tiểu thuyết tâm lý hiện thực đầu tiên trong lịch sử nhân loại</strong>; cùng với tùy bút <em>Chẩm Thảo Tử (Makura no Soshi)</em> của Sei Shonagon và tập thơ <em>Cổ Kim Hòa Ca Tập</em>.</li>" +
+            "</ul>",
+          muc_3: "3. Mỹ học 'Mono no aware' & Tiền thân của Quốc phục Kimono",
+          nd_3:
+            "<p>Thời kỳ Heian đã đặt nền móng cho những giá trị thẩm mỹ cốt lõi nhất của con người Nhật Bản:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Mỹ học 'Mono no aware' (Niềm bi cảm trước vẻ đẹp mong manh):</strong> Sự rung động sâu sắc trước vẻ đẹp thanh cao nhưng ngắn ngủi của tự nhiên, tiêu biểu là hình ảnh cánh hoa anh đào (Sakura) nở rộ rồi nhẹ nhàng rơi trong gió xuân hay lá phong đổi màu mùa thu.</li>" +
+            "<li><strong>Lễ phục 12 lớp (Juni-hitoe) & Kosode:</strong> Phụ nữ quý tộc Heian mặc bộ lễ phục lụa <em>Juni-hitoe</em> gồm 12 lớp áo phối màu tinh tế theo mùa hoa cỏ; lớp áo lót bên trong (Kosode) về sau đã phát triển thành <strong>Quốc phục Kimono</strong> truyền thống của Nhật Bản.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Tìm hiểu bảng chữ cái Hiragana - Katakana, chiêm ngưỡng nghệ thuật phối màu áo Kimono và gấp hạc giấy Origami.",
+        },
+
+        van_hoa_samurai: {
+          quoc_gia: "Nhật Bản - Lịch sử & Văn hóa",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Văn Hóa Samurai & Tinh Thần Võ Sĩ Đạo (Bushido)",
+          hinh: "samurai.jpg",
+          tong_quan:
+            "<strong>Samurai</strong> (hay <em>Bushi - Võ sĩ</em>) là tầng lớp chiến binh quý tộc đóng vai trò trung tâm trong lịch sử Nhật Bản suốt gần 700 năm (từ thế kỷ 12 đến năm 1868). Vượt lên trên hình ảnh người chiến binh trên chiến trường, văn hóa Samurai đã kết tinh thành hệ triết lý đạo đức <strong>Võ Sĩ Đạo (Bushido)</strong> định hình tính cách kỷ luật và trọng danh dự của dân tộc Nhật Bản.",
+          muc_1:
+            "1. Nguồn gốc & Sự phát triển của tầng lớp Samurai qua các thời kỳ",
+          nd_1:
+            "<p>Từ <em>'Samurai'</em> bắt nguồn từ động từ tiếng Nhật cổ <em>'Saburau'</em>, có nghĩa là <strong>'Người phục vụ và bảo vệ bên cạnh bậc bề trên'</strong>:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Hình thành và nắm quyền (Thời kỳ Kamakura 1185 - 1333):</strong> Xuất phát từ những đội武 sĩ bảo vệ trang viên ở các tỉnh xa cuối thời Heian, năm 1192 Minamoto no Yoritomo thành lập chính quyền quân sự Mạc phủ (Bakufu) đầu tiên tại Kamakura, đưa tầng lớp Samurai lên nắm quyền quản lý đất nước dưới danh nghĩa Tướng quân (Shogun).</li>" +
+            "<li><strong>Thời kỳ Chiến Quốc (Sengoku) đến Thời kỳ Edo (1603 - 1867):</strong> Sau thời kỳ các lãnh chúa Daimyo tranh hùng (với ba nhân vật thống nhất Nhật Bản là Oda Nobunaga, Toyotomi Hideyoshi và Tokugawa Ieyasu), dưới 260 năm hòa bình của Mạc phủ Tokugawa thời Edo, các Samurai chuyển từ chiến binh sang tầng lớp học giả - quan chức hành chính theo phương châm <strong>'Văn Võ Lưỡng Đạo'</strong> (vừa tinh thông kiếm thuật, vừa giỏi văn chương, thư pháp, trà đạo).</li>" +
+            "</ul>",
+          muc_2: "2. Bảy đức tính vàng của Tinh thần Võ Sĩ Đạo (Bushido)",
+          nd_2:
+            "<p>Được học giả Inazo Nitobe đúc kết trong tác phẩm nổi tiếng thế giới <em>'Bushido: The Soul of Japan'</em>, linh hồn của người võ sĩ Samurai được xây dựng trên <strong>7 nguyên tắc đạo đức tuyệt đối</strong> (kết hợp từ Thiền tông Phật giáo, Thần đạo và Nho giáo):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Gi (Nghĩa - Sự ngay thẳng và Công chính):</strong> Luôn phân biệt rạch ròi đúng - sai, hành xử công tâm không vụ lợi.</li>" +
+            "<li><strong>2. Yu (Dũng - Lòng dũng cảm):</strong> Dám đương đầu với thử thách để bảo vệ lẽ phải, nhưng là cái dũng của trí tuệ chứ không phải sự liều lĩnh mù quáng.</li>" +
+            "<li><strong>3. Jin (Nhân - Lòng nhân từ, trắc ẩn):</strong> Người có sức mạnh càng lớn càng phải biết thương yêu, che chở cho kẻ yếu.</li>" +
+            "<li><strong>4. Rei (Lễ - Sự lễ phép, tôn trọng):</strong> Khiêm tốn và lịch thiệp trong từng cử chỉ đối nhân xử thế.</li>" +
+            "<li><strong>5. Makoto (Thành - Sự chân thành, chữ Tín):</strong> 'Đã nói là làm', lời nói và hành động luôn là một.</li>" +
+            "<li><strong>6. Meiyo (Danh dự) & 7. Chugi (Trung nghĩa):</strong> Coi trọng thanh danh trong sạch hơn cả sinh mạng và tận trung với trách nhiệm của mình.</li>" +
+            "</ul>",
+          muc_3:
+            "3. Thanh kiếm Katana, Giáp trụ và Di sản trong xã hội hiện đại",
+          nd_3:
+            "<p>Dù tầng lớp Samurai đã chính thức khép lại sau cuộc Duy tân Minh Trị năm 1868 để đưa Nhật Bản tiến lên hiện đại hóa, di sản văn hóa Samurai vẫn còn nguyên giá trị:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thanh kiếm Nhật (Katana) & Bộ giáp O-yoroi:</strong> Được rèn thủ công bằng thép Tamahagane gấp hàng ngàn lớp, thanh kiếm Katana được coi là 'linh hồn của người Samurai' (dùng để bảo vệ chính nghĩa chứ không phải sát phạt), phát triển thành môn kiếm đạo <strong>Kendo</strong> hiện đại.</li>" +
+            "<li><strong>Tinh thần Bushido trong nước Nhật ngày nay:</strong> Trở thành nền tảng cho văn hóa làm việc tận tâm, đúng giờ, kỷ luật cao, tinh thần trách nhiệm với tập thể và ý chí kiên cường vượt qua thiên tai của người dân Nhật Bản.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Chiêm ngưỡng mô hình Giáp trụ Samurai, mũ Kabuto và tìm hiểu 7 chữ vàng của tinh thần Võ Sĩ Đạo Bushido.",
+        },
+
+        tra_dao: {
+          quoc_gia: "Nhật Bản - Lịch sử & Văn hóa",
+          trang_quay_lai: "/nhat-ban",
+          id_nav: "nav_nb",
+          ten: "Nghệ Thuật Trà Đạo Nhật Bản (Chado / Chanoyu)",
+          hinh: "tradao.jpg",
+          tong_quan:
+            "<strong>Trà Đạo Nhật Bản</strong> (tiếng Nhật gọi là <em>Chado - Trà Đạo</em> hoặc <em>Chanoyu</em>) không đơn thuần là việc pha và uống một bát trà, mà là một môn nghệ thuật tổng hợp kết hợp Thiền định, kiến trúc, gốm sứ, cắm hoa Ikebana và triết lý sống hướng tới sự thanh tịnh tuyệt đối trong tâm hồn.",
+          muc_1: "1. Nguồn gốc từ Thiền viện Phật giáo đến Đại sư Sen no Rikyu",
+          nd_1:
+            "<p>Lịch sử Trà Đạo Nhật Bản phát triển qua hơn 1.000 năm gắn liền với dòng chảy của Phật giáo Thiền tông (Zen):</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Thế kỷ 9 - Thế kỷ 12 (Khởi nguồn từ Thiền sư Eisai):</strong> Năm 1191, Thiền sư Myoan Eisai mang hạt giống trà xanh và phương pháp nghiền lá trà thành bột mịn (Matcha) về trồng tại vùng Uji (Kyoto). Ban đầu, các nhà sư uống trà Matcha để giữ sự tỉnh táo khi tọa thiền nhiều giờ và dùng làm thảo dược dưỡng sinh.</li>" +
+            "<li><strong>Thế kỷ 16 - Đỉnh cao 'Wabi-cha' của Đại sư Sen no Rikyu (1522 - 1591):</strong> Trước đó, giới quý tộc thường tổ chức tiệc trà xa hoa khoe chén bát vàng bạc. Thiền sư <strong>Sen no Rikyu</strong> (được tôn vinh là Trà Thánh) đã thực hiện cuộc cách mạng đưa Trà Đạo trở về với vẻ đẹp mộc mạc, giản dị của tự nhiên (mỹ học <strong>Wabi-sabi</strong>) trong căn phòng trà nhỏ bằng gỗ tre, nơi mọi người dù là Tướng quân hay thường dân khi bước qua khung cửa thấp (Nijiriguchi) đều phải cúi đầu bình đẳng như nhau.</li>" +
+            "</ul>",
+          muc_2:
+            "2. Bốn nguyên tắc vàng 'Hòa - Kính - Thanh - Tịch' & Triết lý 'Nhất kỳ nhất hội'",
+          nd_2:
+            "<p>Linh hồn của Trà Đạo được gói gọn trong 4 chữ vàng do Đại sư Sen no Rikyu đúc kết cùng một câu châm ngôn sâu sắc:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>1. Hòa (Wa - 和):</strong> Sự hài hòa giữa con người với thiên nhiên bốn mùa, giữa chủ nhà và khách, giữa tâm hồn và các trà cụ.</li>" +
+            "<li><strong>2. Kính (Kei - 敬):</strong> Lòng tôn kính, khiêm nhường và trân trọng đối với mọi người cũng như từng đồ vật nhỏ bé xung quanh.</li>" +
+            "<li><strong>3. Thanh (Sei - 清):</strong> Sự tinh khiết, sạch sẽ cả về không gian vật chất bên ngoài lẫn tâm niệm trong sáng bên trong.</li>" +
+            "<li><strong>4. Tịch (Jaku - 寂):</strong> Trạng thái tĩnh lặng, an nhiên tự tại của tâm hồn khi Hòa, Kính, Thanh đã đạt tới độ viên mãn.</li>" +
+            "<li><strong>Triết lý 'Ichigo Ichie' (Nhất kỳ nhất hội - Đời người chỉ có một lần gặp gỡ):</strong> Mỗi buổi trà hội là duy nhất trong đời và không bao giờ lặp lại y hệt lần thứ hai, vì vậy cả chủ và khách đều phải dành trọn vẹn 100% sự chân thành cho khoảnh khắc hiện tại.</li>" +
+            "</ul>",
+          muc_3: "3. Bộ trà cụ truyền thống & Quy trình thưởng thức Trà Đạo",
+          nd_3:
+            "<p>Một buổi lễ Trà Đạo chuẩn mực diễn ra trong không gian Trà thất (Chashitsu) yên tĩnh với các bước nghi thức tinh tế:</p>" +
+            "<ul class='article-list'>" +
+            "<li><strong>Bộ trà cụ chính:</strong> Bát gốm uống trà (Chawan), chổi tre 80 - 120 nan chẻ thủ công dùng đánh bọt trà (Chasen), muỗng tre múc bột trà (Chashaku), hộp đựng bột trà Matcha (Natsume) và ấm đun nước bằng gang (Kama).</li>" +
+            "<li><strong>Quy trình pha và thưởng trà:</strong> Khách rửa tay thanh tẩy tại bồn nước đá ngoài vườn (Tsukubai), bước vào trà thất chiêm ngưỡng bức thư pháp và bình hoa theo mùa tại hốc tường Tokonoma. Khách ăn một chiếc <strong>bánh ngọt truyền thống (Wagashi)</strong> trước để vị ngọt dịu làm tôn lên vị đắng thanh và hậu ngọt (Umami) của bột trà Matcha. Chủ nhà lau sạch trà cụ bằng khăn lụa, múc bột Matcha, rót nước nóng 80°C và dùng chổi tre Chasen đánh đều tay tạo lớp bọt xanh ngọc mịn màng rồi hai tay dâng bát trà cho khách.</li>" +
+            "</ul>",
+          le_hoi:
+            "Hoạt động tại lễ hội: Xem trình diễn nghi thức pha Trà Đạo truyền thống, tự tay dùng chổi tre Chasen đánh bọt trà Matcha và thưởng thức cùng bánh ngọt Wagashi.",
+        },
+      };
+
+      // Đọc tham số mục
+      function hienThiChiTiet() {
+        var tham_so = new URLSearchParams(window.location.search);
+        var ma_muc = tham_so.get("muc");
+        var noi_dung =
+          du_lieu_chi_tiet[ma_muc] || du_lieu_chi_tiet["lich_su_giu_nuoc"];
+
+        document.getElementById("tieu_de_banner").textContent =
+          noi_dung.ten.toUpperCase();
+        document.getElementById("mo_ta_banner").textContent =
+          "Chuyên mục: " + noi_dung.quoc_gia;
+        document.getElementById("nhan_quoc_gia").textContent =
+          noi_dung.quoc_gia;
+        document.getElementById("ten_chinh").textContent = noi_dung.ten;
+        document.getElementById("hinh_anh_chinh").src = noi_dung.hinh;
+        document.getElementById("hinh_anh_chinh").alt = noi_dung.ten;
+
+        document.getElementById("mo_ta_tong_quan").innerHTML =
+          noi_dung.tong_quan;
+
+        document.getElementById("tieu_de_1").textContent = noi_dung.muc_1;
+        document.getElementById("noi_dung_1").innerHTML = noi_dung.nd_1;
+
+        document.getElementById("tieu_de_2").textContent = noi_dung.muc_2;
+        document.getElementById("noi_dung_2").innerHTML = noi_dung.nd_2;
+
+        document.getElementById("tieu_de_3").textContent = noi_dung.muc_3;
+        document.getElementById("noi_dung_3").innerHTML = noi_dung.nd_3;
+
+        document.getElementById("hoat_dong_le_hoi").textContent =
+          noi_dung.le_hoi;
+
+        var nut_quay_lai = document.getElementById("nut_quay_lai");
+        nut_quay_lai.href = noi_dung.trang_quay_lai;
+
+        var the_menu = document.getElementById(noi_dung.id_nav);
+        if (the_menu) {
+          the_menu.classList.add("active");
+        }
+      }
+
+      hienThiChiTiet();
+    </script>
+  </body>
+</html>

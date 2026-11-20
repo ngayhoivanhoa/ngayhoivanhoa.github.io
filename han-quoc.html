@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NgayHoiVanHoa_HanQuoc</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanh dieu huong cac site -->
+    <header class="main-header">
+      <div class="logo">NGÀY HỘI VĂN HÓA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/viet-nam">Việt Nam</a></li>
+          <li><a href="/trung-quoc">Trung Quốc</a></li>
+          <li><a href="/han-quoc" class="active">Hàn Quốc</a></li>
+          <li><a href="/nhat-ban">Nhật Bản</a></li>
+          <li><a href="/dang-ky">Đăng ký tham gia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner đầu trang -->
+    <section class="page-banner">
+      <h1>KHÔNG GIAN VĂN HÓA HÀN QUỐC</h1>
+    </section>
+
+    <!-- Nội dung chính -->
+    <main class="container-wide">
+      <!-- 3 mục chọn của quốc gia -->
+      <div class="tab-menu">
+        <button class="tab-btn active" onclick="chonMuc('am_thuc', this)">
+          1. Ẩm thực
+        </button>
+        <button class="tab-btn" onclick="chonMuc('du_lich', this)">
+          2. Du lịch
+        </button>
+        <button class="tab-btn" onclick="chonMuc('lich_su_van_hoa', this)">
+          3. Lịch sử và Văn hóa
+        </button>
+      </div>
+
+      <!-- Mục 1: Ẩm thực (Kimchi, Kimbap, Bibimbap) -->
+      <section id="am_thuc" class="section-card tab-box active">
+        <div class="category-header">
+          <span class="category-tag">Hàn Quốc - Ẩm thực</span>
+          <h2 class="section-title">Tinh Hoa Ẩm Thực Xứ Sở Kim Chi</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Món 1: Kimchi -->
+          <a href="/chi-tiet?muc=kimchi" class="detail-item clickable-item">
+            <img
+              src="kimchi.jpg"
+              alt="Kimchi Hàn Quốc"
+            />
+            <div class="detail-content">
+              <h3>1. Kimchi (Kim Chi Cải Thảo)</h3>
+              <p>
+                Món ăn quốc hồn quốc túy không thể thiếu trên bàn ăn người Hàn,
+                được lên men từ cải thảo, bột ớt Hàn Quốc và gia vị tươi.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Quy trình muối Kimchi →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 2: Kimbap -->
+          <a href="/chi-tiet?muc=kimbap" class="detail-item clickable-item">
+            <img
+              src="kimbap.jpg"
+              alt="Kimbap"
+            />
+            <div class="detail-content">
+              <h3>2. Kimbap (Cơm Cuộn Rong Biển)</h3>
+              <p>
+                Những khoanh cơm trắng trộn dầu mè thơm ngậy cuộn trong lá rong
+                biển khô cùng trứng chiên, cà rốt, củ cải vàng và thanh cua.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách cuộn Kimbap đẹp mắt →
+              </p>
+            </div>
+          </a>
+
+          <!-- Món 3: Bibimbap -->
+          <a
+            href="/chi-tiet?muc=bibimbap"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="bibimbap.jpg"
+              alt="Bibimbap"
+            />
+            <div class="detail-content">
+              <h3>3. Bibimbap (Cơm Trộn Hàn Quốc)</h3>
+              <p>
+                Tô cơm nóng hổi hội tụ triết lý ngũ hành âm dương với 5 sắc màu
+                từ rau củ, thịt bò, trứng ốp la và tương ớt Gochujang.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Hương vị & Cách làm Cơm trộn Bibimbap →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 2: Du lịch (Gyeongbokgung, Tỉnh Gangwon-do, Làng cổ Bukchon Hanok) -->
+      <section id="du_lich" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Hàn Quốc - Du lịch</span>
+          <h2 class="section-title">Địa Điểm Du Lịch Nổi Tiếng Hàn Quốc</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Cung điện Gyeongbokgung -->
+          <a
+            href="/chi-tiet?muc=gyeongbokgung"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="cungdien.jpg"
+              alt="Cung điện Gyeongbokgung"
+            />
+            <div class="detail-content">
+              <h3>1. Cung Điện Gyeongbokgung (Cảnh Phúc Cung)</h3>
+              <p>
+                Cung điện lớn và đồ sộ nhất trong Ngũ Đại Hoàng Cung của triều
+                đại Joseon, tọa lạc uy nghiêm tại trung tâm thủ đô Seoul.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Lịch sử xây dựng, Kiến trúc & Lễ đổi gác hoàng gia
+                →
+              </p>
+            </div>
+          </a>
+
+          <!-- Tỉnh Gangwon-do -->
+          <a
+            href="/chi-tiet?muc=gangwon_do"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="gangwondo.jpg"
+              alt="Tỉnh Gangwon-do"
+            />
+            <div class="detail-content">
+              <h3>2. Tỉnh Gangwon-do</h3>
+              <p>
+                Thiên đường thiên nhiên phía Đông Bắc Hàn Quốc nổi tiếng với
+                vườn quốc gia Seoraksan, đảo Nami thơ mộng và các khu trượt
+                tuyết Thế vận hội mùa đông.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Cảnh sắc bốn mùa & Trải nghiệm du lịch Gangwon-do
+                →
+              </p>
+            </div>
+          </a>
+
+          <!-- Làng cổ Bukchon Hanok -->
+          <a
+            href="/chi-tiet?muc=bukchon_hanok"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="langco.jpg"
+              alt="Làng cổ Bukchon Hanok"
+            />
+            <div class="detail-content">
+              <h3>3. Làng Cổ Bukchon Hanok</h3>
+              <p>
+                Ngôi làng truyền thống hơn 600 năm tuổi lưu giữ nguyên vẹn hàng
+                trăm ngôi nhà gỗ Hanok cổ kính của tầng lớp quý tộc Joseon xưa.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Kiến trúc nhà Hanok & Hoạt động tham
+                quan →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mục 3: Lịch sử và Văn hóa (Phong kiến Hàn Quốc, Taekwondo, Phim ảnh) -->
+      <section id="lich_su_van_hoa" class="section-card tab-box">
+        <div class="category-header">
+          <span class="category-tag">Hàn Quốc - Lịch sử & Văn hóa</span>
+          <h2 class="section-title">Lịch Sử Và Văn Hóa Hàn Quốc</h2>
+        </div>
+
+        <div class="detail-list">
+          <!-- Lịch sử phong kiến Hàn Quốc -->
+          <a
+            href="/chi-tiet?muc=phong_kien_han_quoc"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="lshq.jpg"
+              alt="Lịch sử phong kiến Hàn Quốc"
+            />
+            <div class="detail-content">
+              <h3>1. Lịch Sử Thời Kì Phong Kiến Hàn Quốc</h3>
+              <p>
+                Quá trình phát triển từ thời Tam Quốc (Goguryeo, Baekje, Silla)
+                đến vương triều Goryeo và sự thịnh trị của triều đại Joseon với
+                việc sáng tạo chữ Hangeul.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Các triều đại lịch sử & Di sản văn hóa tiêu biểu →
+              </p>
+            </div>
+          </a>
+
+          <!-- Võ Taekwondo -->
+          <a
+            href="/chi-tiet?muc=taekwondo"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="taekwondo.jpg"
+              alt="Võ Taekwondo"
+            />
+            <div class="detail-content">
+              <h3>2. Quốc Võ Taekwondo</h3>
+              <p>
+                Môn võ truyền thống của Hàn Quốc nổi bật với những đòn chân uy
+                lực, tốc độ và triết lý rèn luyện đạo đức, kỷ luật kiên cường.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Nguồn gốc, Đặc điểm kỹ thuật & Tinh thần võ đạo →
+              </p>
+            </div>
+          </a>
+
+          <!-- Nền phim ảnh Hàn Quốc -->
+          <a
+            href="/chi-tiet?muc=phim_anh_han_quoc"
+            class="detail-item clickable-item"
+          >
+            <img
+              src="kdrama.jpg"
+              alt="Nền phim ảnh Hàn Quốc"
+            />
+            <div class="detail-content">
+              <h3>3. Nền Phim Ảnh Hàn Quốc (K-Cinema & K-Drama)</h3>
+              <p>
+                Trụ cột của làn sóng Hallyu chinh phục khán giả toàn cầu và giải
+                thưởng Oscar, Cannes nhờ kịch bản giàu tính nhân văn và kỹ thuật
+                điện ảnh xuất sắc.
+              </p>
+              <p class="activity-highlight">
+                Ấn vào để xem Sự phát triển, Tác phẩm tiêu biểu & Sức ảnh hưởng
+                →
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="main-footer">
+      <p>
+        © Tổ 4: Phú Lộc, Hoàng Long, Khánh Duy, Minh Khoa, Tiến Lộc, Đức Nguyên,
+        Anh Huy, Bảo Nghi
+      </p>
+      <p>
+        Điều hướng nhanh:
+        <a href="/">Trang chủ</a> |
+        <a href="/viet-nam">Việt Nam</a> |
+        <a href="/trung-quoc">Trung Quốc</a> |
+        <a href="/han-quoc">Hàn Quốc</a> |
+        <a href="/nhat-ban">Nhật Bản</a> |
+        <a href="/dang-ky">Đăng ký</a>
+      </p>
+    </footer>
+
+    <!-- Hàm chuyển đổi giữa 3 mục -->
+    <script>
+      function chonMuc(ten_muc, nut_bam) {
+        var danh_sach_muc = document.getElementsByClassName("tab-box");
+        for (var i = 0; i < danh_sach_muc.length; i++) {
+          danh_sach_muc[i].classList.remove("active");
+        }
+        var danh_sach_nut = document.getElementsByClassName("tab-btn");
+        for (var j = 0; j < danh_sach_nut.length; j++) {
+          danh_sach_nut[j].classList.remove("active");
+        }
+        document.getElementById(ten_muc).classList.add("active");
+        nut_bam.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
